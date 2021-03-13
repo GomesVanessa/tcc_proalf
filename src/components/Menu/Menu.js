@@ -1,7 +1,6 @@
-import React from 'react'
-import styled from 'styled-components';
+/*import React from 'react'
+//import styled from 'styled-components';
 
-//const $root = document.getElementById('root')
 
 const menu = [
     { 
@@ -18,7 +17,26 @@ const menu = [
     }
 ]
 
-const Menu = () => { 
+const Menu = () => {
+    const items = []
+    for(let index = 0; index < menu.length; index++){
+        const element = menu[index];
+        menuItems.push(menu[index])
+    }
+    return (
+        <ul>
+            {
+                
+            }
+        </ul>
+    )
+}
+
+export default Menu*/
+
+
+
+/*const Menu = () => { 
     let menuItems = ''
 
     menu.map((item) => {
@@ -30,8 +48,8 @@ const Menu = () => {
             ${menuItems}
         </ul> 
     `
-}
+}*/
 
-export default Menu
+
 
 

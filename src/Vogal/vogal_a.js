@@ -1,10 +1,8 @@
-import React from 'react';
+/*import React from 'react';
 import {Abacaxi, Sino, Abelha, Agulha, Minhoca, 
         Anel, Olhos, Foguete, Apito, Aranha, 
         Asas, Galinha, Coelho, Aviao, Arvore
 }from '../Assets/a'
-
-//function PictureA(){ 
 
     const cardsLetterA =[
         {
@@ -84,13 +82,16 @@ import {Abacaxi, Sino, Abelha, Agulha, Minhoca,
         }
     ]
 
+    
     <CardsGrid>
-        {cardsLetterA.map((item) => { 
+        {cardsLetterA.map(item => { 
             return (
-                <Card alt={} image={image} correct={} />
+                <Card alt={} image={image} />
             )
         })}
-    </CardsGrid>
+    <CardsGrid /> */
+
+    
 
 
     

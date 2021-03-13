@@ -1,6 +1,6 @@
-import Menu from './Menu'
+/*import Menu from './Menu'
 
 // <div id="root">
 // <script src="./Menu.js"></script>
 // </div> 
-export default Menu
+export default Menu */
