@@ -2,15 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wraper = styled.footer`
-    color: white;
-    background-color: lightblue;
-    border: 2px solid #000
+    grid-area: footer;
+    background: lightblue;
     `
          
 const Footer = ({text}) => {
-    return(
+    return (
         <Wraper>
-            {text} 
+            {text}
         </Wraper>
     )
 }
