@@ -4,7 +4,7 @@ import {Abacaxi, Sino, Abelha, Agulha, Minhoca,
         Asas, Galinha, Coelho, Aviao, Arvore
 }from '../Assets/a'
 
-    const cardsLetterA =[
+    const CardsLetterA =[
         {
             image: 'Abacaxi', 
             alt: 'Abacaxi', 
@@ -23,7 +23,7 @@ import {Abacaxi, Sino, Abelha, Agulha, Minhoca,
         {
             image: 'Agulha', 
             alt: 'Agulha', 
-            correct: false
+            correct: true
         },
         {
             image: 'Minhoca', 
@@ -83,15 +83,15 @@ import {Abacaxi, Sino, Abelha, Agulha, Minhoca,
     ]
 
     
-    <CardsGrid>
-        {cardsLetterA.map(item => { 
-            return (
-                <Card alt={} image={image} />
-            )
-        })}
-    <CardsGrid /> */
+    // <CardsGrid>
+    //     {CardsLetterA.map((item => { 
+    //         return (
+    //             <Card alt={} image={} />
+    //         )
+    //     }))}
+    // <CardsGrid />
 
-    
+  */  
 
 
     

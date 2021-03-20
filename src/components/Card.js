@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 `
 
 const Img = styled.img`
-    border: 2px solid #fOf;
+    border: 2px solid #F0F0F0;
 `
 
 
@@ -28,8 +28,6 @@ const Card = ({ text, image, correct = false, active = false}) => {
         </Wrapper> 
     )
 }
-
-
 
 export default Card
 
