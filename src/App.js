@@ -1,10 +1,10 @@
-import Button from './Button'
+import Layout from './components/Layout/Layout'
 
 function App() {
   return (
-    <div className="App">
-      <Button />
-    </div>
+    <Layout title="Proalf">
+     <h1><center>Aleluia!!!!! kkkkkk</center> </h1>
+    </Layout>
   )
 }
 

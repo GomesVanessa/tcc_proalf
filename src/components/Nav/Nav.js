@@ -1,17 +1,13 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const Div = styled.div`
+const Wrapper = styled.nav`
 
     background: rgb(51,170,204);
     color: white;
     display: flex;
     text-align: center;
     
-    h1{
-        font-size:1.25em;
-        margin-top: 36.5px; 
-        }
     ul{
         justify-items: center;
         list-style:none;
@@ -19,30 +15,42 @@ const Div = styled.div`
         
         li{
             
-            p{
+            a{
                 margin-right:20px;
                 font-size:1.25em;
+                color: #fff;
+                text-decoration: none;
             }
         }
     }
 `
 
 const Nav = ({Title, Sobre, Vogais, Consoantes}) => { 
-    return ( 
-        <Div>
-            <h1>{Title}</h1>
+    const navItems = [ 
+        {
+            text: 'Inicio', 
+            path: '/'
+        }, 
+        {
+            text: 'Vogais', 
+            path: '/vogais'
+        }, 
+        {
+            text: 'Consoantes', 
+            path: '/consoantes'
+        },
+    ]
+
+    return(
+        <Wrapper> 
             <ul>
-                <li>
-                    <p>{Sobre}</p>
-                </li>
-                <li> 
-                    <p>{Vogais}</p>                    
-                </li>
-                <li> 
-                    <p>{Consoantes}</p> 
-                </li>
+                {
+                    navItems.map(item=>( 
+                        <li><a href={item.path}>{item.text}</a></li>
+                    ))
+                }
             </ul>
-        </Div>
+        </Wrapper>
     )
 }
 

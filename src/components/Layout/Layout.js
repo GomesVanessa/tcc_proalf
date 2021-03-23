@@ -2,13 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import Header from '../Header'
 import Content from '../Content'
-import Card from '../Card'
+//import Card from '../Card'
 import Footer from '../Footer'
+import Nav from "../Nav";
 
 const Wrapper = styled.div`
     border: 2px solid black;
     display: grid;
-    min-height: 90vh;//90%altura
+    height: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
    
@@ -19,31 +20,26 @@ const Wrapper = styled.div`
             "content content content content content content"
             "content content content content content content"
             "footer footer footer footer footer footer";
-`
+`;
 
 export const Layout = (props) => {
+    const {children} = props;
     return (
         <Wrapper>
-        <Header>{props.title}
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Vogais</a></li>
-                <li><a href="/">Consoantes</a></li>
-            </ul>
-        </nav>
-        </Header>
-        <Content>
-            <Card>
-
-            </Card>
-                  
-        </Content>
-        <Footer>
-            
-        </Footer>
+            <Header>
+            <h1>{props.title}</h1>
+            <Nav>
+                Sobre="Sobre"
+                Vogais="Vogais"
+                Consoantes="Consoantes"
+            </Nav>
+            </Header>
+            <Content>{children}</Content> 
+            <Footer year="2021">
+                TCC Etec Embu | Programa de alfabetização e estimulaçao cognitiva.
+            </Footer> 
         </Wrapper>
-    )
-}
+    ); 
+};
 
-export default Layout
+export default Layout;

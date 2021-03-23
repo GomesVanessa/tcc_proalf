@@ -1,5 +1,4 @@
 import Reac from "react"; 
-
 import Layout from "./Layout"; 
 import Header from "../Header"; 
 import Content from "../Content"; 
@@ -17,7 +16,7 @@ export default{
 export const LayoutProalf = () => {
     return( 
         <Layout > 
-            <h1>Esse tcc.....</h1>
+            <h1><center>ALELUIA......KKKKK</center></h1>
         </Layout>
     )
 }

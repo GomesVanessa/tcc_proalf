@@ -8,7 +8,7 @@ export default {
 
 export const NavTitle = () => {
     return( 
-       <Nav Title = 'Proalf' Sobre = 'Sobre' Vogais = 'Vogais' Consoantes = 'Consoantes'/>
+       <Nav Title='Proalf' Sobre='Sobre' Vogais='Vogais' Consoantes='Consoantes'/>
     )
 }
 
