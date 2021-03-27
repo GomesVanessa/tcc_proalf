@@ -1,16 +1,15 @@
 import Reac from "react"; 
 import Layout from "./Layout"; 
-import Header from "../Header"; 
-import Content from "../Content"; 
-import Footer from "../Footer"; 
-import Card from "../Card"; 
+import Header from "../Header/Header"; 
+import Nav from "../Nav/Nav";
+import Content from "../Content/Content"; 
+import Footer from "../Footer/Footer"; 
+import Card from"../Card/Card";
+
   
 export default{ 
     title: "Proalf/Layout", 
      component: Layout, 
-    //     argTypes:(
-    //         backgroundColor: 
-    //)
 }
 
 export const LayoutProalf = () => {
@@ -21,13 +20,19 @@ export const LayoutProalf = () => {
     )
 }
 
+
 export const HeaderProalf = () => {
     return( 
         <Header> 
             <h1>Proalf</h1>
             <nav></nav>
-               
         </Header>
+    )
+}
+
+export const NavTitle = () => {
+    return( 
+       <Nav Title='Proalf' Sobre='Sobre' Vogais='Vogais' Consoantes='Consoantes'/>
     )
 }
 
@@ -49,7 +54,7 @@ export const CardCorrectActive = () => {
 
 export const FooterProalf = () => {
     return( 
-        <Footer year="2021"> 
+        <Footer year="2021">
             TCC Etec Embu   |   Programa de alfabetização e estimulaçao cognitiva.   
         </Footer>
     )

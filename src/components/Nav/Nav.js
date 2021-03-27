@@ -6,20 +6,21 @@ const Wrapper = styled.nav`
     background: rgb(51,170,204);
     color: white;
     display: flex;
-    text-align: center;
-    
+    align-items: center;
+    justify-content: center;
+   
+        
     ul{
         justify-items: center;
         list-style:none;
         display: flex; 
         
         li{
-            
             a{
                 margin-right:20px;
                 font-size:1.25em;
                 color: #fff;
-                text-decoration: none;
+                text-decoration: none;  
             }
         }
     }
@@ -27,8 +28,12 @@ const Wrapper = styled.nav`
 
 const Nav = ({Title, Sobre, Vogais, Consoantes}) => { 
     const navItems = [ 
+        // {
+        //    text: 'Proalf',
+        //    path: '/'
+        // },
         {
-            text: 'Inicio', 
+            text: 'Sobre', 
             path: '/'
         }, 
         {
