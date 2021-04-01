@@ -11,7 +11,7 @@ export const Button_ = () => {
 
     }
     return(
-        <Button size="small" onClick={exibealert}>
+        <Button onClick={exibealert}>
             Continuar
         </Button>
     )

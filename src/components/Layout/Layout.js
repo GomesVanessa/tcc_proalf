@@ -2,10 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Header from "../Header/Header";
 import Content from "../Content/Content";
-//import Card from '../Card';
+import CardsGrid from "../CardsGrid/CardsGrid";
 import Button from "../Button/Button";
 import Footer from "../Footer/Footer";
-import CardsGrid from "../CardsGrid/CardsGrid";
 
 
 const Wrapper = styled.div`
@@ -29,16 +28,14 @@ export const Layout = (props) => {
     return (
         <Wrapper>
             <Header></Header>   
-            <Content></Content>
-
-            <Button>Continuar</Button>
-            <CardsGrid></CardsGrid>
+            
+            <Content>
+                <Button>VAnessa </Button>
+                </Content>
             <Footer year="2021">
                 TCC Etec Embu | Programa de alfabetização e estimulaçao cognitiva.
             </Footer> 
         </Wrapper>
-
-
         
     ); 
 };

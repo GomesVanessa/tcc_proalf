@@ -1,6 +1,9 @@
 import Layout from "./Layout"; 
-
+//import Content from "../Content/Content";
+//import CardsGrid from "../CardsGrid/CardsGrid";
+import Button from "../Button/Button";
 //import Card from"../Card/Card";
+import Header from "../Header/Header";
 
   
 export default{ 
@@ -11,7 +14,9 @@ export default{
 export const Layout_ = () => {
     return( 
         <Layout > 
-            <h1>ALELUIA......KKKKK</h1>
+            <Header />
+            <Button>VAnessa </Button>
+                       
         </Layout>
     )
 }
@@ -28,13 +33,7 @@ export const Layout_ = () => {
 // }
 
 
-// export const ContentProalf = () => {
-//     return( 
-//         <Content> 
-     
-//         </Content>
-//     )
-// }
+
 
 // export const CardFalseActive = () => { 
 //     return <Card text = "Sino" image="https://via.placeholder.com/150" />

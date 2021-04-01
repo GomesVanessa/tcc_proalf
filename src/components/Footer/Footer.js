@@ -5,13 +5,15 @@ const Wraper= styled.footer`
     grid-area: footer;
     background: rgb(51,170,204);
     color: rgb(255,255,255);
-    text-align: center;
     font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
          
 const Footer = ({year, children}) => {
     return <Wraper>
-        {year} - {children}
+        © Copyright - {year} - {children}
     </Wraper>
 }
 
