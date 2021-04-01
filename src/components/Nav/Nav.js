@@ -26,12 +26,8 @@ const Wrapper = styled.nav`
     }
 `
 
-const Nav = ({Title, Sobre, Vogais, Consoantes}) => { 
+const Nav = ({className, title, sobre, vogais, consoantes}) => { 
     const navItems = [ 
-        // {
-        //    text: 'Proalf',
-        //    path: '/'
-        // },
         {
             text: 'Sobre', 
             path: '/'
@@ -47,7 +43,7 @@ const Nav = ({Title, Sobre, Vogais, Consoantes}) => {
     ]
 
     return(
-        <Wrapper> 
+        <Wrapper className={className}> 
             <ul>
                 {
                     navItems.map(item=>( 
@@ -60,3 +56,13 @@ const Nav = ({Title, Sobre, Vogais, Consoantes}) => {
 }
 
 export default Nav
+
+// const Nav = () => {
+//     return(
+//         <nav>
+//             <a href="/sobre">Sobre</a>
+//             <a href="/vogais">Vogais</a>
+//             <a href="/consoantes">Consoantes</a>
+//         </nav>
+//     )
+// }

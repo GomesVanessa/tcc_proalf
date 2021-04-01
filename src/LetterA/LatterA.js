@@ -1,4 +1,4 @@
-/*import React from 'react';
+import React from 'react';
 import {Abacaxi, Sino, Abelha, Agulha, Minhoca, 
         Anel, Olhos, Foguete, Apito, Aranha, 
         Asas, Galinha, Coelho, Aviao, Arvore
@@ -89,9 +89,9 @@ import {Abacaxi, Sino, Abelha, Agulha, Minhoca,
     //             <Card alt={} image={} />
     //         )
     //     }))}
-    // <CardsGrid />
+    // </CardsGrid>
 
-  */  
+  
 
 
     

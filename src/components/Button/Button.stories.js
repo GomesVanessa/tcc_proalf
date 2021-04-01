@@ -1,24 +1,19 @@
-//import Button from "./Button";
+import Button from "./Button";
 
-// export default{
-//     title: "Proalf/Button",
-//     component: Button,
-// }
+export default{
+    title: "Proalf/Button",
+    component: Button,
+}
 
-// export const Button = () => {
-//     return(
-//         <Button>
-//             <input type="button" value="Disable me" disabled>Continuar</input>
-//         </Button>
-//     )
-// }
+export const Button_ = () => {
+    const exibealert = () => {
+        alert('Teste')
 
-// // export const Button = ({label}) => {
-// //     return(
-// //     <Button label="Button" onClick={() => {}} size="small">
-// //     Continuar
-// //     </Button>
-// //     )
-// // }
-
+    }
+    return(
+        <Button size="small" onClick={exibealert}>
+            Continuar
+        </Button>
+    )
+}              
 

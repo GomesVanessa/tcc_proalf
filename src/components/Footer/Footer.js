@@ -9,8 +9,8 @@ const Wraper= styled.footer`
     font-size: 1em;
 `
          
-const Footer = ({year, children, ...rest}) => {
-    return <Wraper {...rest}>
+const Footer = ({year, children}) => {
+    return <Wraper>
         {year} - {children}
     </Wraper>
 }

@@ -6,9 +6,9 @@ export default {
     component: Nav
 }; 
 
-export const NavTitle = () => {
+export const Nav_ = () => {
     return( 
-       <Nav Title='Proalf' Sobre='Sobre' Vogais='Vogais' Consoantes='Consoantes'/>
+       <Nav title='Proalf' sobre='Sobre' vogais='Vogais' consoantes='Consoantes'/>
     )
 }
 

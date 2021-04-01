@@ -2,15 +2,17 @@ import Card from "./Card";
   
 export default{ 
     title: "Proalf/Card", 
-     component: Card, 
-    //     argTypes:(
-    //         backgroundColor: 
-    //)
+     component: Card,
 }
 
-export const Cardcorrectactive = () => {
+export const CardTrue = () => {
     return( 
-        <Card active="false"></Card>
+        <Card text="" image="" active={true} correct={true} />
     )
 }
 
+export const CardFalse = () => {
+    return( 
+        <Card text="" image="" active={false} correct={false} />
+    )
+}

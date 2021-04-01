@@ -3,11 +3,13 @@ import styled from "styled-components";
 import Header from "../Header/Header";
 import Content from "../Content/Content";
 //import Card from '../Card';
+import Button from "../Button/Button";
 import Footer from "../Footer/Footer";
-import Nav from "../Nav/Nav";
+import CardsGrid from "../CardsGrid/CardsGrid";
+
 
 const Wrapper = styled.div`
-    border: 2px solid black;
+    border: 2px solid white;
     display: grid;
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
@@ -26,20 +28,18 @@ export const Layout = (props) => {
     const {children} = props;
     return (
         <Wrapper>
-            <Header>
-                <h1>{props.title}</h1>
-            <Nav
-                Sobre="Sobre"
-                Vogais="Vogais"
-                Consoantes="Consoantes"
-            />
-            </Header>
-           
-            <Content>{children}</Content> 
+            <Header></Header>   
+            <Content></Content>
+
+            <Button>Continuar</Button>
+            <CardsGrid></CardsGrid>
             <Footer year="2021">
                 TCC Etec Embu | Programa de alfabetização e estimulaçao cognitiva.
             </Footer> 
         </Wrapper>
+
+
+        
     ); 
 };
 

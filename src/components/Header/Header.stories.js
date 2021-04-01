@@ -1,18 +1,21 @@
-import React from 'react';
 import Header from "./Header";
-//import {Logo} from "../../Assets/icons/Logo.png";
-
-  
-export default{ 
-    title: 'Proalf/Header', 
-     component: Header 
+import Nav from "../Nav/Nav";
+import logo from '../../Assets/icons/logo.png';
+import facebook from '../../Assets/icons/facebook.png';
+//import Icon from '../Icon/Icon';
+ 
+export default{
+    title: 'Proalf/Header',
+    component: Header 
 };
 
-export const HeaderTitle = () => {
+export const Header_ = () => {
     return( 
-        <Header Title='Proalf' Logo='src={Logo} alt="Logo"' Login='' WhatsApp=''/>
+        <Header> 
+            <img src={logo} alt="Logo" width="150" />
+            <Nav />
+            <img src={facebook} alt="Facebook" />
+            
+        </Header>
     )
 }
-
-//tentando colocar um logo.. <img src={Logo} alt="Logo" style="float:right;width:200px"></img>
-

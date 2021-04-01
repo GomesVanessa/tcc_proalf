@@ -1,55 +1,33 @@
+import React from 'react';
 import styled from 'styled-components';
+import logo from '../../Assets/icons/logo.png';
+import Nav from '../Nav/Nav'; 
+//import Icon from '../Icon/Icon';
+import facebook from '../../Assets/icons/facebook.png';
+import login from '../../Assets/icons/login.png';
+
 
 const Wrapper = styled.header`
-    grid-area: header;
+    /*grid-area: header;*/
     background: rgb(51,170,204);
-    color: white;
     display: flex;
-
-    ul{
-        list-style:nome;
-        display:flex;
-    }
-
-    li{
-        a{
-            margin-right: 20px;
-            font-size:1.25em;
-            color:#fff;
-            text-decoration:nome;
-        }
-    }
 `
-//logo, login, whatsapp
-const Header = ({Title, Logo, Login, WhatsApp}) => { 
-    const headerItems = [
-        {
-            text: 'Logo',
-            path: '/logo'
-        }, 
-        {
-            text: 'Login',
-            path: '/login'
-        }, 
-        {
-            text: 'WhatsApp',
-            path: '/whatsApp'
-        }, 
-    ]
 
+const Navigation = styled(Nav)`
+    padding: 0px 300px 0px;
+    
+`
+
+const Header = () => { 
     return(
         <Wrapper>
-            <ul>
-                {
-                    headerItems.map(item=>(
-                        <li><a href={item.path}>{item.text}</a></li>
-                    ))
-                }
-            </ul>
-      </Wrapper>
+            <img src={logo} alt="Logo" width="200" />
+                <Navigation /> 
+                
+            <img src={facebook} alt="Facebook" />
+            <img src={login} alt="Login" />
+        </Wrapper>
     )
 }
-   
+
 export default Header
-
-

@@ -8,9 +8,8 @@ export default{
     //)
 }
 
-export const Footeryear = () => {
-    return( 
-        
+export const Footer_ = () => {
+    return(        
         <Footer year="2021"> TCC Etec Embu   |   Programa de alfabetização e estimulaçao cognitiva. </Footer>
     )
 }

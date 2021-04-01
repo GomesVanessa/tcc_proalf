@@ -1,29 +1,20 @@
-import React from 'react'; 
- import styled from 'styled-components';
+import React from 'react';
+import styled from 'styled-components';
 
-// const Wrapp = styled.button`
-//     display: inline-block;
-//     border-radius: 3px;
-//     background: rgb(51,170,204);
-// `
+const Wrapper = styled.button`
+  font-size: 1.5em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid;
+  border-radius: 30px 30px;
+  background: rgb(101,199,40);
+  color: white;
+`
 
-// // const Button = ({type, ...rest}) => {
-// //     return(
-// //         <Wrapper {...rest}>
-// //             {type} 
-// //         </Wrapper>
-// //     )
-// // }
+ const Button = ({onClick, children}) => { 
+     return (
+         <Wrapper onClick={onClick}>{children}</Wrapper>
+       );
+ }
 
-// const Button = ({type, size, ...rest}) => {
-//     return(
-//     <Wrapp>
-//     <button {...rest} >
-//         {type}, {size}    
-//     </button>
-//     </Wrapp>
-//     )
-// }
-
-// export default Button; 
-
+ export default Button
