@@ -6,13 +6,12 @@ import CardsGrid from "../CardsGrid/CardsGrid";
 import Button from "../Button/Button";
 import Footer from "../Footer/Footer";
 
-
 const Wrapper = styled.div`
     border: 2px solid white;
     display: grid;
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 50px 1fr 1fr 1fr 1fr 50px; 
    
     grid-template-areas: 
             "header header header header header header"
@@ -30,8 +29,9 @@ export const Layout = (props) => {
             <Header></Header>   
             
             <Content>
-                <Button>VAnessa </Button>
-                </Content>
+                <CardsGrid></CardsGrid>
+               
+            </Content>
             <Footer year="2021">
                 TCC Etec Embu | Programa de alfabetização e estimulaçao cognitiva.
             </Footer> 

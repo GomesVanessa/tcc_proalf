@@ -1,6 +1,6 @@
 import Layout from "./Layout"; 
 //import Content from "../Content/Content";
-//import CardsGrid from "../CardsGrid/CardsGrid";
+import CardsGrid from "../CardsGrid/CardsGrid";
 import Button from "../Button/Button";
 //import Card from"../Card/Card";
 import Header from "../Header/Header";
@@ -15,7 +15,9 @@ export const Layout_ = () => {
     return( 
         <Layout > 
             <Header />
-            <Button>VAnessa </Button>
+            <CardsGrid></CardsGrid>
+            
+            
                        
         </Layout>
     )

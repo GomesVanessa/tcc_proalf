@@ -9,6 +9,7 @@ const Wraper= styled.footer`
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 50px;
 `
          
 const Footer = ({year, children}) => {

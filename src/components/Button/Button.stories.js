@@ -8,12 +8,10 @@ export default{
 export const Button_ = () => {
     const exibealert = () => {
         alert('Teste')
-
     }
     return(
         <Button onClick={exibealert}>
             Continuar
         </Button>
     )
-}              
-
+}

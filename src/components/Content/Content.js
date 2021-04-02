@@ -1,24 +1,27 @@
 import React from 'react'; 
 import styled from 'styled-components';
+import Button from '../Button/Button';
+import CardsGrid from '../CardsGrid/CardsGrid';
 
 
-const Wrapper = styled.div`
+ const Wrapper = styled.div`
     grid-area: content;
-    background: Gainsboro;
-    background: rgb(240,240,240);
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    grid-gap: 20px;
-`
+    background: #DCDCDC;    
+    text-align: center;    
+    button {
+        //margin-inline-end: 10px;
+        margin: 28em;
+    }    
+ `
 
 const Content = ({title}) => { 
     return(
         <Wrapper>
             {title}
+            
+            <Button>Continuar</Button>
         </Wrapper>
     )
 }
 
 export default Content
-
-

@@ -15,11 +15,9 @@ export const Header_ = () => {
         <Header> 
             <img src={logo} alt="Logo" width="150" />
             <Nav />
-            
-            
-
-            {/* <Icon to="./facebook" path={facebook} alt="facebook" />
-            <Icon to="./login" path={login} alt="Login" />  */}
+            <Icon to="./facebook" path={facebook} alt="facebook" width="50" />
+                
+            <Icon to="./login" path={login} alt="Login" /> 
             
         </Header>
     )

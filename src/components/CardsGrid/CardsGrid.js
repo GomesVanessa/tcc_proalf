@@ -1,28 +1,49 @@
 import React from 'react'; 
 import styled from 'styled-components';
 
+import Abacaxi from '../../Assets/a/abacaxi.png';
+
 const Wrapper = styled.div`
-    padding:80px;
-    width: 80px;
-    box-shadow: 0 0 5px 0px gray;   
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 3em;
+  //margin: 10px; 
+
+  div{
+    padding:40px;
+    width: 40px;
+    border:2px solid white; 
+    border-radius: 5px;
+    box-shadow: 0 0 2px 0px gray;
 
   &:hover {
-    box-shadow: 0 15px 15px rgba(0, 0, 0, .16);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .16);
     transform: translate(0, -5px);
   }
-
-
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-   
-    grid-template-areas: 
-            "cardsgrid cardsgrid cardsgrid cardsgrid cardsgrid"
-            "cardsgrid cardsgrid cardsgrid cardsgrid cardsgrid"
-            "cardsgrid cardsgrid cardsgrid cardsgrid cardsgrid";
+}
 `
 
 const CardsGrid = ({onClick, children}) => {
-    return <Wrapper onClick={onClick}>{children}</Wrapper>
+  return(
+    <Wrapper>{children}
+      <div><img src={Abacaxi} width="90" onClick={onClick} correct={true}/></div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+      <div>Five</div>
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+      <div>Five</div>
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+      <div>Five</div>
+    </Wrapper>
+  )
 }
 
 export default CardsGrid

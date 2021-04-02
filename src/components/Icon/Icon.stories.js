@@ -10,7 +10,7 @@ export default{
 export const IconFacebook = () => {
     return(
         <div>
-            <Icon to="./facebook" path={facebook} alt="facebook" />
+            <Icon to="./iconfacebook" path={facebook} alt="facebook" width="50"/>
         </div> 
     )
 }
@@ -18,7 +18,7 @@ export const IconFacebook = () => {
 export const IconLogin = () => {
     return(
         <div>
-            <Icon to="./login" path={login} alt="Login" />
+            <Icon to="./iconlogin" path={login} alt="Login" />
         </div> 
     )
 }

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Wrapper = styled.nav`
 
     background: rgb(51,170,204);
+    // background: linear-gradient(90deg,#33aacc 0,#2eb3d9);
     color: white;
     display: flex;
     align-items: center;
@@ -17,7 +18,7 @@ const Wrapper = styled.nav`
         
         li{
             a{
-                margin-right:20px;
+                margin-right:30px;
                 font-size:1.25em;
                 color: #fff;
                 text-decoration: none;  
