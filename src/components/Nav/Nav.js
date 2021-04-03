@@ -57,13 +57,3 @@ const Nav = ({className, title, sobre, vogais, consoantes}) => {
 }
 
 export default Nav
-
-// const Nav = () => {
-//     return(
-//         <nav>
-//             <a href="/sobre">Sobre</a>
-//             <a href="/vogais">Vogais</a>
-//             <a href="/consoantes">Consoantes</a>
-//         </nav>
-//     )
-// }

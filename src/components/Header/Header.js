@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-//import logo from '../../Assets/icons/logo.png';
+import logo from '../../Assets/icons/logo.png';
 import Nav from '../Nav/Nav'; 
 import Icon from '../Icon/Icon';
 import facebook from '../../Assets/icons/facebook.png';

@@ -1,4 +1,3 @@
-import Layout from '../../components/Layout/Layout';
 import Home from './Home';
 
 export default { 
@@ -6,13 +5,9 @@ export default {
     component: Home
 }; 
 
-export const Home_ = ({children}) => {
-    return( 
-      
-        <Home>
-            
-        </Home>
-       
-
+export const Home_ = () => {
+    return(
+        <Home></Home>
     )
 }
+

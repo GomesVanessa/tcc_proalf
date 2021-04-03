@@ -1,15 +1,22 @@
 import React from 'react';
 import styled from 'styled-components'; 
+import volume from '../../Assets/icons/volume5.png'
 
-const Wrapper = styled.div`
+const Wrapper = styled.button`
+    border: none; 
+    background: transparent; 
 `
-const Audio = ({to, path, alt}) => { 
+const Audio = ({path}) => { 
+    const handleClick = () => {
+        alert()
 
+    }
     return(
-        <Wrapper>
-            <a href={to}>
-                <img path={path} alt={alt}  /> 
-            </a>
+        <Wrapper>           
+            <img src={volume} />
+                <audio src={'http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg}'} >
+                    Seu navegador não suporta audio.         
+                </audio>
         </Wrapper>
     )
 }

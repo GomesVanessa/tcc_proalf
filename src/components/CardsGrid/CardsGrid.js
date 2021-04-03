@@ -1,7 +1,7 @@
-import React from 'react'; 
+/*import React from 'react'; 
 import styled from 'styled-components';
 
-import Abacaxi from '../../Assets/a/abacaxi.png';
+import Card from '../../components/Card/Card';
 
 const Wrapper = styled.div`
   display: grid;
@@ -24,26 +24,103 @@ const Wrapper = styled.div`
 }
 `
 
-const CardsGrid = ({onClick, children}) => {
-  return(
-    <Wrapper>{children}
-      <div><img src={Abacaxi} width="90" onClick={onClick} correct={true}/></div>
-      <div>Two</div>
-      <div>Three</div>
-      <div>Four</div>
-      <div>Five</div>
-      <div>One</div>
-      <div>Two</div>
-      <div>Three</div>
-      <div>Four</div>
-      <div>Five</div>
-      <div>One</div>
-      <div>Two</div>
-      <div>Three</div>
-      <div>Four</div>
-      <div>Five</div>
+const CardsGrid = ({ image, onClick}) => { 
+  return( 
+    <Wrapper>
+      <Card src = {image} onClick = {onClick} />
     </Wrapper>
   )
 }
 
-export default CardsGrid
+
+
+export default CardsGrid 
+
+/*const CardsGrid = ({onClick}) =>{
+  const CardsGridLetterA =[
+  {
+      image: 'Abacaxi', 
+      alt: 'Abacaxi', 
+      correct: true
+  }, 
+  {
+      image: 'Sino', 
+      alt: 'Sino', 
+      correct: false
+  },
+  {
+      image: 'Abelha', 
+      alt: 'Abelha', 
+      correct: true
+  },
+  {
+      image: 'Agulha', 
+      alt: 'Agulha', 
+      correct: true
+  },
+  {
+      image: 'Minhoca', 
+      alt: 'Minhoca', 
+      correct: false
+  },
+  {
+      image: 'Anel', 
+      alt: 'Anel', 
+      correct: true
+  },
+  {
+      image: 'Olhos', 
+      alt: 'Olhos', 
+      correct: false
+  },
+  {
+      image: 'Foguete', 
+      alt: 'Foguete', 
+      correct: false
+  },
+  {
+      image: 'Apito', 
+      alt: 'Apito', 
+      correct: true
+  },
+  {
+      image: 'Aranha', 
+      alt: 'Aranha', 
+      correct: true
+  },
+  {
+      image: 'Asas', 
+      alt: 'Asas', 
+      correct: true
+  },
+  {
+      image: 'Galinha', 
+      alt: 'Galinha', 
+      correct: false
+  },
+  {
+      image: 'Coelho', 
+      alt: 'Coelho', 
+      correct: false
+  },
+  {
+      image: 'Aviao', 
+      alt: 'Aviao', 
+      correct: true
+  },
+  {
+      image: 'Arvore', 
+      alt: 'Arvore', 
+      correct: true
+  }
+]
+
+  return(
+    <CardsGrid onClick={onClick}>
+      {CardsGridLetterA.map(item =>( 
+        <CardsGridLetterA image = {item.image} />
+      ))}
+    </CardsGrid>
+  )
+}*/
+
