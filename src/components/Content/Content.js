@@ -1,25 +1,19 @@
 import React from 'react'; 
 import styled from 'styled-components';
-import Button from '../Button/Button';
-import CardsGrid from '../CardsGrid/CardsGrid';
 
-
- const Wrapper = styled.div`
+const Wrapper = styled.div`
     grid-area: content;
     background: #DCDCDC;    
     text-align: center;    
-    button {
-        //margin-inline-end: 10px;
-        margin: 28em;
-    }    
+    div {
+        margin: 17em;
+    }   
  `
 
-const Content = ({title}) => { 
+const Content = ({children}) => { 
     return(
         <Wrapper>
-            {title}
-            
-            <Button>Continuar</Button>
+            {children}
         </Wrapper>
     )
 }

@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Header from "../Header/Header";
 import Content from "../Content/Content";
-import CardsGrid from "../CardsGrid/CardsGrid";
-import Button from "../Button/Button";
 import Footer from "../Footer/Footer";
 
 const Wrapper = styled.div`
@@ -11,7 +9,7 @@ const Wrapper = styled.div`
     display: grid;
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 50px 1fr 1fr 1fr 1fr 50px; 
+    grid-template-rows: 70px 1fr 1fr 1fr 1fr 70px; 
    
     grid-template-areas: 
             "header header header header header header"
@@ -26,12 +24,8 @@ export const Layout = (props) => {
     const {children} = props;
     return (
         <Wrapper>
-            <Header></Header>   
-            
-            <Content>
-                <CardsGrid></CardsGrid>
-               
-            </Content>
+            <Header />               
+            <Content> {children} </Content>
             <Footer year="2021">
                 TCC Etec Embu | Programa de alfabetização e estimulaçao cognitiva.
             </Footer> 

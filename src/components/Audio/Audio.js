@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components'; 
-import volume from '../../Assets/icons/volume5.png'
+import volume from '../../Assets/icons/volume6.png'
 
 const Wrapper = styled.button`
     border: none; 
     background: transparent; 
+    margin: 2em;
 `
 const Audio = ({path}) => { 
     const handleClick = () => {
@@ -14,34 +15,12 @@ const Audio = ({path}) => {
     return(
         <Wrapper>           
             <img src={volume} />
-                <audio src={'http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg}'} >
-                    Seu navegador não suporta audio.         
+                {/* <audio src={path} controls> */}
+                <audio src={path}>
+                    O seu navegador não suporta áudio.         
                 </audio>
         </Wrapper>
     )
 }
 
 export default Audio
-
-// const Audio = ({onClick, children}) => {
-//     return(
-//         <Wrapper onClick={onClick}>
-//             <img src={iconVolume} type="audio/A1" />
-//             {children}
-            
-//             </Wrapper>
-//     );
-// }
-
-
-// export const Audio_ = () => {
-//     const playAudio = audioFile => {
-//         audioFile.play(); 
-//     }
-//     return(
-//         <Audio onClick={playAudio}>
-//             //<img src={iconVolume} alt="Audio" width="200" />
-//            <source src={iconVolume} type="audio/A1" /> 
-//         </Audio>
-//     )
-// }       

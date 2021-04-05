@@ -1,79 +1,103 @@
 import React from 'react';
 import styled from 'styled-components';
-import flor from '../../Assets/icons/flor.jpg';
-import gabriela from '../../Assets/icons/gabriela.jpg';
+import Alunos from '../../Assets/icons/alunos.jpg';
+import gabriela from '../../Assets/icons/gabriela.PNG';
+import Button from '../../components/Button/Button';
 
 const Wrapper = styled.div`
-    //font-size: 1.3em;
-    //margin: 1em;
-    //padding: 0.25em 1em;
-    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
 
-    div{ 
-        align-items: center;
+    div{
+        display: flex;
+        margin: 10px;
+        border: 2px solid white;
+        //flex-direction: row;
     }
 
-
-    section{
-        width: 40%;
-        min-width: 100px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right:30px;
-        //background-color:#F5FFFA;
-        background: linear-gradient(90deg,#f7fdff 0,#ebf4f7);
+    img{        
+        width: 400px;
+        height: 200px;
+        margin: 20px 20px 20px 250px;
+    }
+    .Gabriela{
+        width: 200px;
+        height: 200px;
+    }
+    .gambiarra{
+        border:none;
+    }
+    blockquote{
+        border: 2px;
+        background: linear-gradient(90deg,#33ccab 0,#33a3cc);
+        width: 1600px;
+        height: 200px;
+        /* display:flex;
+        text-align: center; */
         
-
-        //padding:60px;
-       // width: 400px;
-        border:2px solid white; 
-        border-radius: 5px;
-        box-shadow: 0 0 2px 0px white;
         
     }
+    p{
+        line-height: 2;
+        color:white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      
 
-        p{
-            display: flex;
-            height: 200px;
-            background-color: #adadad;
-        }
-    
-    
+    }
+
 `
 
-    const Home = () => { 
-        return (
-        <Wrapper >
-            <div><h3>Nossa parceria</h3>
-            <h1 className="top">Durante a pandemia nos reunimos para disponibilizar essa aplicação gratuita para 
-                auxiliar no processo de alfabetização de crianças de 4 a 9 anos de idade. 
-            </h1></div>
+const Home = () => { 
+    return (        
+        <Wrapper>
+            <h2>Nossa parceria</h2>
+            <h3>Durante a pandemia do Covid-19 observamos a dificuldade enfrentada por pais e professores
+                para continuar o processo de alfabetização de crianças de 4 a 9 anos de idade. 
+                Nos unimos para desenvolver esse site para auxiliá-los.  
+            </h3>  
+            <br>
+            </br>         
 
-            <h3>Quem Somos</h3>
-            <section className="Alunos"> 
-            <img src={flor} alt="Alunos" width="200" />
-            <h5>Alunos do Curso de Desenvolvimento de Sistemas da Etec de Embu das Artes. Este projeto
-                surgiu durante o desenvolvimento do nosso Trabalho de 
+            <h2>Quem Somos</h2>
+            
+            <div className="gambiarra">
+                <img src={Alunos} alt="Alunos" /> 
+                <img className="Gabriela" src={gabriela} alt="Gabriela"  />
+            </div>
+
+            {/* <div>
+            <h3>Sara | Vanessa | Vinícius</h3>
+            <h3>Gabriela Guarnieri Mendes</h3>
+            </div>  */}
+             
+            <div className="gambiarra">
+            <div>
+            <h3>Alunos do Curso de Desenvolvimento de Sistemas da Etec de Embu das Artes. Este projeto
+                foi desenvolvimento no nosso Trabalho de 
                 Conclusão de Curso(TCC). 
                 Somos gratos pela Doutora Gabriela e pela Editora BookToy que permitiram a utilização 
-                do livro Proalf como base para o desenvolvimento desse site. 
-            </h5>
-            </section>
+                do livro Proalf (Programa de alfabetização e estimulaçao cognitiva) como base para o 
+                desenvolvimento desse site.
+            </h3> 
+            </div>  
 
-            <section className="Gabriela">
-            <img src={gabriela} alt="Alunos" width="200" /> 
-            <h5>Gabriela Guarnieri Mendes é pedagoga, formada pela FFCLRP-USP, psicopedagoga clínica e institucional, 
+            <div>
+            
+            <h3>Gabriela é pedagoga, formada pela FFCLRP-USP, psicopedagoga clínica e institucional, 
                 além de mestre em Psicologia pela FFCLRP-USP e especialista em Neuropsicopedagogia e Educação
                 Inclusiva, com aprimoramento em Neuroaprendizagem.  
-            </h5>
-            </section>
+            </h3>           
+            </div>
+            </div>
             
             <blockquote cite="https://www.pensador.com/frase/ODc0MjY5/">
-            <p><h3>"Ensinar não é transferir conhecimento, mas criar as possibilidades para a sua produção
-                ou a sua construção”  Paulo Freire </h3></p>
+            <p><h3>"Ensinar não é transferir conhecimento, mas criar as possibilidades<br></br>
+                    para a sua produção ou a sua construção”<br></br>
+                    Paulo Freire </h3></p>
             </blockquote>
-           
+            
         </Wrapper>
+        
     );
 }
 

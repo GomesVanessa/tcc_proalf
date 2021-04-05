@@ -10,8 +10,8 @@ const Wrapper = styled.header`
     grid-area: header;
     background: rgb(51,170,204);
     display: flex;
-    height: 50px;
-    
+    font-size: 1.3em;
+        
     h1{
         color: #FCFCFC;
         //color: #DCDCDC;
@@ -25,7 +25,8 @@ const Wrapper = styled.header`
 `
 
 const Navigation = styled(Nav)`
-    padding: 0px 350px 0px;   
+    margin: 1em;
+    padding: 0.25em 28em ;   
 `
 
 const Header = ({to, path, alt}) => { 

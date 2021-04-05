@@ -1,3 +1,4 @@
+import Layout from '../../components/Layout/Layout';
 import Home from './Home';
 
 export default { 
@@ -7,7 +8,9 @@ export default {
 
 export const Home_ = () => {
     return(
+        <Layout>
         <Home></Home>
+        </Layout>
     )
 }
 

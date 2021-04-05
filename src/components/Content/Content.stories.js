@@ -5,9 +5,9 @@ export default {
     component: Content,
 }; 
 
-export const Content_ = ({title}) => {
+export const Content_ = () => {
     return( 
-        <Content>{title}</Content>
+        <Content></Content>
     )
 }
 
