@@ -2,7 +2,7 @@ import Layout from '../../components/Layout/Layout';
 import Home from './Home';
 
 export default { 
-    title: 'Proalf/Home', 
+    title: 'Proalf/Telas/Home', 
     component: Home
 }; 
 

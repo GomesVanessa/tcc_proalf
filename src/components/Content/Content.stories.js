@@ -7,7 +7,7 @@ export default {
 
 export const Content_ = () => {
     return( 
-        <Content></Content>
+        <Content>ContenteTeste</Content>
     )
 }
 

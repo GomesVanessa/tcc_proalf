@@ -53,7 +53,7 @@ const Home = () => {
             <h2>Nossa parceria</h2>
             <h3>Durante a pandemia do Covid-19 observamos a dificuldade enfrentada por pais e professores
                 para continuar o processo de alfabetização de crianças de 4 a 9 anos de idade. 
-                Nos unimos para desenvolver esse site para auxiliá-los.  
+                Unimo-nos para desenvolver esse site para auxiliá-los.  
             </h3>  
             <br>
             </br>         
@@ -72,9 +72,8 @@ const Home = () => {
              
             <div className="gambiarra">
             <div>
-            <h3>Alunos do Curso de Desenvolvimento de Sistemas da Etec de Embu das Artes. Este projeto
-                foi desenvolvimento no nosso Trabalho de 
-                Conclusão de Curso(TCC). 
+            <h3>Alunos do Curso de Desenvolvimento de Sistemas da Etec de Embu das Artes. Este site
+                foi desenvolvimento no nosso Trabalho de Conclusão de Curso(TCC). 
                 Somos gratos pela Doutora Gabriela e pela Editora BookToy que permitiram a utilização 
                 do livro Proalf (Programa de alfabetização e estimulaçao cognitiva) como base para o 
                 desenvolvimento desse site.

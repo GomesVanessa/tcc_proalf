@@ -16,7 +16,7 @@ const Audio = ({path}) => {
         <Wrapper>           
             <img src={volume} />
                 {/* <audio src={path} controls> */}
-                <audio src={path}>
+                <audio src={path} controls>
                     O seu navegador não suporta áudio.         
                 </audio>
         </Wrapper>

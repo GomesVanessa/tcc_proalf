@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   grid-row-gap: 2em;
 `
 
-const CardsGrid = ({ children}) => { 
+const CardsGrid = ({children}) => { 
   return( 
     <Wrapper>
       {children}

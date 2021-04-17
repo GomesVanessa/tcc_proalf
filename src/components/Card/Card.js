@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-    /* ${({ correct, active }) => {
+    ${({ correct, active }) => {
     if (correct && active) {
       return `
                 border: 2px solid green; 
@@ -12,7 +12,7 @@ const Wrapper = styled.div`
                 border: 2px solid red;
             `;
     }
-    }} */
+    }}
 `;
 
 const Img = styled.img`
@@ -22,10 +22,8 @@ const Img = styled.img`
     &:hover {
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
         transform: translate(0, -5px);  
-    }
-    
-`
-
+    }    
+`;
 
 const Card = ({ text, image, correct = false, active = false}) => { 
     return( 
@@ -35,6 +33,6 @@ const Card = ({ text, image, correct = false, active = false}) => {
     )
 }
 
-export default Card
+export default Card;
 
 
