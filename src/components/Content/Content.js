@@ -5,9 +5,6 @@ const Wrapper = styled.div`
     grid-area: content;
     background: #DCDCDC;    
     text-align: center;    
-    div {
-        margin: 17em;
-    }   
  `
 
 const Content = ({children}) => { 

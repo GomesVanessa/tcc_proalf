@@ -9,8 +9,7 @@ const Wrapper = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-   
-        
+           
     ul{
         justify-items: center;
         list-style:none;

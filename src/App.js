@@ -1,31 +1,13 @@
-import Layout from './components/Layout/Layout';
-import Audio from './components/Audio/Audio';
-import CardsGrid from './components/CardsGrid/CardsGrid';
-import Button from './components/Button/Button';
-import LetterA1 from './Pages/LetterA/LetterA1';
+import React from 'react'; 
+import {BrowserRouter} from 'react-router-dom'; 
+import Routes from './Routes'
 
 function App() {
   return (
-    <LetterA1></LetterA1>
-  )
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+  );
 }
 
 export default App
-
-
-
-
-
-// import React from 'react';
-// import Routes from './Routes';
-
-
-// function App() {
-//   return (
-
-//     <Routes/>
-   
-//   );
-// }
-
-// export default App;

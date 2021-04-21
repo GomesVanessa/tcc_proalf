@@ -5,10 +5,8 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right:20px;  
-   
-     
-`
+    margin-right:20px;      
+`;
 
 const Icon = ({to, path, alt}) => { 
 
@@ -22,5 +20,3 @@ const Icon = ({to, path, alt}) => {
 }
    
 export default Icon
-
-
