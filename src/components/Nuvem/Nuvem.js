@@ -13,7 +13,7 @@ const Nuvem = ({to, path, alt}) => {
     return(
         <Wrapper>
             <a href={to}>
-                <img src={path} alt={alt} width="200" /> 
+                <img src={path} alt={alt} width="300" /> 
             </a>
         </Wrapper>
     )

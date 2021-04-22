@@ -2,13 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import Layout from '../../components/Layout/Layout'; 
 import Container from '../../components/Container/Container';
-import imghome from './../../Assets/icons/imghome.JPG';
+import imghome from './../../Assets/icons/imghome.jpg';
 import Sara from '../../Assets/icons/sara.jpeg';
 import Vanessa from '../../Assets/icons/vanessa.jpg';
 import Vinicius from '../../Assets/icons/vinicius.jpeg';
 import gabriela from '../../Assets/icons/gabriela.PNG';
 import Button from '../../components/Button/Button';
-
 
 const Wrapper = styled.div`
 
@@ -69,7 +68,7 @@ const Home = () => {
 
                     <section>
                         <h2>Quem Somos</h2><hr width="80%" align="left" />
-                        
+                      
                         <div className="container">
                             <img className="imgfoto" src={Sara}  alt="Alunos" />
                             <img className="imgfoto" src={Vanessa} alt="Alunos" />
@@ -81,6 +80,7 @@ const Home = () => {
                                 desenvolvimento desse site.
                             </h3>
                         </div>
+                       
                     
                         <div className="container">
                             <img className="imgfoto" src={gabriela} alt="Gabriela"  />
