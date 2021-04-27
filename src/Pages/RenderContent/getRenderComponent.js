@@ -4,8 +4,6 @@ import RenderImage from "./RenderImage";
 
 const getRenderComponent = (type) => {
   switch (type) {
-    case "VIDEO":
-      return RenderVideo;
     case "IMAGE":
       return RenderImage;
     case "TEXT":

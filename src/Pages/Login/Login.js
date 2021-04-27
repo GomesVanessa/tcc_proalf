@@ -4,16 +4,18 @@ import login from "../../Assets/icons/login4.png";
 import Footer from "../../components/Footer/Footer";
 
 const Wrapper = styled.div`
-  background: #DCDCDC; 
+  //background: #DCDCDC; 
+  background: rgb(51,170,204);
   min-height:100%;
-  .h1{
-      font-style: italic;
+  h1{
+    font-size: 1.9em;
+    font-style: italic;
   }
   .form{
     font-family: sans-serif;
     width:500px; 
     margin: auto; 
-    padding-top: 200px;
+    padding-top: 250px;
     text-align: center;
   }
   .card{
@@ -75,9 +77,12 @@ const Wrapper = styled.div`
   .title{
     color: black;
   }
-  /* ${Footer} {
-
-  } */
+  .footer{
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    margin-top: 1.3em;
+  }
 `;
 
 const Login = () => {
@@ -117,9 +122,9 @@ const Login = () => {
         <h5>Não possui uma conta? Registre-se.</h5>
       </div>
     </form>
-    <Footer className="footer">
-      2021 - TCC - Etec Embu | Programa de alfabetização e estimulação cognitiva. 
-    </Footer>
+    <div class="footer">
+      Programa de alfabetização e estimulação cognitiva. 
+    </div>
   </Wrapper>
 );
 }

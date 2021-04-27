@@ -21,6 +21,22 @@ import NuvemSapo from '../../src/Assets/a/nuvensLetterA/sapo.jpeg';
 import NuvemUrso from '../../src/Assets/a/nuvensLetterA/urso.jpeg';  
 import NuvemUva from '../../src/Assets/a/nuvensLetterA/uva.jpeg';
 
+import A from '../../src/Assets/a/letterA4/A.JPG'; 
+import a_cur from '../../src/Assets/a/letterA4/a_cur.JPG'; 
+import acur from '../../src/Assets/a/letterA4/acur.JPG'; 
+import ami from '../../src/Assets/a/letterA4/ami.JPG';
+import E from '../../src/Assets/a/letterA4/E.JPG'; 
+import emi from '../../src/Assets/a/letterA4/emi.JPG'; 
+import omi from '../../src/Assets/a/letterA4/omi.JPG'; 
+import umi from '../../src/Assets/a/letterA4/umi.JPG'; 
+import bmi from '../../src/Assets/a/letterA4/bmi.JPG'; 
+import dmi from '../../src/Assets/a/letterA4/dmi.JPG';
+import B from '../../src/Assets/a/letterA4/B.JPG';  
+import P from '../../src/Assets/a/letterA4/P.JPG'; 
+import I from '../../src/Assets/a/letterA4/I.JPG'; 
+
+
+
 const atividades = [
     {
         audio: '/audio/Audio_A/ASOM1.mp3',
@@ -45,15 +61,25 @@ const atividades = [
         ]
     },
 
-    {   type: 'RenderText',
+    {   type: 'TEXT',
         audio: '/audio/A2.mp3',
         cards: [
-            {image: NuvemAnel, text: "A"}, {text: "A" }, {text: "A" }, {text: "A" }, {text: "A" }, 
-            {text: "A" }, {text: "A" }, {text: "A" }, {text: "A" }, {text: "A" }, 
-            {text: "A" }, {text: "A" }, {text: "A" }, {text: "A" }, {text: "A" },
-            {text: "A" }, {text: "A" }, {text: "A" }, {text: "A" }, {text: "A" }
+            {image:A}, {image:ami}, {image:a_cur}, {image:omi}, {image:umi}, 
+            {image:bmi}, {image:dmi}, {image:A}, {image:acur}, {image:I},
+            {image:ami}, {image:P}, {image:umi}, {image:emi}, {image:E},
+            {image:B}, {image:ami}, {image:emi}, {image:a_cur}, {image:I},
         ]
 },
+
+    {   type: 'TEXT',
+            audio: '/audio/A2.mp3',
+            cards: [
+                {image:A}, {image:ami}, {image:a_cur}, {image:omi}, {image:umi}, 
+                {image:bmi}, {image:dmi}, {image:A}, {image:acur}, {image:I},
+                {image:ami}, {image:P}, {image:umi}, {image:emi}, {image:E},
+                {image:B}, {image:ami}, {image:emi}, {image:a_cur}, {image:I},
+            ]
+    },
       
 ]
 
