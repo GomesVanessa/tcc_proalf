@@ -8,43 +8,66 @@ import Vanessa from '../../Assets/icons/vanessa.jpg';
 import Vinicius from '../../Assets/icons/vinicius.jpeg';
 import gabriela from '../../Assets/icons/gabriela.PNG';
 import Button from '../../components/Button/Button';
+import Card from '../../components/Card/Card';
+
 
 const Wrapper = styled.div`
-
+    p{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.25em;
+        line-height: 1.4;
+    }
+    
     .imgcarrossel{
-        width: 1000px;
-        height: 150px;
+        width: 1024px;
+        height: 400px;
+     
     }
     h2{
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.5em;
+        font-size: 1.4em;
         font-style: italic;
         text-align: left;
-    }
-    h3{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.2em;
-        line-height: 1.5;
-        text-align: left
     }
     hr{
         margin-top:-25px;
         margin-left:180px;
         border-top: 1px solid gray;
     }
-     /* .container{
-        width: 100px; 
-        height: 100px;
-        display: inline-block; 
-        object-fit: contain;
-    }  */
     .imgfoto{ 
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        
-    }   
+    } 
+    
+   ${Button} {
+        //display: flex;
+        align-items: center; 
+        height: 100%; 
+    } 
 `;
+
+const AboutGrid = styled.div`
+    display: flex;
+    gap: 2em;
+    
+    div:nth-child(1){
+        background-color:#D3D3D3;
+        
+    }
+    div:nth-child(2){
+        background-color:#D3D3D3;
+        //border: 2px solid gray;
+        //background-color: #f5f5f5;
+    }
+`;
+const ImagesGrid = styled.div`
+    background-color:#DCDCDC; 
+    display: flex; 
+    gap: 30px; 
+    justify-content: center;
+`;
+
 
 
 const Home = () => { 
@@ -53,44 +76,49 @@ const Home = () => {
             <Container> 
                 <Wrapper>
                     <section1> 
-                    <img className="imgcarrossel" src={imghome} alt="vogais" /> 
+                        <img className="imgcarrossel" src={imghome} alt="vogais" /> 
                     </section1>
                     
                     <section>
                         <h2>Nossa parceria</h2><hr width="80%" align="left" />
-                        <h3>Durante a pandemia do Covid-19 observamos a dificuldade enfrentada por pais e professores
+                        <p>
+                            Durante a pandemia do Covid-19 observamos a dificuldade enfrentada por pais e professores
                             para continuar o processo de alfabetização de crianças de 4 a 9 anos de idade. 
                             Unimo-nos para desenvolver esse site para auxiliá-los.  
-                        </h3>  
-                        <br>
-                        </br>  
+                        </p>
                     </section>   
 
                     <section>
                         <h2>Quem Somos</h2><hr width="80%" align="left" />
-                      
-                        <div className="container">
-                            <img className="imgfoto" src={Sara}  alt="Alunos" />
-                            <img className="imgfoto" src={Vanessa} alt="Alunos" />
-                            <img className="imgfoto" src={Vinicius} alt="Alunos" /> 
-                            <h3>Alunos do Curso de Desenvolvimento de Sistemas da Etec de Embu das Artes. Este site
-                                foi desenvolvimento no nosso Trabalho de Conclusão de Curso(TCC). 
-                                Somos gratos pela Doutora Gabriela e pela Editora BookToy que permitiram a utilização 
-                                do livro Proalf (Programa de alfabetização e estimulaçao cognitiva) como base para o 
-                                desenvolvimento desse site.
-                            </h3>
-                        </div>
-                       
-                    
-                        <div className="container">
-                            <img className="imgfoto" src={gabriela} alt="Gabriela"  />
-                            <h3>Gabriela é pedagoga, formada pela FFCLRP-USP, psicopedagoga clínica e institucional, 
-                                além de mestre em Psicologia pela FFCLRP-USP e especialista em Neuropsicopedagogia e Educação
-                                Inclusiva, com aprimoramento em Neuroaprendizagem.  
-                            </h3>
-                        </div>
-                    </section>   
-                    <Button>Começar</Button>
+                        <AboutGrid>
+                            <Card>
+                                <ImagesGrid>
+                                    <img className="imgfoto" src={Sara}  alt="Alunos" />
+                                    <img className="imgfoto" src={Vanessa} alt="Alunos" />
+                                    <img className="imgfoto" src={Vinicius} alt="Alunos" /> 
+                                </ImagesGrid>
+                                
+                                <p>
+                                    Alunos do Curso de Desenvolvimento de Sistemas da Etec de Embu das Artes. Este site
+                                    foi desenvolvimento durante o nosso Trabalho de Conclusão de Curso(TCC). 
+                                    Somos gratos pela Doutora Gabriela e pela Editora BookToy que permitiram a utilização 
+                                    do livro Proalf como base para o desenvolvimento desse site.
+                                </p>
+                            </Card>
+                        
+                        
+                            <Card>
+                                <ImagesGrid>
+                                    <img className="imgfoto" src={gabriela} alt="Gabriela"  />
+                                </ImagesGrid>
+                                <p>
+                                    Gabriela é pedagoga, formada pela FFCLRP-USP, psicopedagoga clínica e institucional, 
+                                    além de mestre em Psicologia pela FFCLRP-USP e especialista em Neuropsicopedagogia e Educação
+                                    Inclusiva, com aprimoramento em Neuroaprendizagem.  
+                                </p>                        
+                            </Card>
+                        </AboutGrid>
+                    </section> 
                 </Wrapper>
                 
             </Container>

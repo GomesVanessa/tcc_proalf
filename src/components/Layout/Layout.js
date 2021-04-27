@@ -5,9 +5,8 @@ import Content from "../Content/Content";
 import Footer from "../Footer/Footer";
 
 const Wrapper = styled.div`
-    border: 2px solid white;
     display: grid;
-    height: 100%;
+    min-height: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows: 70px 1fr 1fr 1fr 1fr 70px; 
    

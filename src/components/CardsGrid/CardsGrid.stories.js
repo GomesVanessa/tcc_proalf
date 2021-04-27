@@ -1,5 +1,5 @@
 import CardsGrid from './CardsGrid';
-import Card from '../Card/Card';
+import CardImage from '../Card/CardImage';
 
 import Abacaxi from '../../Assets/a/abacaxi.png';
 import Abelha from '../../Assets/a/abelha.png';
@@ -32,7 +32,7 @@ const cards = [
 export const CardsGrid_ = () => {
   return <CardsGrid>
     {cards.map(item => {
-      return <Card image={item.image} />
+      return <CardImage image={item.image} />
     })}
   </CardsGrid>
 }

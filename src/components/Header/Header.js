@@ -20,11 +20,10 @@ const Wrapper = styled.header`
     h1{
         margin:0; 
         color: #FCFCFC;
-        //color: #DCDCDC;
         font-size: 1.9em;
         font-style: italic;
     }
-`
+`;
 
 const Navigation = styled(Nav)`
     margin: auto;   

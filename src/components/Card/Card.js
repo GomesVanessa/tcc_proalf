@@ -11,30 +11,13 @@ const Wrapper = styled.div`
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
         transform: translate(0, -5px);  
     }
-/* 
-    ${({ correct, active }) => {
-    if (correct && active) {
-      return `
-                border: 2px solid green; 
-            `;
-    } else {
-      return `
-                border: 2px solid red;
-            `;
-    }
-    }} */
+
 `;
 
-const Img = styled.img`
-    width: 100px;
-    height: 100px;
-    object-fit: contain;         
-`;
-
-const Card = ({ text, image, correct = false, active = false}) => { 
+const Card = ({children, ...rest}) => { 
     return( 
-        <Wrapper correct = {correct} active ={active} >
-            <Img src={image} alt={text} /> 
+        <Wrapper {...rest}>
+            {children}            
         </Wrapper> 
     )
 }

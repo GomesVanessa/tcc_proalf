@@ -36,7 +36,7 @@ const atividades = [
         ]
     }, 
 
-    {
+    {   type: 'Nuvem',
         audio: '/audio/A2.mp3',
         cards: [
             {image: NuvemAnel, audio: 'audio/abacaxi.mp3'}, {image: NuvemAve, audio: 'audio/abacaxi.mp3'},
@@ -44,14 +44,17 @@ const atividades = [
             {image: NuvemUrso, audio: 'audio/abacaxi.mp3'}, {image: NuvemUva, audio: 'audio/abacaxi.mp3'},       
         ]
     },
-    
-    {
-        audio: '/audio/Audio_A/ASOM1.mp3',
-        cards: [
-            
-        ]
-    }, 
-]
 
+    {   type: 'RenderText',
+        audio: '/audio/A2.mp3',
+        cards: [
+            {image: NuvemAnel, text: "A"}, {text: "A" }, {text: "A" }, {text: "A" }, {text: "A" }, 
+            {text: "A" }, {text: "A" }, {text: "A" }, {text: "A" }, {text: "A" }, 
+            {text: "A" }, {text: "A" }, {text: "A" }, {text: "A" }, {text: "A" },
+            {text: "A" }, {text: "A" }, {text: "A" }, {text: "A" }, {text: "A" }
+        ]
+},
+      
+]
 
 export default atividades

@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import Content from "../../components/Content/Content";
-
-
 import login from "../../Assets/icons/login4.png";
+import Footer from "../../components/Footer/Footer";
 
 const Wrapper = styled.div`
+  background: #DCDCDC; 
+  min-height:100%;
+  .h1{
+      font-style: italic;
+  }
   .form{
     font-family: sans-serif;
     width:500px; 
@@ -72,15 +75,18 @@ const Wrapper = styled.div`
   .title{
     color: black;
   }
-  `;
+  /* ${Footer} {
+
+  } */
+`;
 
 const Login = () => {
   return (
-  <Content>
   <Wrapper>
     <form className="form" action="#">
       <div className="card">
         <div className="card-top"> 
+        <h1>Proalf</h1>
           <img className="imglogin" src={login} alt="login" /> 
             <h2 className="title">Acesso</h2>
         </div>       
@@ -111,8 +117,10 @@ const Login = () => {
         <h5>Não possui uma conta? Registre-se.</h5>
       </div>
     </form>
+    <Footer className="footer">
+      2021 - TCC - Etec Embu | Programa de alfabetização e estimulação cognitiva. 
+    </Footer>
   </Wrapper>
-  </Content>
 );
 }
 
