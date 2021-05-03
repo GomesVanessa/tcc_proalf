@@ -2,9 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Wrapper = styled.nav`
-
     background: rgb(51,170,204);
-    // background: linear-gradient(90deg,#33aacc 0,#2eb3d9);
+    //background: linear-gradient(90deg,#33aacc 0,#2eb3d9);
     color: white;
     display: flex;
     align-items: center;
@@ -24,23 +23,23 @@ const Wrapper = styled.nav`
             }
         }
     }
-`
+`;
 
 const Nav = ({className, title, sobre, vogais, consoantes}) => { 
-    const navItems = [ 
-        {
-            text: 'Sobre', 
-            path: '/'
-        }, 
-        {
-            text: 'Vogais', 
-            path: '/vogais'
-        }, 
-        {
-            text: 'Consoantes', 
-            path: '/consoantes'
-        },
-    ]
+     const navItems = [ 
+         {
+             text: 'Sobre', 
+             path: '/'
+         }, 
+         {
+             text: 'Vogais', 
+             path: '/vogais'
+         }, 
+         {
+             text: 'Consoantes', 
+             path: '/consoantes'
+         },
+     ]
 
     return(
         <Wrapper className={className}> 
@@ -54,5 +53,19 @@ const Nav = ({className, title, sobre, vogais, consoantes}) => {
         </Wrapper>
     )
 }
-
 export default Nav
+
+// const Nav = ({href}) => { 
+//     return(
+//         <Wrapper>
+//             <ul>
+//                 <li>
+//                     <a href="/">Sobre</a>
+//                     <a href="/vogais">Vogais</a>
+//                     <a href="/consoantes">Consoantes</a>
+//                 </li>
+//             </ul>
+//         </Wrapper>
+//     )
+// };
+

@@ -16,10 +16,9 @@ const atividades = [
         audio: '/audio/Audio_A/ASOM1.mp3',
         cards: [
             {image: Elefante}, {image: Abelha}, {image: Escova}, 
-            {image: Abelha}, {image: Apito}, {image: Espada}, 
-            {image: Dedo}, {image: Olhos}, {image: Espelho}, 
-            {image: Aviao}, {image: Aviao}, {image: Aviao}, 
-            {image: Porco}, {image: Esquilo}, {image: Estrela},            ,      
+            {image: Apito}, {image: Espada}, {image: Dedo}, 
+            {image: Olhos}, {image: Espelho}, {image: Aviao}, 
+            {image: Estrela}, {image: Porco}, {image: Esquilo},            ,      
         ]
     }, 
 ]

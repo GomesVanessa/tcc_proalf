@@ -10,11 +10,9 @@ const atividades = [
     {
         audio: '/audio/Audio_A/ASOM1.mp3',
         cards: [
-            {image: Ovo}, {image: Uva}, {image: Uva}, 
-            {image: Urso}, {image: Urso}, {image: Osso}, 
-            {image: Unha}, {image: Unha}, {image: Urubu}, 
-            {image: Urubu}, {image: Urubu}, {image: Aranha}, 
-            {image: Aranha}, {image: Aranha}, {image: Aranha}, 
+            {image: Ovo}, {image: Uva}, {image: Uva}, {image: Urso},
+            {image: Urso}, {image: Osso}, {image: Unha}, {image: Unha}, 
+            {image: Urubu}, {image: Urubu}, {image: Aranha}, {image: Aranha},
         ]
     }, 
 ]

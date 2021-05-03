@@ -1,21 +1,27 @@
 import React from "react";
 import styled from "styled-components";
 import login from "../../Assets/icons/login4.png";
-import Footer from "../../components/Footer/Footer";
 
 const Wrapper = styled.div`
   //background: #DCDCDC; 
-  background: rgb(51,170,204);
+  //background: rgb(51,170,204);
+  // background: linear-gradient(90deg,#33aacc 0,#2eb3d9);
+  background: linear-gradient(180deg,#DCDCDC 0,#33aacc);
   min-height:100%;
   h1{
-    font-size: 1.9em;
+    color:#46494a;
+    font-size: 1.8em;
     font-style: italic;
+  }
+  h2{
+    font-size: 1.6em;
+
   }
   .form{
     font-family: sans-serif;
     width:500px; 
     margin: auto; 
-    padding-top: 250px;
+    padding-top: 200px;
     text-align: center;
   }
   .card{
@@ -28,7 +34,8 @@ const Wrapper = styled.div`
       text-align: center; 
   }
   .card-group{ 
-    margin-bottom:10px;
+    margin-bottom:20px;
+    
   }
   .card-group > input{
     border-radius: 5px; 
@@ -37,6 +44,7 @@ const Wrapper = styled.div`
     height: 25px; 
     padding: 5px;
     text-align: center; 
+    font-size: 1.3em;
   }
   .card-group > button {
     background-color: #65c728;
@@ -75,11 +83,11 @@ const Wrapper = styled.div`
     box-shadow: 0px 0px 5px #ccc; 
   }
   .title{
-    color: black;
+    color: #46494a;
   }
   .footer{
     text-align: center;
-    color: white;
+    color: #46494a;
     font-size: 1.3em;
     margin-top: 1.3em;
   }
@@ -92,7 +100,8 @@ const Login = () => {
       <div className="card">
         <div className="card-top"> 
         <h1>Proalf</h1>
-          <img className="imglogin" src={login} alt="login" /> 
+        
+        <img className="imglogin" src={login} alt="login" /> 
             <h2 className="title">Acesso</h2>
         </div>       
 
@@ -118,13 +127,10 @@ const Login = () => {
           <button className="gmail" type="submit">Continue com o Gmail</button>
         </div> */}
 
-        <h5>Esqueceu sua senha? Clique aqui.</h5>
-        <h5>Não possui uma conta? Registre-se.</h5>
+        <h4>Esqueceu sua senha? Clique aqui.</h4>
+        <h4>Não possui uma conta? Registre-se.</h4>
       </div>
     </form>
-    <div class="footer">
-      Programa de alfabetização e estimulação cognitiva. 
-    </div>
   </Wrapper>
 );
 }

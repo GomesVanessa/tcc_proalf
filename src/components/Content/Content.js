@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     grid-area: content;
     background: #DCDCDC;    
-    //text-align: center;
+    text-align: center;
  `
 
 const Content = ({children}) => { 

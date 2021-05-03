@@ -26,7 +26,7 @@ export const Layout = (props) => {
             <Header />               
             <Content> {children} </Content>
             <Footer year="2021">
-                TCC Etec Embu | Programa de alfabetização e estimulaçao cognitiva.
+                TCC Etec Embu.
             </Footer> 
         </Wrapper>
         

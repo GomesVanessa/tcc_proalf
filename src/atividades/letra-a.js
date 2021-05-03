@@ -10,7 +10,7 @@ import Aviao from '../Assets/a/aviao.png';
 import Coelho from '../Assets/a/coelho.png';
 import Foguete from '../Assets/a/foguete.png';
 import Galinha from '../Assets/a/galinha.png';
-import Minhoca from '../Assets/a/minhoca.png';
+
 import Olhos from '../Assets/a/olhos.png';
 import Sino from '../Assets/a/sino.png';
 
@@ -35,21 +35,25 @@ import B from '../../src/Assets/a/letterA4/B.JPG';
 import P from '../../src/Assets/a/letterA4/P.JPG'; 
 import I from '../../src/Assets/a/letterA4/I.JPG'; 
 
+import Caneca from '../../src/Assets/e/caneca.png';
+import Caneta from '../../src/Assets/e/caneta.png';
+
+import speakA from '../../src/Assets/a/letterA4/speakAaAa.jpg';
+
 
 
 const atividades = [
-    {
+    {  image: {speakA},
         audio: '/audio/Audio_A/ASOM1.mp3',
         cards: [
             {image: Abacaxi, audio: '/audio/Audio_A/abacaxi.mp3'}, {image:Sino, audio: '/audio/Audio_A/sino.mp3'}, 
-            {image: Abelha, audio: '/audio/Audio_A/abelha.mp3'}, {image: Agulha, audio: '/audio/Audio_A/agulha.mp3'},
-            {image:Minhoca, audio: '/audio/Audio_A/minhoca.mp3'}, {image: Anel, audio: '/audio/Audio_A/anel.mp3'}, 
-            {image:Olhos, audio: '/audio/Audio_A/olhos.mp3'}, {image:Foguete, audio: '/audio/Audio_A/foguete.mp3'},
-            {image: Apito, audio: '/audio/Audio_A/apito.mp3'}, {image:Aranha, audio: '/audio/Audio_A/aranha.mp3'},
-            {image:Asas, audio: '/audio/Audio_A/asas.mp3'}, {image:Galinha, audio: '/audio/Audio_A/galinha.mp3'},
-            {image:Coelho, audio: '/audio/Audio_A/coelho.mp3'}, {image:Aviao, audio: '/audio/Audio_A/aviao.mp3'},
-            {image:Arvore, audio: '/audio/Audio_A/arvore.mp3'},      
+            {image: Abelha, audio: '/audio/Audio_A/abelha.mp3'}, {image: Anel, audio: '/audio/Audio_A/anel.mp3'}, 
+            {image:Olhos, audio: '/audio/Audio_A/olhos.mp3'}, {image: Apito, audio: '/audio/Audio_A/apito.mp3'},
+            {image:Foguete, audio: '/audio/Audio_A/foguete.mp3'}, {image:Aranha, audio: '/audio/Audio_A/aranha.mp3'},
+            {image:Arvore, audio: '/audio/Audio_A/arvore.mp3'}, {image:Coelho, audio: '/audio/Audio_A/coelho.mp3'},
+            {image:Aviao, audio: '/audio/Audio_A/aviao.mp3'}, {image:Galinha, audio: '/audio/Audio_A/galinha.mp3'},       
         ]
+    
     }, 
 
     {   type: 'Nuvem',
@@ -62,24 +66,22 @@ const atividades = [
     },
 
     {   type: 'TEXT',
-        audio: '/audio/A2.mp3',
-        cards: [
-            {image:A}, {image:ami}, {image:a_cur}, {image:omi}, {image:umi}, 
-            {image:bmi}, {image:dmi}, {image:A}, {image:acur}, {image:I},
-            {image:ami}, {image:P}, {image:umi}, {image:emi}, {image:E},
-            {image:B}, {image:ami}, {image:emi}, {image:a_cur}, {image:I},
-        ]
-},
-
-    {   type: 'TEXT',
             audio: '/audio/A2.mp3',
             cards: [
-                {image:A}, {image:ami}, {image:a_cur}, {image:omi}, {image:umi}, 
-                {image:bmi}, {image:dmi}, {image:A}, {image:acur}, {image:I},
-                {image:ami}, {image:P}, {image:umi}, {image:emi}, {image:E},
-                {image:B}, {image:ami}, {image:emi}, {image:a_cur}, {image:I},
+                {image:A}, {image:ami}, {image:a_cur}, {image:omi},
+                {image:bmi}, {image:dmi}, {image:A}, {image:acur}, 
+                {image:ami}, {image:P}, {image:umi}, {image:emi}, 
             ]
     },
+
+    {   type: 'IMAGE',
+    audio: '/audio/A2.mp3',
+    cards: [
+        {image:Apito, text: "__ PITO"}, {image:Apito}, {image:Anel}, {image:Aviao}, {image:Abacaxi}, 
+        {image:Aranha}, {image:Agulha}, {image:Asas}, {image:Asas}, {image:Caneca},
+        {image:Caneca}, {image:Caneta}, {image:Caneta}, {image:Caneta}, {image:Caneta},
+    ]
+},
       
 ]
 

@@ -9,7 +9,6 @@ import Container from '../../components/Container/Container';
 import atividades from '../../atividades'; 
 import {useParams} from "react-router"; 
 
-
 const Wrapper = styled.div`
   display: grid;
   height: 100%;   
@@ -36,10 +35,10 @@ const Letter = () => {
     <Wrapper> 
       <Layout>
         <Container>
-        <Audio src={atividade.audio} />
+          <Audio src={atividade.audio} />
           <CardsGrid>
             {(atividade.cards || []).map((item) => {
-              return <Card image ={item.image} />;
+              return <Card image ={item.image}/>;
             })}
           </CardsGrid>
           <Button>Continuar</Button>
