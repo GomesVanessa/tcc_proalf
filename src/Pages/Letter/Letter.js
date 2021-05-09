@@ -12,7 +12,7 @@ import {useParams} from "react-router";
 const Wrapper = styled.div`
   display: grid;
   height: 100%;   
- 
+   
   /* ${Container} {
     margin-top: 100px; 
   } */

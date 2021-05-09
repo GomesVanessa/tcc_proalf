@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     grid-area: content;
-    background: #DCDCDC;    
+    //background: #DCDCDC; 
+    background: #EBEDEF ;    
     text-align: center;
  `
 

@@ -35,8 +35,11 @@ import B from '../../src/Assets/a/letterA4/B.JPG';
 import P from '../../src/Assets/a/letterA4/P.JPG'; 
 import I from '../../src/Assets/a/letterA4/I.JPG'; 
 
-import Caneca from '../../src/Assets/e/caneca.png';
-import Caneta from '../../src/Assets/e/caneta.png';
+import Caneca from '../../src/Assets/a/caneca.jpg';
+import Caneta from '../../src/Assets/a/caneta.png';
+import Faca from '../../src/Assets/a/faca.png';
+import Batata from '../../src/Assets/a/batata.jpg';
+import Gato from '../../src/Assets/a/gato.jpg';
 
 import speakA from '../../src/Assets/a/letterA4/speakAaAa.jpg';
 
@@ -69,17 +72,18 @@ const atividades = [
             audio: '/audio/A2.mp3',
             cards: [
                 {image:A}, {image:ami}, {image:a_cur}, {image:omi},
-                {image:bmi}, {image:dmi}, {image:A}, {image:acur}, 
+                {image:bmi}, {image:dmi}, {image:A}, {image:a_cur}, 
                 {image:ami}, {image:P}, {image:umi}, {image:emi}, 
+                {image:E}, {image:ami}, {image:emi}, {image:acur}, 
             ]
     },
 
     {   type: 'IMAGE',
     audio: '/audio/A2.mp3',
     cards: [
-        {image:Apito, text: "__ PITO"}, {image:Apito}, {image:Anel}, {image:Aviao}, {image:Abacaxi}, 
-        {image:Aranha}, {image:Agulha}, {image:Asas}, {image:Asas}, {image:Caneca},
-        {image:Caneca}, {image:Caneta}, {image:Caneta}, {image:Caneta}, {image:Caneta},
+        {image:Apito, text: "__ PITO"}, {image:Faca}, {image:Anel}, {image:Aviao},
+        {image:Abacaxi}, {image:Aranha}, {image:Agulha}, {image:Asas},
+        {image:Batata}, {image:Caneca}, {image:Caneta}, {image:Gato}, 
     ]
 },
       

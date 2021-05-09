@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Layout from '../../components/Layout/Layout';
 import Container from '../../components/Container/Container';
+import Button from '../../components/Button/Button';
 
 import Vogal_A from '../../Assets/homeVogais/vogal_A.jpeg';
 import Vogal_E from '../../Assets/homeVogais/vogal_E.jpeg';
@@ -39,27 +40,19 @@ import ucur from '../../Assets/a/letterA4/ucur.JPG';
 const Wrapper = styled.div`
     display: grid;
     height: 100%;
-    /* ${Container} {
-    margin-top: 20px; 
-    } */
-
+   
     img{
         width: 150px;
         height: 150px;
         object-fit: contain; 
     }
-    ul {
-    margin: 0;
-    padding:0;
-    } 
+    
     li {
         list-style: none; 
-        margin: 5px;
         display: inline;
     }
     li a {
-        padding: 5px 10px; 
-        margin:0;       
+        padding: 5px 10px;       
     }
     li a img:hover {
         background:#65c728;
@@ -69,9 +62,9 @@ const Wrapper = styled.div`
 
 const HomeVogais = () => {
   return(
-    <Wrapper>
-        <Layout>
-            <Container>
+    <Layout>
+        <Container>
+            <Wrapper>
                 <ul>
                     <li>
                         <a href="letra/a/1"><img src={Vogal_A}  alt="Vogal A" /></a>
@@ -112,10 +105,12 @@ const HomeVogais = () => {
                     <a href="letra/o/1"><img src={ocur}  alt="Vogal O" /></a>
                     <a href="letra/u/1"><img src={ucur}  alt="Vogal U" /></a>
                     </li>                                     
-                </ul>                          
-            </Container>
-        </Layout>
-    </Wrapper>
+                </ul>  
+                
+            </Wrapper>
+            <Button>Continuar</Button>
+        </Container>
+    </Layout>
   )
 }
 

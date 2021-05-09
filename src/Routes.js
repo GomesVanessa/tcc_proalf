@@ -6,6 +6,7 @@ import Home from'./Pages/Home/Home';
 import Letter from './Pages/Letter/Letter';
 import Nuvem from './components/Nuvem/Nuvem';
 import HomeVogais from './Pages/HomeVogais/HomeVogais';
+import EnterLetter from './Pages/EnterLetter/EnterLetter';
 
 function Routes(){
     return(
@@ -15,6 +16,7 @@ function Routes(){
             {/* <Route path='/nuvem/:letter/:id' component={Cloud} />    */}
             <Route path='/nuvem' component={Nuvem} /> 
             <Route path='/vogais' component={HomeVogais} />
+            <Route path='/enter' component={EnterLetter} />
             <Route path='/' component={Home} />
         </Switch>        
     ); 

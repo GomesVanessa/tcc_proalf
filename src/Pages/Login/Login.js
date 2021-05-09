@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import login from "../../Assets/icons/login4.png";
 
+import Background from '../../Assets/icons/alfabeto.jpg';
+
 const Wrapper = styled.div`
   //background: #DCDCDC; 
   //background: rgb(51,170,204);
@@ -26,7 +28,8 @@ const Wrapper = styled.div`
   }
   .card{
       background-color: white; 
-      box-shadow: 1px 1px 5px #ccc; 
+      //box-shadow: 1px 1px 5px #ccc; 
+      box-shadow: 10px 5px 5px #46494a;
       padding: 30px; 
       border-radius: 50px; 
   }

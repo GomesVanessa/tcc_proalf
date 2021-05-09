@@ -10,6 +10,7 @@ import gabriela from '../../Assets/icons/gabriela.PNG';
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
 
+
 const Wrapper = styled.div`
     background-color:#FDFEFE; 
     /* @font-face {
@@ -18,7 +19,8 @@ const Wrapper = styled.div`
     } */
     p{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-family:'maria_lucia';
+        //font-family:'maria_lucia';
+        
         font-size: 1.2em;
         line-height: 1.5;
         text-align: left;
@@ -51,11 +53,11 @@ const Wrapper = styled.div`
         border-radius: 50%;
     } 
     
-   /* ${Button} {
+    ${Button} {
         //display: flex;
         align-items: center; 
         height: 100%; 
-    }  */
+    }
     li{
         list-style: none; 
         margin: 45px;
@@ -73,7 +75,7 @@ const AboutGrid = styled.div`
     gap: 2em;    
     
     div:nth-child(1){
-       background-color:#FDFEFE; 
+       background-color:#FDFEFE;         
     }
     div:nth-child(2){
         background-color:#FDFEFE;
@@ -128,9 +130,11 @@ const Home = () => {
                                     <img className="imgfoto" src={Vinicius} alt="Alunos" /> 
                                 </ImagesGrid>
                                 <p>
-                                    <li>Sara</li>
-                                    <li>Vanessa</li>
-                                    <li>Vinícius</li>
+                                    <hr />
+                                        <li>Sara </li>
+                                        <li>Vanessa</li>
+                                        <li>Vinícius</li>
+                                    <hr />
                                 </p>
                                 <p>
                                     Alunos do Curso de Desenvolvimento de Sistemas da Etec de Embu das Artes. Este site
@@ -146,7 +150,9 @@ const Home = () => {
                                     <img className="imgfoto" src={gabriela} alt="Gabriela"  />
                                 </ImagesGrid>
                                 <p>
-                                    <li>Gabriela Guarnieri Mendes</li>
+                                    <hr />
+                                        <li>Gabriela Guarnieri Mendes</li>
+                                    <hr />
                                 </p>
                                 <p>
                                     Gabriela é pedagoga, formada pela FFCLRP-USP, psicopedagoga clínica e institucional, 
@@ -157,7 +163,7 @@ const Home = () => {
                         </AboutGrid>
                     </section> 
                 </Wrapper>
-                {/* <Button>Iniciar</Button>   */}
+                <Button>Iniciar Atividades</Button>
             </Container>
         </Layout> 
     );
