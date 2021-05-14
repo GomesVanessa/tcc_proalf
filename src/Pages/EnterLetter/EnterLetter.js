@@ -21,6 +21,7 @@ import Caneca from '../../Assets/a/caneca.jpg';
 import Caneta from '../../Assets/a/caneta.png';
 import Gato from '../../Assets/a/gato.jpg';
 
+
 const Wrapper = styled.div`
    
     display: grid;
@@ -33,7 +34,21 @@ const Wrapper = styled.div`
         height: 100px; 
         object-fit: contain;
     }
-    
+
+    input{
+        ${({text}) => { 
+            if(text === "A"){
+                return`
+                    color: green; 
+                `;
+            }else{
+                return`
+                    color: red;
+                `;
+            }            
+        }}
+    }
+   
     input, label{
         width: 16px;
         height: 29px;
@@ -60,56 +75,56 @@ const EnterLetter = () => {
                     <Wrapper>
                         <Card>
                             <img src={Apito}  alt="Apito" /><hr/>
-                            <input type="text" placeholder="_"/><label>PITO</label>
+                            <input class="Active" type="text" placeholder="_" required/><label>PITO</label>
                         </Card>
                         <Card>
                             <img src={Faca}  alt="Faca" /><hr/>
-                            <label>F</label><input type="text" placeholder="_"/><label>C</label><input type="text" placeholder="_"/>
+                            <label>F</label><input type="text" placeholder="_" required/><label>C</label><input type="text" placeholder="_"/>
                         </Card>
                         <Card>
                             <img src={Anel}  alt="Anel" /><hr/>
-                            <input type="text" placeholder="_"/><label>NEL</label>
+                            <input type="text" placeholder="_" required/><label>NEL</label>
                         </Card>
                         <Card>
                             <img src={Aviao}  alt="Aviao" /><hr/>
-                            <input type="text" placeholder="_"/><label>VI</label><input type="text" placeholder="_"/><label>O</label>
+                            <input type="text" placeholder="_" required/><label>VI</label><input type="text" placeholder="_"/><label>O</label>
                         </Card>
 
                         <Card>
                             <img src={Abacaxi}  alt="Abacaxi" /><hr/>
-                            <input type="text" placeholder="_"/><label>B</label><input type="text" placeholder="_"/><label>C</label><input type="text" placeholder="_"/><label>XI</label>
+                            <input type="text" placeholder="_" required/><label>B</label><input type="text" placeholder="_"/><label>C</label><input type="text" placeholder="_"/><label>XI</label>
                         </Card>
                         <Card>
                             <img src={Aranha}  alt="Aranha" /><hr/>
-                            <input type="text" placeholder="_"/><label>R</label><input type="text" placeholder="_"/><label>NH</label><input type="text" placeholder="_"/>
+                            <input type="text" placeholder="_" required/><label>R</label><input type="text" placeholder="_"/><label>NH</label><input type="text" placeholder="_"/>
                         </Card>
                         <Card>
                             <img src={Agulha}  alt="Agulha" /><hr/>
-                            <input type="text" placeholder="_"/><label>GULH</label><input type="text" placeholder="_"/>
+                            <input type="text" placeholder="_" required/><label>GULH</label><input type="text" placeholder="_"/>
                         </Card>
                         <Card>
                             <img src={Asas}  alt="Asas" /><hr/>
-                            <input type="text" placeholder="_"/><label>S</label><input type="text" placeholder="_"/><label>S</label>
+                            <input type="text" placeholder="_" required/><label>S</label><input type="text" placeholder="_"/><label>S</label>
                         </Card>
 
                         <Card>
                             <img src={Batata}  alt="Batata" /><hr/>
-                            <label>B</label><input type="text" placeholder="_"/><label>T</label><input type="text" placeholder="_"/><label>T</label><input type="text" placeholder="_"/>
+                            <label>B</label><input type="text" placeholder="_" required/><label>T</label><input type="text" placeholder="_"/><label>T</label><input type="text" placeholder="_"/>
                         </Card>
                         <Card>
                             <img src={Caneca}  alt="Caneca" /><hr/>
-                            <label>C</label><input type="text" placeholder="_"/><label>NEC</label><input type="text" placeholder="_"/>
+                            <label>C</label><input type="text" placeholder="_" required/><label>NEC</label><input type="text" placeholder="_"/>
                         </Card>
                         <Card>
                             <img src={Caneta}  alt="Caneta" /><hr/>
-                            <label>C</label><input type="text" placeholder="_"/><label>NET</label><input type="text" placeholder="_"/>
+                            <label>C</label><input type="text" placeholder="_" required /><label>NET</label><input type="text" placeholder="_"/>
                         </Card>
                         <Card>
                             <img src={Gato}  alt="Gato" /><hr/>
-                            <label>G</label><input type="text" placeholder="_"/><label>TO</label>
+                            <label>G</label><input type="text" placeholder="_" required/><label>TO</label>
                         </Card>                        
                     </Wrapper>
-                    <Button>Continuar</Button>
+                <Button>Continuar</Button>
             </Container>
         </Layout>
     );

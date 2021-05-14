@@ -41,14 +41,15 @@ const Wrapper = styled.div`
     
   }
   .card-group > input{
-    border-radius: 5px; 
     outline: 0;
-    width: 100%;
+    width: 97%;
     height: 25px; 
     padding: 5px;
     text-align: center; 
     font-size: 1.3em;
+    border-radius: 30px;
   }
+
   .card-group > button {
     background-color: #65c728;
     width: 100%;

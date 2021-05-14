@@ -23,6 +23,9 @@ const Wrapper = styled.header`
         font-size: 1.9em;
         font-style: italic;
     }
+    a{
+        text-decoration: none; 
+    }
 `;
 
 const Navigation = styled(Nav)`
@@ -33,10 +36,10 @@ const Header = ({to, path, alt}) => {
     return(
         <Wrapper>
             <Container>
-                <h1>Proalf</h1>
+                <a href="/home"><h1>Proalf</h1></a>
                 {/* <img src={logo} alt="Logo" width="200" /> */}
                 <Navigation /> 
-                <Icon to="./facebook" path={facebook} alt="facebook" />
+                <Icon to="https://www.facebook.com/SerPsicopedagoga" path={facebook} alt="facebook" />
                 <Icon to="./login" path={Login} alt="Login" /> 
             </Container>
         </Wrapper>

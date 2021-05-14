@@ -16,6 +16,20 @@ const Wrapper = styled.div`
   /* ${Container} {
     margin-top: 100px; 
   } */
+
+/* ${({active}) => { 
+  if(active === true){
+      return`
+          border: green; 
+      `;
+  }else{
+      return`
+          border: red;
+      `;
+  }
+  
+}}
+} */
 `;
 
 const Letter = () => { 

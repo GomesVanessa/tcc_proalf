@@ -9,18 +9,19 @@ import Vinicius from '../../Assets/icons/vinicius.jpeg';
 import gabriela from '../../Assets/icons/gabriela.PNG';
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
+import HomeVogais from '../HomeVogais/HomeVogais';
 
 
 const Wrapper = styled.div`
     background-color:#FDFEFE; 
     /* @font-face {
-        font-family: 'maria_lucia' ;
+        font-family: "Maria lucia" ;
         src: url('../../Fonts/Maria_lucia.ttf') format('truetype');
     } */
+    
     p{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        //font-family:'maria_lucia';
-        
+        //font-family:"Maria_lucia";
         font-size: 1.2em;
         line-height: 1.5;
         text-align: left;
@@ -163,7 +164,7 @@ const Home = () => {
                         </AboutGrid>
                     </section> 
                 </Wrapper>
-                <Button>Iniciar Atividades</Button>
+            <a href="/vogais"><Button>Iniciar Atividades</Button></a>
             </Container>
         </Layout> 
     );

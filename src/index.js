@@ -4,6 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Normalize} from 'styled-normalize';
 import GlobalStyles from './GlobalStyles';
+// import './Fonts/Maria_lucia.ttf';
 
 ReactDOM.render(
   <React.StrictMode>

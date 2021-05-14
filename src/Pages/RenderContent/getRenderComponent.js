@@ -1,11 +1,11 @@
 import RenderVideo from "./RenderVideo";
 import RenderText from "./RenderText";
-import RenderImage from "./RenderImage";
+import RenderClick from "./RenderClick";
 
 const getRenderComponent = (type) => {
   switch (type) {
     case "IMAGE":
-      return RenderImage;
+      return RenderClick;
     case "TEXT":
       return RenderText;
     default:

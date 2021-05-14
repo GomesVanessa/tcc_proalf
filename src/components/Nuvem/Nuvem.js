@@ -1,6 +1,6 @@
 import React from 'react'; 
 import styled from 'styled-components';
-import Card from '../Card/Card'
+import Card from '../Card/Card';
 
 const Wrapper = styled.div`
   display: grid;
