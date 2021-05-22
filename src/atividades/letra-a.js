@@ -76,8 +76,7 @@ const atividades = [
             cards: [
                 {image:A}, {image:ami}, {image:a_cur}, {image:omi},
                 {image:bmi}, {image:dmi}, {image:A}, {image:a_cur}, 
-                {image:ami}, {image:P}, {image:umi}, {image:emi}, 
-                {image:E}, {image:ami}, {image:emi}, {image:acur}, 
+                {image:ami}, {image:P}, {image:umi}, {image:acur},  
             ]
     },
 

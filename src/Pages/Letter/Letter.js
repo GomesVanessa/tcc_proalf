@@ -32,6 +32,10 @@ const Wrapper = styled.div`
 } */
 `;
 
+const AudioInstrucao = styled(Audio)`
+    margin: 40px; 
+`;
+
 const Letter = () => { 
   const {letter, id} = useParams(); 
   const atividade = (atividades[letter] || []) [id-1] || null;
@@ -49,7 +53,7 @@ const Letter = () => {
     <Wrapper> 
       <Layout>
         <Container>
-          <Audio src={atividade.audio} />
+          <AudioInstrucao src={atividade.audio} />
           <CardsGrid>
             {(atividade.cards || []).map((item) => {
               return <Card image ={item.image}/>;

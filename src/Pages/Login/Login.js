@@ -97,6 +97,42 @@ const Wrapper = styled.div`
   }
 `;
 
+// function Login(){ 
+//   const [user, setUser] = useState('')
+//   const [password, setPassword] = useState('')
+
+//   let login; 
+  
+//   const history = useHistory(); 
+
+//   function handleSubmit(event){ 
+//     event.preventDefault(); 
+
+//     axios 
+//       .post('http://localhost/proalf')
+//       .then(response=>{
+//         const results = response.data.dados; 
+
+//         if(user === '' || password === ''){ 
+//           alert('Preencha todos os campos.'); 
+//         }else{
+//           login = results.some(({usuario, senha}) => {
+//             return usuario === user && senha === password; 
+//           }); 
+//         }
+
+//         if(login){
+//           history.push('/Login'); 
+//           setTimeout(()=>{
+//             history.push('/home'); 
+//           }, 4000); 
+//             alert('Dados Incorretos'); 
+//         }
+//       }).catch(err=> {
+//         alert('Servidor Indisponível')
+//   })
+// }
+
 const Login = () => {
   return (
   <Wrapper>

@@ -11,37 +11,82 @@ import hvI from '../../Assets/homeVogais/hvI.jpg';
 import hvO from '../../Assets/homeVogais/hvO.jpg';
 import hvU from '../../Assets/homeVogais/hvU.jpg';
 
+//import VogalA from '../../../public/audio/Audio_A/abacaxi.mp3';
+
 const Wrapper = styled.div`
-    display: grid;
+    display: flex;
     height: 100%;
-    display: inline; 
-    
+    justify-content: center;
 
     img{
-        width: 200px;
-        height: 400px;
-        object-fit: contain;
+        border: .8px solid black;
+    }
+
+    a{
+        margin: 0px 20px;
+        //flex:1;
     }
     
-    div a img:hover {
+    img:hover {
         background:#65c728;
     }    
      
 `;
 
+const AudioInstrucao = styled(Audio)`
+    margin: 40px; 
+`;
+
+const Item = styled.div`
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    ${Audio}{
+        margin: 10px;
+    }
+`;
+
+const VogalImage = styled.img`
+    height: 350px;
+    object-fit: contain;
+
+`; 
+
+ 
+
+
 const HomeVogais = () => {
   return(
     <Layout>
         <Container>
-            <Audio />
+            <AudioInstrucao icon={false}/>
                 <Wrapper>
-                    <div>                       
-                        <a href="letra/a/1"><img src={hvA}  alt="Vogal A" /></a>
-                        <a href="letra/e/1"><img src={hvE}  alt="Vogal E" /></a>
-                        <a href="letra/i/1"><img src={hvI}  alt="Vogal I" /></a>
-                        <a href="letra/o/1"><img src={hvO}  alt="Vogal O" /></a>
-                        <a href="letra/u/1"><img src={hvU}  alt="Vogal U" /></a>                     
-                    </div>              
+                    <Item >
+                        <Audio controls={false} icon={true} />                
+                        <a href="letra/a/1">
+                        <VogalImage src={hvA}  alt="Vogal A" /></a>
+                    </Item>
+                    <Item >
+                        <Audio controls={false} icon={true} />                
+                        <a href="letra/e/1">
+                        <VogalImage src={hvE}  alt="Vogal E" /></a>
+                    </Item>
+                    <Item >
+                        <Audio controls={false} icon={true} />                
+                        <a href="letra/i/1">
+                        <VogalImage src={hvI}  alt="Vogal I" /></a>
+                    </Item>
+                    <Item >
+                        <Audio controls={false} icon={true} />                
+                        <a href="letra/o/1">
+                        <VogalImage src={hvO}  alt="Vogal O" /></a>
+                    </Item>
+                    <Item >
+                        <Audio controls={false} icon={true} />                
+                        <a href="letra/u/1">
+                        <VogalImage src={hvU}  alt="Vogal U" /></a>
+                    </Item>                                
                 </Wrapper>
                 <a href="/letra/a/1"><Button>Continuar</Button></a>
         </Container>

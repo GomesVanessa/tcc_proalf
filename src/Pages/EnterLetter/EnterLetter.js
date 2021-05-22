@@ -1,4 +1,5 @@
 import React from 'react';
+import {useState} from 'react'; 
 import styled from "styled-components";
 import Layout from '../../components/Layout/Layout';
 import Card from '../../components/Card/Card';
@@ -21,7 +22,6 @@ import Caneca from '../../Assets/a/caneca.jpg';
 import Caneta from '../../Assets/a/caneta.png';
 import Gato from '../../Assets/a/gato.jpg';
 
-
 const Wrapper = styled.div`
    
     display: grid;
@@ -30,98 +30,121 @@ const Wrapper = styled.div`
     grid-row-gap: 1.7em;
 
     img{ 
-        width: 100px;
-        height: 100px; 
+        width: 80px;
+        height: 80px; 
         object-fit: contain;
     }
-
-    input{
-        ${({text}) => { 
-            if(text === "A"){
-                return`
-                    color: green; 
-                `;
-            }else{
-                return`
-                    color: red;
-                `;
-            }            
-        }}
-    }
-   
+     
     input, label{
         width: 16px;
-        height: 29px;
+        height: 28px;
         align-items: center;
         border: none;
         text-transform: uppercase;
         font-size: 1.5em;
     } 
-    
+  
     hr{
         width: 100%;
-        //width: 300px;
+        width: 300px;
         border: 0; 
         height: 1.5px; 
         background-image: linear-gradient(to right, #f0f0f0, #F2F3F4, #F2F3F4, #f0f0f0);
     }
 `; 
 
-const EnterLetter = () => {
+const AudioInstrucao = styled(Audio)`
+    margin: 20px; 
+`;
+
+// const EnterLetter = () => {
+
+function EnterLetter(){
+
+    const [letter, setLetter] = useState('');
+    const [color, setColor] = useState('#000');
+    const [answer, setAnswer] = useState(false);
+
+    React.useEffect(() => {
+        setColor(() => answer  ? '#0F0': '#F00');
+    }, [answer]);
+
+
+    function validaLetter({target}){
+        setLetter(target.value)
+        const pressLetter = target.value.toUpperCase();
+        
+        if(pressLetter === 'A') {
+            setAnswer(true);
+        } else {
+            setAnswer(false);
+        }
+    }
+
     return (
         <Layout>
             <Container> 
-                <Audio />
+                <AudioInstrucao />
                     <Wrapper>
                         <Card>
                             <img src={Apito}  alt="Apito" /><hr/>
-                            <input class="Active" type="text" placeholder="_" required/><label>PITO</label>
+                            <div>
+                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter} 
+                                       onChange={validaLetter} style={{outlineColor:color,}}/>
+                                PITO
+                            </div>    
                         </Card>
                         <Card>
                             <img src={Faca}  alt="Faca" /><hr/>
-                            <label>F</label><input type="text" placeholder="_" required/><label>C</label><input type="text" placeholder="_"/>
+                            <div>
+                                F<input type="text" maxLength="1" size="1" placeholder="_" value={letter}
+                                       onChange={validaLetter} style={{outlineColor:color,}}/>
+                                C<input type="text" maxLength="1" size="1" placeholder="_" value={letter}
+                                       onChange={validaLetter} style={{outlineColor:color,}}/>
+                            </div>
+                                            
                         </Card>
                         <Card>
                             <img src={Anel}  alt="Anel" /><hr/>
-                            <input type="text" placeholder="_" required/><label>NEL</label>
+                            <input type="text" maxLength="1" placeholder="_" required/><label>NEL</label>
                         </Card>
                         <Card>
                             <img src={Aviao}  alt="Aviao" /><hr/>
-                            <input type="text" placeholder="_" required/><label>VI</label><input type="text" placeholder="_"/><label>O</label>
+                            <input type="text" maxLength="1" placeholder="_" required/><label>VI</label><input type="text" maxLength="1" placeholder="_"/><label>O</label>
                         </Card>
 
                         <Card>
                             <img src={Abacaxi}  alt="Abacaxi" /><hr/>
-                            <input type="text" placeholder="_" required/><label>B</label><input type="text" placeholder="_"/><label>C</label><input type="text" placeholder="_"/><label>XI</label>
+                            <input type="text" maxLength="1" placeholder="_" required/><label>B</label><input type="text" maxLength="1" placeholder="_"/><label>C</label><input type="text" maxLength="1" placeholder="_"/><label>XI</label>
                         </Card>
                         <Card>
                             <img src={Aranha}  alt="Aranha" /><hr/>
-                            <input type="text" placeholder="_" required/><label>R</label><input type="text" placeholder="_"/><label>NH</label><input type="text" placeholder="_"/>
+                            <input type="text" maxLength="1" placeholder="_" required/><label>R</label><input type="text" maxLength="1" placeholder="_"/><label>NH</label><input type="text" maxLength="1" placeholder="_"/>
                         </Card>
                         <Card>
                             <img src={Agulha}  alt="Agulha" /><hr/>
-                            <input type="text" placeholder="_" required/><label>GULH</label><input type="text" placeholder="_"/>
+                            <input type="text" maxLength="1" placeholder="_" required/><label>GULH</label><input type="text" maxLength="1" placeholder="_"/>
                         </Card>
                         <Card>
                             <img src={Asas}  alt="Asas" /><hr/>
-                            <input type="text" placeholder="_" required/><label>S</label><input type="text" placeholder="_"/><label>S</label>
+                            <input type="text" maxLength="1" placeholder="_" required/><label>S</label><input type="text" maxLength="1" placeholder="_"/><label>S</label>
                         </Card>
 
                         <Card>
                             <img src={Batata}  alt="Batata" /><hr/>
-                            <label>B</label><input type="text" placeholder="_" required/><label>T</label><input type="text" placeholder="_"/><label>T</label><input type="text" placeholder="_"/>
+                            <label>B</label><input type="text" maxLength="1" placeholder="_" required/><label>T</label><input type="text" maxLength="1" placeholder="_"/><label>T</label><input type="text" maxLength="1" placeholder="_"/>
                         </Card>
                         <Card>
                             <img src={Caneca}  alt="Caneca" /><hr/>
-                            <label>C</label><input type="text" placeholder="_" required/><label>NEC</label><input type="text" placeholder="_"/>
+                            <label>C</label><input type="text" maxLength="1" placeholder="_" required/><label>NEC</label><input type="text" maxLength="1" placeholder="_"/>
                         </Card>
                         <Card>
                             <img src={Caneta}  alt="Caneta" /><hr/>
-                            <label>C</label><input type="text" placeholder="_" required /><label>NET</label><input type="text" placeholder="_"/>
+                            <label>C</label><input type="text" maxLength="1" placeholder="_" required /><label>NET</label><input type="text" maxLength="1" placeholder="_"/>
                         </Card>
                         <Card>
                             <img src={Gato}  alt="Gato" /><hr/>
-                            <label>G</label><input type="text" placeholder="_" required/><label>TO</label>
+                            <label>G</label><input type="text" maxLength="1" placeholder="_" required/><label>TO</label>
                         </Card>                        
                     </Wrapper>
                 <Button>Continuar</Button>
@@ -129,5 +152,6 @@ const EnterLetter = () => {
         </Layout>
     );
 }
+
 
 export default EnterLetter
