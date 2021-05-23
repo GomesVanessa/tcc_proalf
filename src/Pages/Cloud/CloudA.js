@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import Nuvem from '../../Assets/a/nuvensLetterA/nuvem.png';
 import Layout from '../../components/Layout/Layout';
 import Container from '../../components/Container/Container';
 import Audio from '../../components/Audio/Audio';
@@ -8,25 +7,20 @@ import Button from '../../components/Button/Button';
 
 //import AudioAve from '../../../public/audio/Audio_A/tela2-nuvens.mp3';
 
-import NuvemAnel from '../../../src/Assets/a/nuvensLetterA/anel.jpg'; 
-import NuvemAve from '../../../src/Assets/a/nuvensLetterA/ave.jpg'; 
-import NuvemOvo from '../../../src/Assets/a/nuvensLetterA/ovo.jpg'; 
-import NuvemSapo from '../../../src/Assets/a/nuvensLetterA/sapo.jpg'; 
-import NuvemUrso from '../../../src/Assets/a/nuvensLetterA/urso.jpg'; 
-import NuvemUva from '../../../src/Assets/a/nuvensLetterA/uva.jpg'; 
+import NuvemAnel from '../../../src/Assets/cloud/anel.JPG'; 
+import NuvemAve from '../../../src/Assets/cloud/ave.JPG'; 
+import NuvemOvo from '../../../src/Assets/cloud/ovo.JPG'; 
+import NuvemSapo from '../../../src/Assets/cloud/sapo.JPG'; 
+import NuvemUrso from '../../../src/Assets/cloud/urso.JPG'; 
+import NuvemUva from '../../../src/Assets/cloud/uva.JPG'; 
 
 const Wrapper = styled.div`
     //background-color: lightskyblue;
-    margin-top:100px;
-
-    ${Audio} {
-        margin-top: 550px;
-    }
- 
+     
     img{
-        width: 250px;
-        height: 140px; 
-        padding: .7em;
+        width: 260px;
+        height: 150px; 
+        padding: 1.5em;
         border-radius: 6px; 
         cursor: pointer; 
         &:hover {
@@ -34,16 +28,21 @@ const Wrapper = styled.div`
             transform: translate(0, -5px);  
         }       
     }
+
     label{
         color: #154360; 
     }
 `;
 
-const Cloud = () => { 
+const AudioInstrucao = styled(Audio)`
+    margin: 60px; 
+`;
+
+const CloudA = () => { 
     return(
         <Layout> 
             <Container>
-                <Audio /> 
+                <AudioInstrucao /> 
                     <Wrapper>
                         <div>
                             <img src={NuvemAve} alt="Ave" />
@@ -60,4 +59,4 @@ const Cloud = () => {
     )
 }
 
-export default Cloud;
+export default CloudA;
