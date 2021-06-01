@@ -59,7 +59,7 @@ const Letter = () => {
               return <Card image ={item.image}/>;
             })}
           </CardsGrid>
-          <Button>Continuar</Button>
+          <a href="/cloudA"><Button>Continuar</Button></a>
         </Container>
       </Layout>
     </Wrapper>

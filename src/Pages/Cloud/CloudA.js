@@ -54,7 +54,7 @@ const CloudA = () => {
                         </div>
                     </Wrapper>
             </Container>
-            <Button>Continuar</Button>
+            <a href="/clickLetterA"><Button>Continuar</Button></a>
         </Layout>
     )
 }

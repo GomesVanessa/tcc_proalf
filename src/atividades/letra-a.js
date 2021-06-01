@@ -23,8 +23,7 @@ const atividades = [
             {image:Arvore, audio: '/audio/Audio_A/arvore.mp3'}, {image:Coelho, audio: '/audio/Audio_A/coelho.mp3'},
             {image:Aviao, audio: '/audio/Audio_A/aviao.mp3'}, {image:Galinha, audio: '/audio/Audio_A/galinha.mp3'},       
         ]
-    
-    }, 
+        },
  
     // {   type: 'TEXT',
     //         audio: '/audio/Audio_A/tela5-.mp3',

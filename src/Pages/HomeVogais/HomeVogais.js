@@ -48,7 +48,7 @@ const Item = styled.div`
 `;
 
 const VogalImage = styled.img`
-    height: 350px;
+    height: 360px;
     object-fit: contain;
 
 `; 
