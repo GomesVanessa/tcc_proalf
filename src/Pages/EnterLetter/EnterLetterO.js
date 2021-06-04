@@ -21,6 +21,7 @@ import Radio from '../../Assets/o/radio.png';
 import Navio from '../../Assets/o/navio.png';
 import Porco from '../../Assets/o/porco.png';
 import Piano from '../../Assets/o/piano.png';
+import { Link } from 'react-router-dom';
 
 
 const Wrapper = styled.div`
@@ -431,7 +432,7 @@ function EnterLetterO () {
                             </div>    
                         </CardGeral>                        
                     </Wrapper>
-                <a href="/letra/u/1"><Button>Continuar</Button></a>
+                <Link to="/letra/u/1"><Button>Continuar</Button></Link>
             </Container>
         </Layout>
     );

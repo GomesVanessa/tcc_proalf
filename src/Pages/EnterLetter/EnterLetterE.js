@@ -21,6 +21,7 @@ import Meia from '../../Assets/e/meia.png';
 import Caneca from '../../Assets/e/caneca.png';
 import Caneta from '../../Assets/e/caneta.png';
 import Coelho from '../../Assets/e/coelho.png';
+import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
    
@@ -414,7 +415,7 @@ function EnterLetterE () {
                         </CardGeral>
                         
                     </Wrapper>
-                <a href="/letra/i/1"><Button>Continuar</Button></a>
+                <Link to="/letra/i/1"><Button>Continuar</Button></Link>
             </Container>
         </Layout>
     );

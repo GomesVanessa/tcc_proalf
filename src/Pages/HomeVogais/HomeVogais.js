@@ -10,6 +10,7 @@ import hvE from '../../Assets/homeVogais/hvE.jpg';
 import hvI from '../../Assets/homeVogais/hvI.jpg';
 import hvO from '../../Assets/homeVogais/hvO.jpg';
 import hvU from '../../Assets/homeVogais/hvU.jpg';
+import { Link } from 'react-router-dom';
 
 //import VogalA from '../../../public/audio/Audio_A/abacaxi.mp3';
 
@@ -53,9 +54,6 @@ const VogalImage = styled.img`
 
 `; 
 
- 
-
-
 const HomeVogais = () => {
   return(
     <Layout>
@@ -63,32 +61,37 @@ const HomeVogais = () => {
             <AudioInstrucao icon={false}/>
                 <Wrapper>
                     <Item >
-                        <Audio controls={false} icon={true} />                
-                        <a href="letra/a/1">
-                        <VogalImage src={hvA}  alt="Vogal A" /></a>
+                        <Audio controls={false} icon={true} /> 
+                        <Link to="letra/a/1">              
+                            <VogalImage src={hvA}  alt="Vogal A" />
+                        </Link> 
                     </Item>
                     <Item >
-                        <Audio controls={false} icon={true} />                
-                        <a href="letra/e/1">
-                        <VogalImage src={hvE}  alt="Vogal E" /></a>
+                        <Audio controls={false} icon={true} /> 
+                        <Link to="letra/e/1">              
+                            <VogalImage src={hvE}  alt="Vogal E" />
+                        </Link>                   
                     </Item>
                     <Item >
-                        <Audio controls={false} icon={true} />                
-                        <a href="letra/i/1">
-                        <VogalImage src={hvI}  alt="Vogal I" /></a>
+                        <Audio controls={false} icon={true} /> 
+                        <Link to="letra/i/1">              
+                            <VogalImage src={hvI}  alt="Vogal I" />
+                        </Link>                 
                     </Item>
                     <Item >
-                        <Audio controls={false} icon={true} />                
-                        <a href="letra/o/1">
-                        <VogalImage src={hvO}  alt="Vogal O" /></a>
+                        <Audio controls={false} icon={true} /> 
+                        <Link to="letra/o/1">              
+                            <VogalImage src={hvO}  alt="Vogal O" />
+                        </Link>               
                     </Item>
                     <Item >
-                        <Audio controls={false} icon={true} />                
-                        <a href="letra/u/1">
-                        <VogalImage src={hvU}  alt="Vogal U" /></a>
+                        <Audio controls={false} icon={true} />
+                        <Link to="letra/u/1">              
+                            <VogalImage src={hvU}  alt="Vogal U" />
+                        </Link>                  
                     </Item>                                
                 </Wrapper>
-                <a href="/letra/a/1"><Button>Continuar</Button></a>
+                <Link to="/letra/a/1"><Button>Continuar</Button></Link>
         </Container>
     </Layout>
   )

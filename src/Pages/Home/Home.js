@@ -10,6 +10,7 @@ import gabriela from '../../Assets/icons/gabriela.PNG';
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
 import HomeVogais from '../HomeVogais/HomeVogais';
+import { Link } from 'react-router-dom';
 
 
 const Wrapper = styled.div`
@@ -164,7 +165,7 @@ const Home = () => {
                         </AboutGrid>
                     </section> 
                 </Wrapper>
-            <a href="/vogais"><Button>Iniciar Atividades</Button></a>
+            <Link to="/vogais"><Button>Iniciar Atividades</Button></Link>
             </Container>
         </Layout> 
     );

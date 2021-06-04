@@ -21,6 +21,7 @@ import Ninho from '../../Assets/i/ninho.PNG';
 import Navio from '../../Assets/i/navio.png';
 import Pipa from '../../Assets/i/pipa.png';
 import Piano from '../../Assets/i/piano.png';
+import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
    
@@ -397,7 +398,7 @@ function EnterLetterI () {
                             </div>    
                         </CardGeral>
                     </Wrapper>
-                <a href="/letra/o/1"><Button>Continuar</Button></a>
+                <Link to="/letra/o/1"><Button>Continuar</Button></Link>
             </Container>
         </Layout>
     );

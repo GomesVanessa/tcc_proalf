@@ -21,6 +21,7 @@ import Tucano from '../../Assets/u/tucano.png';
 import Nuvem from '../../Assets/u/nuvem.png';
 import Lua from '../../Assets/u/lua.png';
 import Fumaca from '../../Assets/u/fumaca.png';
+import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
    
@@ -378,7 +379,7 @@ function EnterLetterU () {
                             </div>    
                         </CardGeral>                                
                     </Wrapper>
-                <a href=""><Button>Continuar</Button></a>
+                <Link to=""><Button>Continuar</Button></Link>
             </Container>
         </Layout>
     );

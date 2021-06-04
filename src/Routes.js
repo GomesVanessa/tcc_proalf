@@ -20,8 +20,9 @@ import ClickLetterE from './Pages/ClickLetter/ClickLetterE';
 import ClickLetterI from './Pages/ClickLetter/ClickLetterI';
 import ClickLetterO from './Pages/ClickLetter/ClickLetterO';
 import ClickLetterU from './Pages/ClickLetter/ClickLetterU';
-import excanvas from './Pages/ClickLetter/excanvas'; 
-import htmlCanvas from './Pages/ClickLetter/html5-canvas-paint-bucket';
+
+import test from './Pages/ClickLetter/Test';
+import test2 from './Pages/ClickLetter/Test2.js';
 
 //import test from './Pages/test';
 
@@ -53,13 +54,11 @@ function Routes(){
             <Route path='/enterLetterO' component={EnterLetterO} />
             <Route path='/enterLetterU' component={EnterLetterU} />
 
+            <Route path='/test' component={test} />
+            <Route path='/test2' component={test2} />
+
             <Route path='/clickLetterU' component={ClickLetterU} />
 
-            {/* <Route path='/drawletter' component={excanvas} /> */}
-            <Route path='/drawletter2' component={htmlCanvas} />
-
-            {/* <Route path='/test' component={test} /> */}
-            
             <Route path='/' component={Home} />
         </Switch>        
     ); 

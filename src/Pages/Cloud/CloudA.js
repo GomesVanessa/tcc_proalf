@@ -13,6 +13,7 @@ import NuvemOvo from '../../../src/Assets/cloud/ovo.JPG';
 import NuvemSapo from '../../../src/Assets/cloud/sapo.JPG'; 
 import NuvemUrso from '../../../src/Assets/cloud/urso.JPG'; 
 import NuvemUva from '../../../src/Assets/cloud/uva.JPG'; 
+import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
     //background-color: lightskyblue;
@@ -54,7 +55,7 @@ const CloudA = () => {
                         </div>
                     </Wrapper>
             </Container>
-            <a href="/clickLetterA"><Button>Continuar</Button></a>
+            <Link to="/clickLetterA"><Button>Continuar</Button></Link>
         </Layout>
     )
 }

@@ -21,6 +21,7 @@ import Batata from '../../Assets/a/batata.jpg';
 import Caneca from '../../Assets/a/caneca.jpg';
 import Caneta from '../../Assets/a/caneta.png';
 import Gato from '../../Assets/a/gato.jpg';
+import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
    
@@ -553,7 +554,7 @@ function EnterLetter () {
                             </div>
                         </CardGeral>                 
                     </Wrapper>
-                <a href="/letra/e/1"><Button>Continuar</Button></a>
+                <Link to="/letra/e/1"><Button>Continuar</Button></Link>
             </Container>
         </Layout>
     );
