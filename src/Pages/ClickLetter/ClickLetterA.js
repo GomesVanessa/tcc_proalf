@@ -63,9 +63,51 @@ const ImgA = styled.img`
 `;
 
 
+function ClickLetterA(){  
+    const [acertos, setAcertos] = useState(0);
+    const [erros, setErros] = useState(0); 
+    const [color1, setColor1] = useState('#000');
+    const [color2, setColor2] = useState('#000');
+    const [color3, setColor3] = useState('#000');
+    const [color4, setColor4] = useState('#000');
+    const [color5, setColor5] = useState('#000');
+    const [color6, setColor6] = useState('#000');
+    const [color7, setColor7] = useState('#000');
+    const [color8, setColor8] = useState('#000');
+    const [color9, setColor9] = useState('#000');
+    const [color10, setColor10] = useState('#000');
 
-const ClickLetterA = () => {
-    
+    function validaAcerto1(){
+        setColor1('#0F0');
+        setAcertos(acertos+1);
+    }
+    function validaAcerto2(){
+        setColor2('#0F0');
+        setAcertos(acertos+1);
+    }
+    function validaAcerto3(){
+        setColor3('#0F0');
+        setAcertos(acertos+1);
+    }
+    function validaErro1(){
+        setColor1('#F00');
+        setErros(erros+1);
+    }
+
+
+
+
+
+    function contacertos(){
+        //console.log(acertos);
+        alert('Você acertou ' + acertos);
+    }
+
+    function contaerros(){
+        //console.log(acertos);
+        alert('Você errou ' + erros);
+    }
+
     return(
         <Layout>
             <Container>
@@ -73,10 +115,11 @@ const ClickLetterA = () => {
 
                 <Representation>
                     <ImgA src={Aa} alt="A"/>
-                </Representation>        
+                </Representation>  
+
                     <Wrapper>
-                        <CardClick>
-                            <Img src={A} alt="A"/>  
+                        <CardClick onClick={validaAcerto1} style={{borderColor: color1,}}>
+                            <Img src={A} alt="A" />  
                         </CardClick>
                         <CardClick>
                             <Img src={ami} alt="A"/>
@@ -137,7 +180,7 @@ const ClickLetterA = () => {
                         </CardClick>
                     </Wrapper>
             </Container>
-            <Link to="/enterLetterA"><Button>Continuar</Button></Link>
+            <Link to="/enterLetterA"><Button onClick={contaerros}>Continuar</Button></Link>
         </Layout>
     );
 }

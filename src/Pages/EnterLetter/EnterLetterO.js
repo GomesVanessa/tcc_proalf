@@ -67,7 +67,8 @@ const CardGeral = styled(Card)`
 `;
 
 function EnterLetterO () {
-
+    const [acertos, setAcertos] = useState(0); 
+    const [erros, setErros] = useState(0);
     const [letter1, setLetter1] = useState('');
     const [color1, setColor1] = useState('#000');
     const [answer1, setAnswer1] = useState(false);
@@ -150,8 +151,10 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer1(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer1(false);
+            setErros(erros+1);
         }
     }
     function validaLetter2({target}){
@@ -160,8 +163,10 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer2(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer2(false);
+            setErros(erros+1);
         }
     }
     function validaLetter3({target}){
@@ -170,8 +175,10 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer3(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer3(false);
+            setErros(erros+1);
         }
     }
     function validaLetter4({target}){
@@ -180,8 +187,10 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer4(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer4(false);
+            setErros(erros+1);
         }
     }
     function validaLetter5({target}){
@@ -190,8 +199,10 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer5(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer5(false);
+            setErros(erros+1);
         }
     }
     function validaLetter6({target}){
@@ -200,8 +211,10 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer6(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer6(false);
+            setErros(erros+1);
         }
     }
     function validaLetter7({target}){
@@ -210,8 +223,10 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer7(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer7(false);
+            setErros(erros+1);
         }
     }
     function validaLetter8({target}){
@@ -220,8 +235,10 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer8(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer8(false);
+            setErros(erros+1);
         }
     }
     function validaLetter9({target}){
@@ -230,8 +247,10 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer9(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer9(false);
+            setErros(erros+1);
         }
     }
     function validaLetter10({target}){
@@ -240,8 +259,10 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer10(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer10(false);
+            setErros(erros+1);
         }
     }
     function validaLetter11({target}){
@@ -250,8 +271,10 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer11(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer11(false);
+            setErros(erros+1);
         }
     }
     function validaLetter12({target}){
@@ -260,8 +283,10 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer12(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer12(false);
+            setErros(erros+1);
         }
     }
     function validaLetter13({target}){
@@ -270,8 +295,10 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer13(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer13(false);
+            setErros(erros+1);
         }
     }
     function validaLetter14({target}){
@@ -280,8 +307,10 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer14(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer14(false);
+            setErros(erros+1);
         }
     }
     function validaLetter15({target}){
@@ -290,8 +319,10 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer15(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer15(false);
+            setErros(erros+1);
         }
     }
     function validaLetter16({target}){
@@ -300,8 +331,10 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer16(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer16(false);
+            setErros(erros+1);
         }
     }
     function validaLetter17({target}){
@@ -310,9 +343,19 @@ function EnterLetterO () {
         
         if(pressLetter === 'O') {
             setAnswer17(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer17(false);
+            setErros(erros+1);
         }
+    }
+
+    function contAcertos (){ 
+        alert('Você acertou ' + acertos); 
+    }
+
+    function contErros (){
+        alert('Você errou ' + erros);
     }
   
     return (
@@ -432,7 +475,7 @@ function EnterLetterO () {
                             </div>    
                         </CardGeral>                        
                     </Wrapper>
-                <Link to="/letra/u/1"><Button>Continuar</Button></Link>
+                <Link to="/letra/u/1"><Button onClick={contAcertos}>Continuar</Button></Link>
             </Container>
         </Layout>
     );

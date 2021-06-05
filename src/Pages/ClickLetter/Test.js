@@ -35,13 +35,9 @@ const AudioInstrucao = styled(Audio)`
 
 function ClickLetter() { 
 
-    const[letter, setLetter] = useState('');
-    let card;
-    if(card){ 
-        
-    }
+    const[letter, setLetter] = useState();
     const [color, setColor] = useState('#000');
-    const [answer, setAnswer] = useState(false); 
+    const [answer, setAnswer] = useState(true); 
 
     React.useEffect(() => {
         setColor(() => answer  ? 'border-color:#0F0': 'border-color:#F00');
@@ -49,14 +45,13 @@ function ClickLetter() {
 
     function validaLetter({target}){
         setLetter(target.value)
-        //const pressLetter = target.value();
+        const pressLetter = target.value();
         if(items === 'A') {
             setAnswer(true);
         } else {
             alert('A borda do card precisa ficar verde')
             setAnswer(false);
-        }
-        
+        }        
            
     }
     const items= [

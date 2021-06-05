@@ -67,6 +67,8 @@ const CardGeral = styled(Card)`
 
 function EnterLetterI () {
 
+    const [acertos, setAcertos] = useState(0); 
+    const [erros, setErros] = useState(0);
     const [letter1, setLetter1] = useState('');
     const [color1, setColor1] = useState('#000');
     const [answer1, setAnswer1] = useState(false);
@@ -112,8 +114,7 @@ function EnterLetterI () {
     const [letter15, setLetter15] = useState('');    
     const [color15, setColor15] = useState('#000');    
     const [answer15, setAnswer15] = useState(false);
-    const [letter16, setLetter16] = useState('');    
-    const [color16, setColor16] = useState('#000');    
+  
         
     React.useEffect(() => {
         setColor1(() => answer1  ? '#0F0': '#F00');
@@ -142,8 +143,10 @@ function EnterLetterI () {
         
         if(pressLetter === 'I') {
             setAnswer1(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer1(false);
+            setErros(erros+1);
         }
     }
     function validaLetter2({target}){
@@ -152,8 +155,10 @@ function EnterLetterI () {
         
         if(pressLetter === 'I') {
             setAnswer2(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer2(false);
+            setErros(erros+1);
         }
     }
     function validaLetter3({target}){
@@ -162,8 +167,10 @@ function EnterLetterI () {
         
         if(pressLetter === 'I') {
             setAnswer3(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer3(false);
+            setErros(erros+1);
         }
     }
     function validaLetter4({target}){
@@ -172,8 +179,10 @@ function EnterLetterI () {
         
         if(pressLetter === 'I') {
             setAnswer4(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer4(false);
+            setErros(erros+1);
         }
     }
     function validaLetter5({target}){
@@ -182,8 +191,10 @@ function EnterLetterI () {
         
         if(pressLetter === 'I') {
             setAnswer5(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer5(false);
+            setErros(erros+1);
         }
     }
     function validaLetter6({target}){
@@ -192,8 +203,10 @@ function EnterLetterI () {
         
         if(pressLetter === 'I') {
             setAnswer6(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer6(false);
+            setErros(erros+1);
         }
     }
     function validaLetter7({target}){
@@ -202,8 +215,10 @@ function EnterLetterI () {
         
         if(pressLetter === 'I') {
             setAnswer7(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer7(false);
+            setErros(erros+1);
         }
     }
     function validaLetter8({target}){
@@ -212,8 +227,10 @@ function EnterLetterI () {
         
         if(pressLetter === 'I') {
             setAnswer8(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer8(false);
+            setErros(erros+1);
         }
     }
     function validaLetter9({target}){
@@ -222,8 +239,10 @@ function EnterLetterI () {
         
         if(pressLetter === 'I') {
             setAnswer9(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer9(false);
+            setErros(erros+1);
         }
     }
     function validaLetter10({target}){
@@ -232,8 +251,10 @@ function EnterLetterI () {
         
         if(pressLetter === 'I') {
             setAnswer10(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer10(false);
+            setErros(erros+1);
         }
     }
     function validaLetter11({target}){
@@ -242,8 +263,10 @@ function EnterLetterI () {
         
         if(pressLetter === 'I') {
             setAnswer11(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer11(false);
+            setErros(erros+1);
         }
     }
     function validaLetter12({target}){
@@ -252,8 +275,10 @@ function EnterLetterI () {
         
         if(pressLetter === 'I') {
             setAnswer12(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer12(false);
+            setErros(erros+1);
         }
     }
     function validaLetter13({target}){
@@ -262,8 +287,10 @@ function EnterLetterI () {
         
         if(pressLetter === 'I') {
             setAnswer13(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer13(false);
+            setErros(erros+1);
         }
     }
     function validaLetter14({target}){
@@ -272,8 +299,10 @@ function EnterLetterI () {
         
         if(pressLetter === 'I') {
             setAnswer14(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer14(false);
+            setErros(erros+1);
         }
     }
     function validaLetter15({target}){
@@ -282,9 +311,19 @@ function EnterLetterI () {
         
         if(pressLetter === 'I') {
             setAnswer15(true);
+            setAcertos(acertos+1);
         } else {
             setAnswer15(false);
+            setErros(erros+1);
         }
+    }
+
+    function contAcertos(){
+        alert('Você acertou ' + acertos);
+    }
+
+    function contErros(){
+        alert('Você errou ' + erros);
     }
   
     return (
@@ -398,7 +437,7 @@ function EnterLetterI () {
                             </div>    
                         </CardGeral>
                     </Wrapper>
-                <Link to="/letra/o/1"><Button>Continuar</Button></Link>
+                <Link to="/letra/o/1"><Button onClick={contAcertos}>Continuar</Button></Link>
             </Container>
         </Layout>
     );
