@@ -20,7 +20,7 @@ const Wrapper = styled.div`
     justify-content: center;
 
     img{
-        border: .8px solid black;
+        //border: .8px solid black;
     }
 
     a{
@@ -49,7 +49,9 @@ const Item = styled.div`
 `;
 
 const VogalImage = styled.img`
-    height: 360px;
+    height: 390px;
+    width: 110px;
+    
     object-fit: contain;
 
 `; 
