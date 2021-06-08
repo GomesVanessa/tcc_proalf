@@ -1,15 +1,14 @@
 import React from 'react';
 import{Route, Switch} from 'react-router-dom';
-
-import Login from'./Pages/Login/Login';
 import Home from'./Pages/Home/Home';
-import Letter from './Pages/Letter/Letter';
+import Login from'./Pages/Login/Login';
+import NewUser from './Pages/Login/NewUser';
 import HomeVogais from './Pages/HomeVogais/HomeVogais';
-import EnterLetterA from './Pages/EnterLetter/EnterLetterA';
-import EnterLetterE from './Pages/EnterLetter/EnterLetterE';
-import EnterLetterI from './Pages/EnterLetter/EnterLetterI';
-import EnterLetterO from './Pages/EnterLetter/EnterLetterO';
-import EnterLetterU from './Pages/EnterLetter/EnterLetterU';
+import ClickImageA from './Pages/ClickImage/ClickImageA';
+import ClickImageE from './Pages/ClickImage/ClickImageE';
+import ClickImageI from './Pages/ClickImage/ClickImageI';
+import ClickImageO from './Pages/ClickImage/ClickImageO';
+import ClickImageU from './Pages/ClickImage/CliqueImageU';
 import CloudA from './Pages/Cloud/CloudA';
 import CloudE from './Pages/Cloud/CloudE';
 import CloudI from './Pages/Cloud/CloudI';
@@ -20,9 +19,12 @@ import ClickLetterE from './Pages/ClickLetter/ClickLetterE';
 import ClickLetterI from './Pages/ClickLetter/ClickLetterI';
 import ClickLetterO from './Pages/ClickLetter/ClickLetterO';
 import ClickLetterU from './Pages/ClickLetter/ClickLetterU';
-
-import test from './Pages/ClickLetter/Test';
-import test2 from './Pages/ClickLetter/Test2.js';
+import TypeLetterA from './Pages/TypeLetter/TypeLetterA';
+import TypeLetterE from './Pages/TypeLetter/TypeLetterE';
+import TypeLetterI from './Pages/TypeLetter/TypeLetterI';
+import TypeLetterO from './Pages/TypeLetter/TypeLetterO';
+import TypeLetterU from './Pages/TypeLetter/TypeLetterU';
+import TestVowels from './Pages/TestVowels/TestVowels';
 
 //import test from './Pages/test';
 
@@ -30,11 +32,16 @@ function Routes(){
     return(
         <Switch>
             <Route path='/login' component={Login}/>
-            <Route path='/ForgotPassword' component={Login}/>
-            <Route path='/NewUser' component={Login}/>
+            <Route path='/forgotPassword' component={Login}/>
+            <Route path='/newUser' component={NewUser}/>
             <Route path='/vogais' component={HomeVogais} />
 
-            <Route path='/letra/:letter/:id' component={Letter} />     
+            {/* <Route path='/letra/:letter/:id' component={Letter} />      */}
+            <Route path='/clickImageA' component={ClickImageA} />
+            <Route path='/clickImageE' component={ClickImageE} />
+            <Route path='/clickImageI' component={ClickImageI} />
+            <Route path='/clickImageO' component={ClickImageO} />
+            <Route path='/clickImageU' component={ClickImageU} /> 
                      
             <Route path='/cloudA' component={CloudA} />
             <Route path='/cloudE' component={CloudE} /> 
@@ -48,16 +55,13 @@ function Routes(){
             <Route path='/clickLetterO' component={ClickLetterO} />
             <Route path='/clickLetterU' component={ClickLetterU} />
 
-            <Route path='/enterLetterA' component={EnterLetterA} />
-            <Route path='/enterLetterE' component={EnterLetterE} />
-            <Route path='/enterLetterI' component={EnterLetterI} />
-            <Route path='/enterLetterO' component={EnterLetterO} />
-            <Route path='/enterLetterU' component={EnterLetterU} />
+            <Route path='/typeLetterA' component={TypeLetterA} />
+            <Route path='/typeLetterE' component={TypeLetterE} />
+            <Route path='/typeLetterI' component={TypeLetterI} />
+            <Route path='/typeLetterO' component={TypeLetterO} />
+            <Route path='/typeLetterU' component={TypeLetterU} />
 
-            <Route path='/test' component={test} />
-            <Route path='/test2' component={test2} />
-
-            <Route path='/clickLetterU' component={ClickLetterU} />
+            <Route path='/testVowels' component={TestVowels} />
 
             <Route path='/' component={Home} />
         </Switch>        

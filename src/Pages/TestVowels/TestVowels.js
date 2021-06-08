@@ -5,23 +5,22 @@ import Layout from '../../components/Layout/Layout';
 import Card from '../../components/Card/Card';
 import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
-
+import { Link } from 'react-router-dom';
 import Audio from '../../components/Audio/Audio';
 //import AudioEnter from '../../../public/audio/Audio_A/tela5-.mp3'
 
 import Apito from '../../Assets/a/apito.png';
 import Faca from '../../Assets/a/faca.png';
-import Anel from '../../Assets/a/anel.png';
-import Aviao from '../../Assets/a/aviao.png';
-import Abacaxi from '../../Assets/a/abacaxi.png';
-import Aranha from '../../Assets/a/aranha.png';
-import Agulha from '../../Assets/a/agulha.png';
-import Asas from '../../Assets/a/asas.png';
-import Batata from '../../Assets/a/batata.jpg';
-import Caneca from '../../Assets/a/caneca.jpg';
-import Caneta from '../../Assets/a/caneta.png';
-import Gato from '../../Assets/a/gato.jpg';
-import { Link } from 'react-router-dom';
+import Fumaca from '../../Assets/u/fumaca.png';
+import Elefante from '../../Assets/e/elefante.png';
+import Tucano from '../../Assets/u/tucano.png';
+import Lua from '../../Assets/u/lua.png';
+import Espada from '../../Assets/e/espada.png';
+import Ioio from '../../Assets/i/ioio.png';
+import Igreja from '../../Assets/i/igreja.png';
+import Onibus from '../../Assets/o/onibus.png';
+import Pirulito from '../../Assets/i/pirulito.png';
+import Caneta from '../../Assets/e/caneta.png';
 
 const Wrapper = styled.div`
    
@@ -65,9 +64,7 @@ const CardGeral = styled(Card)`
     
 `;
 
-//const EnterLetter = () => {
-
-function EnterLetter () {
+function TestVowels () {
     const [acertos, setAcertos] = useState(0);
     const [erros, setErros] = useState(0);
     const [letter1, setLetter1] = useState('');
@@ -142,7 +139,46 @@ function EnterLetter () {
     const [letter24, setLetter24] = useState('');    
     const [color24, setColor24] = useState('#000');    
     const [answer24, setAnswer24] = useState(false);
-    
+    const [letter25, setLetter25] = useState('');    
+    const [color25, setColor25] = useState('#000');    
+    const [answer25, setAnswer25] = useState(false);
+    const [letter26, setLetter26] = useState('');    
+    const [color26, setColor26] = useState('#000');    
+    const [answer26, setAnswer26] = useState(false);
+    const [letter27, setLetter27] = useState('');    
+    const [color27, setColor27] = useState('#000');    
+    const [answer27, setAnswer27] = useState(false);
+    const [letter28, setLetter28] = useState('');    
+    const [color28, setColor28] = useState('#000');    
+    const [answer28, setAnswer28] = useState(false);
+    const [letter29, setLetter29] = useState('');    
+    const [color29, setColor29] = useState('#000');    
+    const [answer29, setAnswer29] = useState(false);
+    const [letter30, setLetter30] = useState('');    
+    const [color30, setColor30] = useState('#000');    
+    const [answer30, setAnswer30] = useState(false);
+    const [letter31, setLetter31] = useState('');    
+    const [color31, setColor31] = useState('#000');    
+    const [answer31, setAnswer31] = useState(false);
+    const [letter32, setLetter32] = useState('');    
+    const [color32, setColor32] = useState('#000');    
+    const [answer32, setAnswer32] = useState(false);
+    const [letter33, setLetter33] = useState('');    
+    const [color33, setColor33] = useState('#000');    
+    const [answer33, setAnswer33] = useState(false);
+    const [letter34, setLetter34] = useState('');    
+    const [color34, setColor34] = useState('#000');    
+    const [answer34, setAnswer34] = useState(false);
+    const [letter35, setLetter35] = useState('');    
+    const [color35, setColor35] = useState('#000');    
+    const [answer35, setAnswer35] = useState(false);
+    const [letter36, setLetter36] = useState('');    
+    const [color36, setColor36] = useState('#000');    
+    const [answer36, setAnswer36] = useState(false);
+    const [letter37, setLetter37] = useState('');    
+    const [color37, setColor37] = useState('#000');    
+    const [answer37, setAnswer37] = useState(false);
+            
     React.useEffect(() => {
         setColor1(() => answer1  ? '#0F0': '#F00');
         setColor2(() => answer2  ? '#0F0': '#F00');
@@ -168,11 +204,27 @@ function EnterLetter () {
         setColor22(() => answer22  ? '#0F0': '#F00');
         setColor23(() => answer23  ? '#0F0': '#F00');
         setColor24(() => answer24  ? '#0F0': '#F00');
+        setColor25(() => answer25  ? '#0F0': '#F00');
+        setColor26(() => answer26  ? '#0F0': '#F00');
+        setColor27(() => answer27  ? '#0F0': '#F00');
+        setColor28(() => answer28  ? '#0F0': '#F00');
+        setColor29(() => answer29  ? '#0F0': '#F00');
+        setColor30(() => answer30  ? '#0F0': '#F00');
+        setColor31(() => answer31  ? '#0F0': '#F00');
+        setColor32(() => answer32  ? '#0F0': '#F00');
+        setColor33(() => answer33  ? '#0F0': '#F00');
+        setColor34(() => answer34  ? '#0F0': '#F00');
+        setColor35(() => answer35  ? '#0F0': '#F00');
+        setColor36(() => answer36  ? '#0F0': '#F00');
+        setColor37(() => answer37  ? '#0F0': '#F00');
     }, [answer1, answer2, answer3, answer4, answer5, 
         answer6, answer7, answer8, answer9, answer10,
-        answer11, answer12, answer13, answer14, answer15, 
-        answer16, answer17, answer18, answer19, answer20, 
-        answer21, answer22, answer23, answer24]);
+        answer11, answer12, answer13, answer14, answer15,
+        answer16, answer17, answer18, answer19, answer20,
+        answer21, answer22, answer23, answer24, answer25,
+        answer26, answer27, answer28, answer29, answer30,
+        answer31, answer32, answer33, answer34, answer35, 
+        answer36, answer37]);
 
 
     function validaLetter1({target}){
@@ -192,7 +244,7 @@ function EnterLetter () {
         setLetter2(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'A') {
+        if(pressLetter === 'I') {
             setAnswer2(true);
             setAcertos(acertos+1);
        
@@ -205,7 +257,7 @@ function EnterLetter () {
         setLetter3(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'A') {
+        if(pressLetter === 'O') {
             setAnswer3(true);
             setAcertos(acertos+1);
         } else {
@@ -241,7 +293,7 @@ function EnterLetter () {
         setLetter6(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'A') {
+        if(pressLetter === 'U') {
             setAnswer6(true);
             setAcertos(acertos+1);
         } else {
@@ -277,7 +329,7 @@ function EnterLetter () {
         setLetter9(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'A') {
+        if(pressLetter === 'E') {
             setAnswer9(true);
             setAcertos(acertos+1);
         } else {
@@ -289,7 +341,7 @@ function EnterLetter () {
         setLetter10(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'A') {
+        if(pressLetter === 'E') {
             setAnswer10(true);
             setAcertos(acertos+1);
         } else {
@@ -313,7 +365,7 @@ function EnterLetter () {
         setLetter12(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'A') {
+        if(pressLetter === 'E') {
             setAnswer12(true);
             setAcertos(acertos+1);
         } else {
@@ -325,7 +377,7 @@ function EnterLetter () {
         setLetter13(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'A') {
+        if(pressLetter === 'U') {
             setAnswer13(true);
             setAcertos(acertos+1);
         } else {
@@ -349,7 +401,7 @@ function EnterLetter () {
         setLetter15(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'A') {
+        if(pressLetter === 'O') {
             setAnswer15(true);
             setAcertos(acertos+1);
         } else {
@@ -361,7 +413,7 @@ function EnterLetter () {
         setLetter16(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'A') {
+        if(pressLetter === 'U') {
             setAnswer16(true);
             setAcertos(acertos+1);
         } else {
@@ -385,7 +437,7 @@ function EnterLetter () {
         setLetter18(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'A') {
+        if(pressLetter === 'E') {
             setAnswer18(true);
             setAcertos(acertos+1);
         } else {
@@ -421,7 +473,7 @@ function EnterLetter () {
         setLetter21(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'A') {
+        if(pressLetter === 'I') {
             setAnswer21(true);
             setAcertos(acertos+1);
         } else {
@@ -433,7 +485,7 @@ function EnterLetter () {
         setLetter22(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'A') {
+        if(pressLetter === 'O') {
             setAnswer22(true);
             setAcertos(acertos+1);
         } else {
@@ -445,7 +497,7 @@ function EnterLetter () {
         setLetter23(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'A') {
+        if(pressLetter === 'I') {
             setAnswer23(true);
             setAcertos(acertos+1);
         } else {
@@ -456,8 +508,7 @@ function EnterLetter () {
     function validaLetter24({target}){
         setLetter24(target.value)
         const pressLetter = target.value.toUpperCase();
-        
-        if(pressLetter === 'A') {
+        if(pressLetter === 'O') {
             setAnswer24(true);
             setAcertos(acertos+1);
         } else {
@@ -465,9 +516,160 @@ function EnterLetter () {
             setErros(erros+1);
         }
     }
-
+    function validaLetter25({target}){
+        setLetter25(target.value)
+        const pressLetter = target.value.toUpperCase();
+        
+        if(pressLetter === 'I') {
+            setAnswer25(true);
+            setAcertos(acertos+1);
+        } else {
+            setAnswer25(false);
+            setErros(erros+1);
+        }
+    }
+    function validaLetter26({target}){
+        setLetter26(target.value)
+        const pressLetter = target.value.toUpperCase();
+        
+        if(pressLetter === 'E') {
+            setAnswer26(true);
+            setAcertos(acertos+1);
+        } else {
+            setAnswer26(false);
+            setErros(erros+1);
+        }
+    }
+    function validaLetter27({target}){
+        setLetter27(target.value)
+        const pressLetter = target.value.toUpperCase();
+        
+        if(pressLetter === 'A') {
+            setAnswer27(true);
+            setAcertos(acertos+1);
+        } else {
+            setAnswer27(false);
+            setErros(erros+1);
+        }
+    }
+    function validaLetter28({target}){
+        setLetter28(target.value)
+        const pressLetter = target.value.toUpperCase();
+        
+        if(pressLetter === 'O') {
+            setAnswer28(true);
+            setAcertos(acertos+1);
+        } else {
+            setAnswer28(false);
+            setErros(erros+1);
+        }
+    }
+    function validaLetter29({target}){
+        setLetter29(target.value)
+        const pressLetter = target.value.toUpperCase();
+        if(pressLetter === 'I') {
+            setAnswer29(true);
+            setAcertos(acertos+1);
+        } else {
+            setAnswer29(false);
+            setErros(erros+1);
+        }
+    }
+    function validaLetter30({target}){
+        setLetter30(target.value)
+        const pressLetter = target.value.toUpperCase();
+        
+        if(pressLetter === 'U') {
+            setAnswer30(true);
+            setAcertos(acertos+1);
+        } else {
+            setAnswer30(false);
+            setErros(erros+1);
+        }
+    }
+    function validaLetter31({target}){
+        setLetter31(target.value)
+        const pressLetter = target.value.toUpperCase();
+        
+        if(pressLetter === 'I') {
+            setAnswer31(true);
+            setAcertos(acertos+1);
+        } else {
+            setAnswer31(false);
+            setErros(erros+1);
+        }
+    }
+    function validaLetter32({target}){
+        setLetter32(target.value)
+        const pressLetter = target.value.toUpperCase();
+        
+        if(pressLetter === 'U') {
+            setAnswer32(true);
+            setAcertos(acertos+1);
+        } else {
+            setAnswer32(false);
+            setErros(erros+1);
+        }
+    }
+    function validaLetter33({target}){
+        setLetter33(target.value)
+        const pressLetter = target.value.toUpperCase();
+        
+        if(pressLetter === 'I') {
+            setAnswer33(true);
+            setAcertos(acertos+1);
+        } else {
+            setAnswer33(false);
+            setErros(erros+1);
+        }
+    }
+    function validaLetter34({target}){
+        setLetter34(target.value)
+        const pressLetter = target.value.toUpperCase();
+        if(pressLetter === 'O') {
+            setAnswer34(true);
+            setAcertos(acertos+1);
+        } else {
+            setAnswer34(false);
+            setErros(erros+1);
+        }
+    }
+    function validaLetter35({target}){
+        setLetter35(target.value)
+        const pressLetter = target.value.toUpperCase();
+        if(pressLetter === 'A') {
+            setAnswer35(true);
+            setAcertos(acertos+1);
+        } else {
+            setAnswer35(false);
+            setErros(erros+1);
+        }
+    }
+    function validaLetter36({target}){
+        setLetter36(target.value)
+        const pressLetter = target.value.toUpperCase();
+        if(pressLetter === 'E') {
+            setAnswer36(true);
+            setAcertos(acertos+1);
+        } else {
+            setAnswer36(false);
+            setErros(erros+1);
+        }
+    }
+    function validaLetter37({target}){
+        setLetter37(target.value)
+        const pressLetter = target.value.toUpperCase();
+        if(pressLetter === 'A') {
+            setAnswer37(true);
+            setAcertos(acertos+1);
+        } else {
+            setAnswer37(false);
+            setErros(erros+1);
+        }
+    }
+    
     function contAcertos(){
-        alert('Você acertou ' + acertos);
+        console.log('Você acertou ' + acertos);
     }
 
     function contErros(){
@@ -484,139 +686,177 @@ function EnterLetter () {
                                 <img src={Apito}  alt="Apito" /><hr/>
                                 <input type="text" maxLength="1" size="1" placeholder="_" value={letter1} 
                                     onChange={validaLetter1} style={{outlineColor:color1,}}
-                                />PITO
+                                />
+                                P<input type="text" maxLength="1" size="1" placeholder="_" value={letter2} 
+                                    onChange={validaLetter2} style={{outlineColor:color2,}}
+                                />
+                                T<input type="text" maxLength="1" size="1" placeholder="_" value={letter3} 
+                                    onChange={validaLetter3} style={{outlineColor:color3,}}
+                                />
                             </div>    
                         </CardGeral>
                         <CardGeral>                           
                             <div>
                                 <img src={Faca}  alt="Faca" /><hr/>
-                                F<input type="text" maxLength="1" size="1" placeholder="_" value={letter2}
-                                    onChange={validaLetter2} style={{outlineColor:color2,}}
+                                F<input type="text" maxLength="1" size="1" placeholder="_" value={letter4}
+                                    onChange={validaLetter4} style={{outlineColor:color4,}}
                                 />
-                                C<input type="text" maxLength="1" size="1" placeholder="_" value={letter3}
-                                    onChange={validaLetter3} style={{outlineColor:color3,}}
+                                C<input type="text" maxLength="1" size="1" placeholder="_" value={letter5}
+                                    onChange={validaLetter5} style={{outlineColor:color5,}}
                                 />
                             </div>                                          
                         </CardGeral>
                         <CardGeral>
                             <div>
-                                <img src={Anel}  alt="Anel" /><hr/>
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter4}
-                                    onChange={validaLetter4} style={{outlineColor:color4,}}
-                                />NEL
-                            </div>
-                        </CardGeral>
-                        <CardGeral>
-                            <div>
-                                <img src={Aviao}  alt="Aviao" /><hr/>
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter5}
-                                    onChange={validaLetter5} style={{outlineColor:color5,}}
-                                />VI
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter6}
+                                <img src={Fumaca}  alt="Fumaca" /><hr/>
+                                F<input type="text" maxLength="1" size="1" placeholder="_" value={letter6}
                                     onChange={validaLetter6} style={{outlineColor:color6,}}
-                                />O
+                                />
+                                M<input type="text" maxLength="1" size="1" placeholder="_" value={letter7}
+                                    onChange={validaLetter7} style={{outlineColor:color7,}}
+                                />
+                                Ç<input type="text" maxLength="1" size="1" placeholder="_" value={letter8}
+                                    onChange={validaLetter8} style={{outlineColor:color8,}}
+                                />
                             </div>
                         </CardGeral>
-
                         <CardGeral>
                             <div>
-                                <img src={Abacaxi}  alt="Abacaxi" /><hr/>
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter7}
-                                    onChange={validaLetter7} style={{outlineColor:color7,}}
-                                />B
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter8}
-                                    onChange={validaLetter8} style={{outlineColor:color8,}}
-                                />C
+                                <img src={Elefante}  alt="Elefante" /><hr/>
                                 <input type="text" maxLength="1" size="1" placeholder="_" value={letter9}
                                     onChange={validaLetter9} style={{outlineColor:color9,}}
-                                />XI
-                            </div>
-                        </CardGeral>
-                        <CardGeral>
-                            <div>
-                                <img src={Aranha}  alt="Aranha" /><hr/>
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter10}
+                                />
+                                L<input type="text" maxLength="1" size="1" placeholder="_" value={letter10}
                                     onChange={validaLetter10} style={{outlineColor:color10,}}
-                                />R
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter11}
+                                />
+                                F<input type="text" maxLength="1" size="1" placeholder="_" value={letter11}
                                     onChange={validaLetter11} style={{outlineColor:color11,}}
-                                />NH
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter12}
+                                />
+                                NT<input type="text" maxLength="1" size="1" placeholder="_" value={letter12}
                                     onChange={validaLetter12} style={{outlineColor:color12,}}
                                 />
                             </div>
                         </CardGeral>
                         <CardGeral>
                             <div>
-                                <img src={Agulha}  alt="Agulha" /><hr/>
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter13}
+                                <img src={Tucano}  alt="Tucano" /><hr/>
+                                T<input type="text" maxLength="1" size="1" placeholder="_" value={letter13}
                                     onChange={validaLetter13} style={{outlineColor:color13,}}
-                                />GULH
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter14}
+                                />
+                                C<input type="text" maxLength="1" size="1" placeholder="_" value={letter14}
                                     onChange={validaLetter14} style={{outlineColor:color14,}}
                                 />
-                            </div>
-                        </CardGeral>
-                        <CardGeral>
-                            <div>
-                                <img src={Asas}  alt="Asas" /><hr/>
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter15}
+                                N<input type="text" maxLength="1" size="1" placeholder="_" value={letter15}
                                     onChange={validaLetter15} style={{outlineColor:color15,}}
-                                />S
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter16}
-                                    onChange={validaLetter16} style={{outlineColor:color16,}}
-                                />S
+                                />                                
                             </div>
                         </CardGeral>
                         <CardGeral>
                             <div>
-                                <img src={Batata}  alt="Batata" /><hr/>
-                                B<input type="text" maxLength="1" size="1" placeholder="_" value={letter17}
+                                <img src={Lua}  alt="Lua" /><hr/>
+                                L<input type="text" maxLength="1" size="1" placeholder="_" value={letter16}
+                                    onChange={validaLetter16} style={{outlineColor:color16,}}
+                                />
+                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter17}
                                     onChange={validaLetter17} style={{outlineColor:color17,}}
-                                />T
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter18}
-                                    onChange={validaLetter18} style={{outlineColor:color18,}}
-                                />T
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter19}
-                                    onChange={validaLetter19} style={{outlineColor:color19,}}
                                 />
                             </div>
                         </CardGeral>
                         <CardGeral>
                             <div>
-                                <img src={Caneca}  alt="Caneca" /><hr/>
-                                C<input type="text" maxLength="1" size="1" placeholder="_" value={letter20}
+                                <img src={Espada}  alt="Espada" /><hr/>
+                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter18}
+                                    onChange={validaLetter18} style={{outlineColor:color18,}}
+                                />
+                                SP<input type="text" maxLength="1" size="1" placeholder="_" value={letter19}
+                                    onChange={validaLetter19} style={{outlineColor:color19,}}
+                                />
+                                D<input type="text" maxLength="1" size="1" placeholder="_" value={letter20}
                                     onChange={validaLetter20} style={{outlineColor:color20,}}
-                                />NEC
+                                />                                
+                            </div>
+                        </CardGeral>
+                        <CardGeral>
+                            <div>
+                                <img src={Ioio}  alt="Ioio" /><hr/>
                                 <input type="text" maxLength="1" size="1" placeholder="_" value={letter21}
                                     onChange={validaLetter21} style={{outlineColor:color21,}}
                                 />
-                            </div>
-                       </CardGeral>
-                        <CardGeral>
-                            <div>
-                                <img src={Caneta}  alt="Caneta" /><hr/>
-                                C<input type="text" maxLength="1" size="1" placeholder="_" value={letter22}
+                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter22}
                                     onChange={validaLetter22} style={{outlineColor:color22,}}
-                                />NET
+                                />
                                 <input type="text" maxLength="1" size="1" placeholder="_" value={letter23}
                                     onChange={validaLetter23} style={{outlineColor:color23,}}
+                                />
+                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter24}
+                                    onChange={validaLetter24} style={{outlineColor:color24,}}
                                 />
                             </div>
                         </CardGeral>
                         <CardGeral>
                             <div>
-                                <img src={Gato}  alt="Gato" /><hr/>
-                                G<input type="text" maxLength="1" size="1" placeholder="_" value={letter24}
-                                    onChange={validaLetter24} style={{outlineColor:color24,}}
-                                />TO
+                                <img src={Igreja}  alt="Igreja" /><hr/>
+                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter25}
+                                    onChange={validaLetter25} style={{outlineColor:color25,}}
+                                />
+                                GR<input type="text" maxLength="1" size="1" placeholder="_" value={letter26}
+                                    onChange={validaLetter26} style={{outlineColor:color26,}}
+                                />
+                                J<input type="text" maxLength="1" size="1" placeholder="_" value={letter27}
+                                    onChange={validaLetter27} style={{outlineColor:color27,}}
+                                />                                
                             </div>
-                        </CardGeral>                 
+                        </CardGeral>
+                        <CardGeral>
+                            <div>
+                                <img src={Onibus}  alt="Onibus" /><hr/>
+                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter28}
+                                    onChange={validaLetter28} style={{outlineColor:color28,}}
+                                />
+                                N<input type="text" maxLength="1" size="1" placeholder="_" value={letter29}
+                                    onChange={validaLetter29} style={{outlineColor:color29,}}
+                                />
+                                B<input type="text" maxLength="1" size="1" placeholder="_" value={letter30}
+                                    onChange={validaLetter30} style={{outlineColor:color30,}}
+                                />S
+                            </div>
+                        </CardGeral>
+                        <CardGeral>
+                            <div>
+                                <img src={Pirulito}  alt="Pirulito" /><hr/>
+                                P<input type="text" maxLength="1" size="1" placeholder="_" value={letter31}
+                                    onChange={validaLetter31} style={{outlineColor:color31,}}
+                                />
+                                R<input type="text" maxLength="1" size="1" placeholder="_" value={letter32}
+                                    onChange={validaLetter32} style={{outlineColor:color32,}}
+                                />
+                                L<input type="text" maxLength="1" size="1" placeholder="_" value={letter33}
+                                    onChange={validaLetter33} style={{outlineColor:color33,}}
+                                />
+                                T<input type="text" maxLength="1" size="1" placeholder="_" value={letter34}
+                                    onChange={validaLetter34} style={{outlineColor:color34,}}
+                                />
+                            </div>
+                        </CardGeral>
+                        <CardGeral>
+                            <div>
+                                <img src={Caneta}  alt="Caneta" /><hr/>
+                                C<input type="text" maxLength="1" size="1" placeholder="_" value={letter35}
+                                    onChange={validaLetter35} style={{outlineColor:color35,}}
+                                />
+                                N<input type="text" maxLength="1" size="1" placeholder="_" value={letter36}
+                                    onChange={validaLetter36} style={{outlineColor:color36,}}
+                                />
+                                T<input type="text" maxLength="1" size="1" placeholder="_" value={letter37}
+                                    onChange={validaLetter37} style={{outlineColor:color37,}}
+                                />                                
+                            </div>
+                        </CardGeral>                                   
                     </Wrapper>
-                <Link to="/letra/e/1"><Button onClick={contAcertos}>Continuar</Button></Link>
+                <Link to=""><Button onClick={contAcertos}>Continuar</Button></Link>
             </Container>
         </Layout>
     );
 }
 
-export default EnterLetter
+export default TestVowels

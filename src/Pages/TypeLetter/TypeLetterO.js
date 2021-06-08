@@ -66,7 +66,7 @@ const CardGeral = styled(Card)`
     
 `;
 
-function EnterLetterO () {
+function TypeLetterO () {
     const [acertos, setAcertos] = useState(0); 
     const [erros, setErros] = useState(0);
     const [letter1, setLetter1] = useState('');
@@ -351,7 +351,7 @@ function EnterLetterO () {
     }
 
     function contAcertos (){ 
-        alert('Você acertou ' + acertos); 
+        console.log('Você acertou ' + acertos); 
     }
 
     function contErros (){
@@ -475,10 +475,10 @@ function EnterLetterO () {
                             </div>    
                         </CardGeral>                        
                     </Wrapper>
-                <Link to="/letra/u/1"><Button onClick={contAcertos}>Continuar</Button></Link>
+                <Link to="clickImageU"><Button onClick={contAcertos}>Continuar</Button></Link>
             </Container>
         </Layout>
     );
 }
 
-export default EnterLetterO
+export default TypeLetterO

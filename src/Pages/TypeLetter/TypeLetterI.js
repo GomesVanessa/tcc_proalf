@@ -9,18 +9,18 @@ import Button from '../../components/Button/Button';
 import Audio from '../../components/Audio/Audio';
 //import AudioEnter from '../../../public/audio/Audio_A/tela5-.mp3'
 
-import Elefante from '../../Assets/e/elefante.png';
-import Escova from '../../Assets/e/escova.png'; 
-import Espada from '../../Assets/e/espada.png'; 
-import Espelho from '../../Assets/e/espelho.png'; 
-import Estrela from '../../Assets/e/estrela.png';
-import Esquilo from '../../Assets/e/esquilo.png';
-import Bigode from '../../Assets/e/bigode.png';
-import Bone from '../../Assets/e/bone.png';
-import Meia from '../../Assets/e/meia.png';
-import Caneca from '../../Assets/e/caneca.png';
-import Caneta from '../../Assets/e/caneta.png';
-import Coelho from '../../Assets/e/coelho.png';
+import Indio from '../../Assets/i/indio.png';
+import Ilha from '../../Assets/i/ilha.png';
+import Igreja from '../../Assets/i/igreja.png';
+import Ioio from '../../Assets/i/ioio.png';
+import Ima from '../../Assets/i/ima.png';
+import Lapis from '../../Assets/i/lapis.png';
+import Bigode from '../../Assets/i/bigode.png';
+import Pirulito from '../../Assets/i/pirulito.png';
+import Ninho from '../../Assets/i/ninho.PNG';
+import Navio from '../../Assets/i/navio.png';
+import Pipa from '../../Assets/i/pipa.png';
+import Piano from '../../Assets/i/piano.png';
 import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
@@ -65,7 +65,7 @@ const CardGeral = styled(Card)`
     
 `;
 
-function EnterLetterE () {
+function TypeLetterI () {
 
     const [acertos, setAcertos] = useState(0); 
     const [erros, setErros] = useState(0);
@@ -114,10 +114,8 @@ function EnterLetterE () {
     const [letter15, setLetter15] = useState('');    
     const [color15, setColor15] = useState('#000');    
     const [answer15, setAnswer15] = useState(false);
-    const [letter16, setLetter16] = useState('');    
-    const [color16, setColor16] = useState('#000');    
-    const [answer16, setAnswer16] = useState(false);
-    
+  
+        
     React.useEffect(() => {
         setColor1(() => answer1  ? '#0F0': '#F00');
         setColor2(() => answer2  ? '#0F0': '#F00');
@@ -134,18 +132,16 @@ function EnterLetterE () {
         setColor13(() => answer13  ? '#0F0': '#F00');
         setColor14(() => answer14  ? '#0F0': '#F00');
         setColor15(() => answer15  ? '#0F0': '#F00');
-        setColor16(() => answer16  ? '#0F0': '#F00');
-    }, [answer1, answer2, answer3, answer4, answer5, 
+        }, [answer1, answer2, answer3, answer4, answer5, 
         answer6, answer7, answer8, answer9, answer10,
-        answer11, answer12, answer13, answer14, answer15, 
-        answer16]);
+        answer11, answer12, answer13, answer14, answer15]);
 
 
     function validaLetter1({target}){
         setLetter1(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'E') {
+        if(pressLetter === 'I') {
             setAnswer1(true);
             setAcertos(acertos+1);
         } else {
@@ -157,7 +153,7 @@ function EnterLetterE () {
         setLetter2(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'E') {
+        if(pressLetter === 'I') {
             setAnswer2(true);
             setAcertos(acertos+1);
         } else {
@@ -169,7 +165,7 @@ function EnterLetterE () {
         setLetter3(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'E') {
+        if(pressLetter === 'I') {
             setAnswer3(true);
             setAcertos(acertos+1);
         } else {
@@ -181,7 +177,7 @@ function EnterLetterE () {
         setLetter4(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'E') {
+        if(pressLetter === 'I') {
             setAnswer4(true);
             setAcertos(acertos+1);
         } else {
@@ -193,7 +189,7 @@ function EnterLetterE () {
         setLetter5(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'E') {
+        if(pressLetter === 'I') {
             setAnswer5(true);
             setAcertos(acertos+1);
         } else {
@@ -205,7 +201,7 @@ function EnterLetterE () {
         setLetter6(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'E') {
+        if(pressLetter === 'I') {
             setAnswer6(true);
             setAcertos(acertos+1);
         } else {
@@ -217,7 +213,7 @@ function EnterLetterE () {
         setLetter7(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'E') {
+        if(pressLetter === 'I') {
             setAnswer7(true);
             setAcertos(acertos+1);
         } else {
@@ -229,7 +225,7 @@ function EnterLetterE () {
         setLetter8(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'E') {
+        if(pressLetter === 'I') {
             setAnswer8(true);
             setAcertos(acertos+1);
         } else {
@@ -241,7 +237,7 @@ function EnterLetterE () {
         setLetter9(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'E') {
+        if(pressLetter === 'I') {
             setAnswer9(true);
             setAcertos(acertos+1);
         } else {
@@ -253,7 +249,7 @@ function EnterLetterE () {
         setLetter10(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'E') {
+        if(pressLetter === 'I') {
             setAnswer10(true);
             setAcertos(acertos+1);
         } else {
@@ -265,7 +261,7 @@ function EnterLetterE () {
         setLetter11(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'E') {
+        if(pressLetter === 'I') {
             setAnswer11(true);
             setAcertos(acertos+1);
         } else {
@@ -277,7 +273,7 @@ function EnterLetterE () {
         setLetter12(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'E') {
+        if(pressLetter === 'I') {
             setAnswer12(true);
             setAcertos(acertos+1);
         } else {
@@ -289,7 +285,7 @@ function EnterLetterE () {
         setLetter13(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'E') {
+        if(pressLetter === 'I') {
             setAnswer13(true);
             setAcertos(acertos+1);
         } else {
@@ -301,7 +297,7 @@ function EnterLetterE () {
         setLetter14(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'E') {
+        if(pressLetter === 'I') {
             setAnswer14(true);
             setAcertos(acertos+1);
         } else {
@@ -313,7 +309,7 @@ function EnterLetterE () {
         setLetter15(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'E') {
+        if(pressLetter === 'I') {
             setAnswer15(true);
             setAcertos(acertos+1);
         } else {
@@ -321,27 +317,15 @@ function EnterLetterE () {
             setErros(erros+1);
         }
     }
-    function validaLetter16({target}){
-        setLetter16(target.value)
-        const pressLetter = target.value.toUpperCase();
-        
-        if(pressLetter === 'E') {
-            setAnswer16(true);
-            setAcertos(acertos+1);
-        } else {
-            setAnswer16(false);
-            setErros(erros+1);
-        }
-    }
 
     function contAcertos(){
-        alert('Você acertou ' + acertos);
+        console.log('Você acertou ' + acertos);
     }
 
     function contErros(){
         alert('Você errou ' + erros);
     }
-
+  
     return (
         <Layout>
             <Container> 
@@ -349,118 +333,114 @@ function EnterLetterE () {
                     <Wrapper>
                         <CardGeral>                            
                             <div>
-                                <img src={Elefante}  alt="Elefante" /><hr/>
+                                <img src={Indio}  alt="Indio" /><hr/>
                                 <input type="text" maxLength="1" size="1" placeholder="_" value={letter1} 
                                     onChange={validaLetter1} style={{outlineColor:color1,}}
-                                />L
+                                />ND
                                 <input type="text" maxLength="1" size="1" placeholder="_" value={letter2} 
                                     onChange={validaLetter2} style={{outlineColor:color2,}}
-                                />FANT
+                                />O
+                            </div>    
+                        </CardGeral>
+                        <CardGeral>                            
+                            <div>
+                                <img src={Ilha}  alt="Ilha" /><hr/>
                                 <input type="text" maxLength="1" size="1" placeholder="_" value={letter3} 
                                     onChange={validaLetter3} style={{outlineColor:color3,}}
-                                />
+                                />LHA
                             </div>    
                         </CardGeral>
                         <CardGeral>                            
                             <div>
-                                <img src={Escova}  alt="Escova" /><hr/>
+                                <img src={Igreja}  alt="Igreja" /><hr/>
                                 <input type="text" maxLength="1" size="1" placeholder="_" value={letter4} 
                                     onChange={validaLetter4} style={{outlineColor:color4,}}
-                                />SCOVA
+                                />GREJA
                             </div>    
                         </CardGeral>
                         <CardGeral>                            
                             <div>
-                                <img src={Espada}  alt="Espada" /><hr/>
+                                <img src={Ioio}  alt="Ioio" /><hr/>
                                 <input type="text" maxLength="1" size="1" placeholder="_" value={letter5} 
                                     onChange={validaLetter5} style={{outlineColor:color5,}}
-                                />SPADA
-                            </div>    
-                        </CardGeral>
-                        <CardGeral>                            
-                            <div>
-                                <img src={Espelho}  alt="Espelho" /><hr/>
+                                />O
                                 <input type="text" maxLength="1" size="1" placeholder="_" value={letter6} 
                                     onChange={validaLetter6} style={{outlineColor:color6,}}
-                                />SP
+                                />Ô
+                            </div>    
+                        </CardGeral>
+                        <CardGeral>                            
+                            <div>
+                                <img src={Ima}  alt="Ima" /><hr/>
                                 <input type="text" maxLength="1" size="1" placeholder="_" value={letter7} 
                                     onChange={validaLetter7} style={{outlineColor:color7,}}
-                                />LHO
+                                />MÃ
                             </div>    
                         </CardGeral>
                         <CardGeral>                            
                             <div>
-                                <img src={Estrela}  alt="Estrela" /><hr/>
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter8} 
+                                <img src={Lapis}  alt="Lapis" /><hr/>
+                                LAP<input type="text" maxLength="1" size="1" placeholder="_" value={letter8} 
                                     onChange={validaLetter8} style={{outlineColor:color8,}}
-                                />STR
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter9} 
-                                    onChange={validaLetter9} style={{outlineColor:color9,}}
-                                />LA
-                            </div>    
-                        </CardGeral>
-                        <CardGeral>                            
-                            <div>
-                                <img src={Esquilo}  alt="Esquilo" /><hr/>
-                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter10} 
-                                    onChange={validaLetter10} style={{outlineColor:color10,}}
-                                />SQUILO
+                                />S
                             </div>    
                         </CardGeral>
                         <CardGeral>                            
                             <div>
                                 <img src={Bigode}  alt="Bigode" /><hr/>
-                                BIGOD<input type="text" maxLength="1" size="1" placeholder="_" value={letter11} 
+                                B<input type="text" maxLength="1" size="1" placeholder="_" value={letter9} 
+                                    onChange={validaLetter9} style={{outlineColor:color9,}}
+                                />GODE
+                            </div>    
+                        </CardGeral>
+                        <CardGeral>                            
+                            <div>
+                                <img src={Pirulito}  alt="Pirulito" /><hr/>
+                                P<input type="text" maxLength="1" size="1" placeholder="_" value={letter10} 
+                                    onChange={validaLetter10} style={{outlineColor:color10,}}
+                                />RUL
+                                <input type="text" maxLength="1" size="1" placeholder="_" value={letter11} 
                                     onChange={validaLetter11} style={{outlineColor:color11,}}
-                                />
+                                />TO
                             </div>    
                         </CardGeral>
                         <CardGeral>                            
                             <div>
-                                <img src={Bone}  alt="Bone" /><hr/>
-                                BON<input type="text" maxLength="1" size="1" placeholder="_" value={letter12} 
+                                <img src={Ninho}  alt="Ninho" /><hr/>
+                                N<input type="text" maxLength="1" size="1" placeholder="_" value={letter12} 
                                     onChange={validaLetter12} style={{outlineColor:color12,}}
-                                />
+                                />NHO                                
                             </div>    
                         </CardGeral>
                         <CardGeral>                            
                             <div>
-                                <img src={Meia}  alt="Meia" /><hr/>
-                                M<input type="text" maxLength="1" size="1" placeholder="_" value={letter13} 
+                                <img src={Navio}  alt="Navio" /><hr/>
+                                NAV<input type="text" maxLength="1" size="1" placeholder="_" value={letter13} 
                                     onChange={validaLetter13} style={{outlineColor:color13,}}
-                                />IA
+                                />O                                                                
                             </div>    
                         </CardGeral>
                         <CardGeral>                            
                             <div>
-                                <img src={Caneca}  alt="Caneca" /><hr/>
-                                CAN<input type="text" maxLength="1" size="1" placeholder="_" value={letter14} 
+                                <img src={Pipa}  alt="Pipa" /><hr/>
+                                P<input type="text" maxLength="1" size="1" placeholder="_" value={letter14} 
                                     onChange={validaLetter14} style={{outlineColor:color14,}}
-                                />CA
+                                />PA                                                               
                             </div>    
                         </CardGeral>
                         <CardGeral>                            
                             <div>
-                                <img src={Caneta}  alt="Caneta" /><hr/>
-                                CAN<input type="text" maxLength="1" size="1" placeholder="_" value={letter15} 
+                                <img src={Piano}  alt="Piano" /><hr/>
+                                P<input type="text" maxLength="1" size="1" placeholder="_" value={letter15} 
                                     onChange={validaLetter15} style={{outlineColor:color15,}}
-                                />TA
+                                />ANO                                                               
                             </div>    
                         </CardGeral>
-                        <CardGeral>                            
-                            <div>
-                                <img src={Coelho}  alt="Coelho" /><hr/>
-                                CO<input type="text" maxLength="1" size="1" placeholder="_" value={letter16} 
-                                    onChange={validaLetter16} style={{outlineColor:color16,}}
-                                />LHO
-                            </div>    
-                        </CardGeral>
-                        
                     </Wrapper>
-                <Link to="/letra/i/1"><Button onClick={contAcertos}>Continuar</Button></Link>
+                <Link to="clickImageO"><Button onClick={contAcertos}>Continuar</Button></Link>
             </Container>
         </Layout>
     );
 }
 
-export default EnterLetterE
+export default TypeLetterI

@@ -3,10 +3,11 @@ import styled from "styled-components";
 import {Link} from 'react-router-dom';
 import Layout from '../../components/Layout/Layout';
 import Container from '../../components/Container/Container';
-import Audio from '../../components/Audio/Audio';
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
-//import AudioAve from '../../../public/audio/Audio_A/tela2-nuvens.mp3';
+
+import ReactAudioPlayer from 'react-audio-player';
+import Audio3 from '../../Audio_A/tela5-.mp3';
 
 import A from '../../../src/Assets/letters/A.JPG';
 import ami from '../../../src/Assets/letters/ami.JPG';
@@ -46,7 +47,7 @@ const Img = styled.img`
     object-fit: contain;
 `;
 
-const AudioInstrucao = styled(Audio)`
+const AudioInstrucao = styled(ReactAudioPlayer)`
     margin: 20px;
 `;
 
@@ -164,19 +165,17 @@ function ClickLetterA(){
     }
 
     function contacertos(){
-        //console.log(acertos);
-        alert('Você acertou ' + acertos);
+        console.log('Você acertou ' + acertos);
     }
 
     function contaerros(){
-        //console.log(acertos);
         alert('Você errou ' + erros);
     }
 
     return(
         <Layout>
             <Container>
-                <AudioInstrucao />
+                <AudioInstrucao src={Audio3} controls />
 
                 <Representation>
                     <ImgA src={Aa} alt="A" />
@@ -245,7 +244,7 @@ function ClickLetterA(){
                         </CardClick>
                     </Wrapper>
             </Container>
-            <Link to="/enterLetterA"><Button onClick={contacertos}>Continuar</Button></Link>
+            <Link to="/typeLetterA"><Button onClick={contacertos}>Continuar</Button></Link>
         </Layout>
     );
 }

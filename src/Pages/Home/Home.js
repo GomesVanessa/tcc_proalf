@@ -9,7 +9,6 @@ import Vinicius from '../../Assets/icons/vinicius.jpeg';
 import gabriela from '../../Assets/icons/gabriela.PNG';
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
-import HomeVogais from '../HomeVogais/HomeVogais';
 import { Link } from 'react-router-dom';
 
 
@@ -34,8 +33,8 @@ const Wrapper = styled.div`
         height: 550px;
     }
     h2{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.4em;
+        font-family: Gabriola;
+        font-size: 2em;
         text-align: center;
         margin-top: 25px;
     }
@@ -69,7 +68,7 @@ const Wrapper = styled.div`
 
 const  Sectionparceria = styled.div`
     background-color:#F2F3F4 ;
-    height: 240px;
+    height: 270px;
 `; 
 
 const AboutGrid = styled.div`
@@ -141,7 +140,7 @@ const Home = () => {
                                 <p>
                                     Alunos do Curso de Desenvolvimento de Sistemas da Etec de Embu das Artes. Este site
                                     foi desenvolvimento durante o nosso Trabalho de Conclusão de Curso(TCC). 
-                                    Somos gratos pela Doutora Gabriela e pela Editora BookToy que permitiram a utilização 
+                                    Somos gratos pela Doutora Gabriela e pela <Link to="https://www.booktoy.com.br/">Editora BookToy</Link> que permitiram a utilização 
                                     do livro Proalf como base para o desenvolvimento desse site.
                                 </p>
                             </Card>

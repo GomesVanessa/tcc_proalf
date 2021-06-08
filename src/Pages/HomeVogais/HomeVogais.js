@@ -64,36 +64,36 @@ const HomeVogais = () => {
                 <Wrapper>
                     <Item >
                         <Audio controls={false} icon={true} /> 
-                        <Link to="letra/a/1">              
+                        <Link to="ClickImageA">              
                             <VogalImage src={hvA}  alt="Vogal A" />
                         </Link> 
                     </Item>
                     <Item >
                         <Audio controls={false} icon={true} /> 
-                        <Link to="letra/e/1">              
+                        <Link to="ClickImageE">              
                             <VogalImage src={hvE}  alt="Vogal E" />
                         </Link>                   
                     </Item>
                     <Item >
                         <Audio controls={false} icon={true} /> 
-                        <Link to="letra/i/1">              
+                        <Link to="ClickImageI">              
                             <VogalImage src={hvI}  alt="Vogal I" />
                         </Link>                 
                     </Item>
                     <Item >
                         <Audio controls={false} icon={true} /> 
-                        <Link to="letra/o/1">              
+                        <Link to="ClickImageO">              
                             <VogalImage src={hvO}  alt="Vogal O" />
                         </Link>               
                     </Item>
                     <Item >
                         <Audio controls={false} icon={true} />
-                        <Link to="letra/u/1">              
+                        <Link to="ClickImageU">              
                             <VogalImage src={hvU}  alt="Vogal U" />
                         </Link>                  
                     </Item>                                
                 </Wrapper>
-                <Link to="/letra/a/1"><Button>Continuar</Button></Link>
+                <Link to="ClickImageA"><Button>Continuar</Button></Link>
         </Container>
     </Layout>
   )

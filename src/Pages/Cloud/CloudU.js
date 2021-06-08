@@ -80,7 +80,7 @@ function CloudU(){
         setErros(erros+1);
     }
     function contacertos(){
-        alert('Você acertou ' + acertos);
+        console.log('Você acertou ' + acertos);
 
     }
     function contaerros(){

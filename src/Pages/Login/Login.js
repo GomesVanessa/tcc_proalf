@@ -1,13 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import login from "../../Assets/icons/login4.png";
-
-import Background from '../../Assets/icons/alfabeto.jpg';
+import {Link} from 'react-router-dom'; 
 
 const Wrapper = styled.div`
-  //background: #DCDCDC; 
-  //background: rgb(51,170,204);
-  // background: linear-gradient(90deg,#33aacc 0,#2eb3d9);
   background: linear-gradient(180deg,#DCDCDC 0,#33aacc);
   min-height:100%;
   h1{
@@ -145,30 +141,30 @@ const Login = () => {
             <h2 className="title">Acesso</h2>
         </div>       
 
-        <div class="card-group"> 
+        <div className="card-group"> 
           <input type="email" name="email" placeholder="Digite seu e-mail." required/>
         </div>
 
-        <div class="card-group"> 
+        <div className="card-group"> 
           <input type="password" name="senha" placeholder="Digite sua senha." required/>
         </div>
 
-        <div class="card-group"> 
+        <div className="card-group"> 
           <button type="submit">ENTRAR</button>
         </div>
 
         {/* <hr width="40%" align="left" /> <center><h2>ou</h2></center> <hr width="40%" align="right" />
         
-        <div class="card-group-facebook"> 
+        <div className="card-group-facebook"> 
           <button className="facebook" type="submit">Continue com o Facebook</button>
         </div>
 
-        <div class="card-group-gmail"> 
+        <div className="card-group-gmail"> 
           <button className="gmail" type="submit">Continue com o Gmail</button>
         </div> */}
 
-        <h4>Esqueceu sua senha? Clique aqui.</h4>
-        <h4>Não possui uma conta? Registre-se.</h4>
+        <h4>Esqueceu sua senha?<Link>Clique aqui.</Link></h4>
+        <h4>Não possui uma conta?<Link to="/newUser">Registre-se.</Link></h4>
       </div>
     </form>
   </Wrapper>

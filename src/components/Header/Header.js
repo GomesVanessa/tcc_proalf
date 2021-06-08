@@ -10,6 +10,7 @@ const Wrapper = styled.header`
     grid-area: header;
     background: rgb(51,170,204);
     font-size: 1.3em;
+      
 
     ${Container} {
         display: flex;
@@ -20,8 +21,11 @@ const Wrapper = styled.header`
     h1{
         margin:0; 
         color: #FCFCFC;
-        font-size: 1.9em;
+        font-size: 2.6em;
         font-style: italic;
+        font-family: Gabriola;
+        text-shadow: black 0.1em 0.1em 0.2em;
+  
     }
     a{
         text-decoration: none; 

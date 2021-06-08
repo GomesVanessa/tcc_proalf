@@ -162,7 +162,7 @@ function ClickLetterI(){
     }
 
     function contacertos(){
-        alert('Você acertou ' + acertos);
+        console.log('Você acertou ' + acertos);
     }
 
     function contaerros(){
@@ -241,7 +241,7 @@ function ClickLetterI(){
                         </CardClick>
                     </Wrapper>
             </Container>
-            <Link to="/enterLetterI"><Button onClick={contacertos}>Continuar</Button></Link>
+            <Link to="/typeLetterI"><Button onClick={contacertos}>Continuar</Button></Link>
         </Layout>
     );
 }

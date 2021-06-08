@@ -167,12 +167,10 @@ function ClickLetterE(){
     }
 
     function contacertos(){
-        //console.log(acertos);
-        alert('Você acertou ' + acertos);
+        console.log('Você acertou ' + acertos);
     }
 
     function contaerros(){
-        //console.log(acertos);
         alert('Você errou ' + erros);
     }
 
@@ -248,7 +246,7 @@ function ClickLetterE(){
                         </CardClick>
                     </Wrapper>
             </Container>
-            <Link to="/enterLetterE"><Button onClick={contacertos}>Continuar</Button></Link>
+            <Link to="/typeLetterE"><Button onClick={contacertos}>Continuar</Button></Link>
         </Layout>
     );
 }
