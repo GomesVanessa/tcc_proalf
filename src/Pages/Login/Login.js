@@ -8,16 +8,21 @@ const Wrapper = styled.div`
   min-height:100%;
   h1{
     color:#46494a;
-    font-size: 1.8em;
-    font-style: italic;
+    font-size: 2em;
+    font-family: Gabriola;
   }
   h2{
     font-size: 1.6em;
-
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .link{
+    text-decoration: none;
+    color: black;
   }
   .form{
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width:500px; 
+    font-size: 1em;
     margin: auto; 
     padding-top: 200px;
     text-align: center;
@@ -50,10 +55,12 @@ const Wrapper = styled.div`
     background-color: #65c728;
     width: 100%;
     border-radius: 30px;
-    padding:15px; 
+    padding:13px; 
     color: white;
     border:0px;
     outline:0px;
+    font-weight:bolder;
+    
   }
   .card-group-btn:hover{
     background-image:linear-gradient(to right, green, white);
@@ -93,49 +100,13 @@ const Wrapper = styled.div`
   }
 `;
 
-// function Login(){ 
-//   const [user, setUser] = useState('')
-//   const [password, setPassword] = useState('')
-
-//   let login; 
-  
-//   const history = useHistory(); 
-
-//   function handleSubmit(event){ 
-//     event.preventDefault(); 
-
-//     axios 
-//       .post('http://localhost/proalf')
-//       .then(response=>{
-//         const results = response.data.dados; 
-
-//         if(user === '' || password === ''){ 
-//           alert('Preencha todos os campos.'); 
-//         }else{
-//           login = results.some(({usuario, senha}) => {
-//             return usuario === user && senha === password; 
-//           }); 
-//         }
-
-//         if(login){
-//           history.push('/Login'); 
-//           setTimeout(()=>{
-//             history.push('/home'); 
-//           }, 4000); 
-//             alert('Dados Incorretos'); 
-//         }
-//       }).catch(err=> {
-//         alert('Servidor Indisponível')
-//   })
-// }
-
 const Login = () => {
   return (
   <Wrapper>
     <form className="form" action="#">
       <div className="card">
         <div className="card-top"> 
-        <h1>Proalf</h1>
+        <Link to='/home'><h1>Proalf</h1></Link>
         
         <img className="imglogin" src={login} alt="login" /> 
             <h2 className="title">Acesso</h2>
@@ -163,8 +134,8 @@ const Login = () => {
           <button className="gmail" type="submit">Continue com o Gmail</button>
         </div> */}
 
-        <h4>Esqueceu sua senha?<Link>Clique aqui.</Link></h4>
-        <h4>Não possui uma conta?<Link to="/newUser">Registre-se.</Link></h4>
+        <h4>Esqueceu sua senha?<Link className='link'>  Clique aqui.</Link></h4>
+        <h4>Não possui uma conta?<Link className='link' to="/newUser">  Registre-se.</Link></h4>
       </div>
     </form>
   </Wrapper>

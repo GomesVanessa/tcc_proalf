@@ -417,7 +417,7 @@ function TypeLetterU () {
                 <Link to="/testVowels"><Button>Continuar</Button></Link>
             </Container>
         </Layout>
-    );
+    ); 
 }
 
 export default TypeLetterU

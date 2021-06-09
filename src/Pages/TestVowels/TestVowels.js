@@ -23,7 +23,7 @@ import Pirulito from '../../Assets/i/pirulito.png';
 import Caneta from '../../Assets/e/caneta.png';
 
 const Wrapper = styled.div`
-   
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 19px;
@@ -47,10 +47,9 @@ const Wrapper = styled.div`
   
     hr{
         width: 100%;
-        //width: 300px;
         border: 0; 
         height: 1.5px; 
-        background-image: linear-gradient(to right, #f0f0f0, #F2F3F4, #F2F3F4, #f0f0f0);
+        background-image: linear-gradient(to right, #f0f0f0, #A7BBC7, #A7BBC7, #f0f0f0);
     }
 `; 
 
@@ -60,8 +59,9 @@ const AudioInstrucao = styled(Audio)`
 
 const CardGeral = styled(Card)`
     width: 200px;
-    height:140px;
-    
+    height:140px; 
+    box-shadow: 1px 1px 1px #A7BBC7; 
+    border-color: #A7BBC7 ; 
 `;
 
 function TestVowels () {
@@ -853,7 +853,8 @@ function TestVowels () {
                             </div>
                         </CardGeral>                                   
                     </Wrapper>
-                <Link to=""><Button onClick={contAcertos}>Continuar</Button></Link>
+                <Link to=""><Button className='button' onClick={contAcertos}>Continuar</Button></Link>
+                <Link to="/testVowels"><Button>Relatório</Button></Link>
             </Container>
         </Layout>
     );
