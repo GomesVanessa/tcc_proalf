@@ -7,17 +7,17 @@ const Wrapper = styled.div`
   background: linear-gradient(180deg,#DCDCDC 0,#33aacc);
   min-height:100%;
   h1{
-    color:#46494a;
-    font-size: 2em;
-    font-family: Gabriola;
+    margin:0; 
+        color: white;
+        font-size: 3em;
+        font-style: italic;
+        font-family: Gabriola;
+        text-shadow: black 0.1em 0.1em 0.1em;
+  
   }
   h2{
     font-size: 1.6em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  .link{
-    text-decoration: none;
-    color: black;
   }
   .form{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -28,7 +28,7 @@ const Wrapper = styled.div`
     text-align: center;
   }
   .card{
-      background-color: white; 
+      background-color: #E5E7E9; 
       //box-shadow: 1px 1px 5px #ccc; 
       box-shadow: 10px 5px 5px #46494a;
       padding: 30px; 
@@ -49,6 +49,7 @@ const Wrapper = styled.div`
     text-align: center; 
     font-size: 1.3em;
     border-radius: 30px;
+    border:0px;
   }
 
   .card-group > button {
@@ -60,10 +61,9 @@ const Wrapper = styled.div`
     border:0px;
     outline:0px;
     font-weight:bolder;
-    
-  }
-  .card-group-btn:hover{
+    :hover{
     background-image:linear-gradient(to right, green, white);
+    }    
   }
   .facebook{
     width: 100%;
@@ -99,14 +99,17 @@ const Wrapper = styled.div`
     margin-top: 1.3em;
   }
 `;
+const Linkk = styled(Link)`
+  text-decoration: none;
+`;
 
 const Login = () => {
   return (
   <Wrapper>
-    <form className="form" action="#">
+    <form className="form" action="" >
       <div className="card">
         <div className="card-top"> 
-        <Link to='/home'><h1>Proalf</h1></Link>
+        <Linkk to='/home'><h1>Proalf</h1></Linkk>
         
         <img className="imglogin" src={login} alt="login" /> 
             <h2 className="title">Acesso</h2>
@@ -134,8 +137,8 @@ const Login = () => {
           <button className="gmail" type="submit">Continue com o Gmail</button>
         </div> */}
 
-        <h4>Esqueceu sua senha?<Link className='link'>  Clique aqui.</Link></h4>
-        <h4>Não possui uma conta?<Link className='link' to="/newUser">  Registre-se.</Link></h4>
+        <h4>Esqueceu sua senha?<Linkk className='Linkk' to="/forgotPassword">  Clique aqui.</Linkk></h4>
+        <h4>Não possui uma conta?<Linkk className='Linkk' to="/newUser">  Registre-se.</Linkk></h4>
       </div>
     </form>
   </Wrapper>

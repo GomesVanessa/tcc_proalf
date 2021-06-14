@@ -63,7 +63,7 @@ const Wrapper = styled.div`
         list-style: none; 
         margin: 45px;
         display: inline;
-    }
+    }    
 `;
 
 const  Sectionparceria = styled.div`

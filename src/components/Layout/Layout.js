@@ -19,6 +19,8 @@ const Wrapper = styled.div`
             "footer footer footer footer footer footer";
 `;
 
+
+
 export const Layout = (props) => {
     const {children} = props;
     return (

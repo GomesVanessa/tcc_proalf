@@ -37,7 +37,7 @@ const Nav = ({className, title, sobre, vogais, consoantes}) => {
          }, 
          {
              text: 'Consoantes', 
-             path: '/consoantes'
+             path: '/consonants'
          },
      ]
 

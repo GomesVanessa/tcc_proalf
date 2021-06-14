@@ -5,6 +5,7 @@ import Icon from '../Icon/Icon';
 import facebook from '../../Assets/icons/facebook.png';
 import Login from '../../Assets/icons/login.png';
 import Container from '../Container/Container';
+import { Link } from 'react-router-dom';
 
 const Wrapper = styled.header`
     grid-area: header;
@@ -19,9 +20,9 @@ const Wrapper = styled.header`
     }
         
     h1{
-        margin:0; 
+        
         color: #FCFCFC;
-        font-size: 2.6em;
+        font-size: 3em;
         font-style: italic;
         font-family: Gabriola;
         text-shadow: black 0.1em 0.1em 0.2em;
@@ -30,6 +31,7 @@ const Wrapper = styled.header`
     a{
         text-decoration: none; 
     }
+    
 `;
 
 const Navigation = styled(Nav)`

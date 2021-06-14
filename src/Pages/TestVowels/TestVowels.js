@@ -853,7 +853,7 @@ function TestVowels () {
                             </div>
                         </CardGeral>                                   
                     </Wrapper>
-                <Link to=""><Button className='button' onClick={contAcertos}>Continuar</Button></Link>
+                <Link to="/consonants"><Button className='button' onClick={contAcertos}>Continuar</Button></Link>
                 <Link to="/testVowels"><Button>Relatório</Button></Link>
             </Container>
         </Layout>

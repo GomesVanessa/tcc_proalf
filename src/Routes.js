@@ -3,6 +3,7 @@ import{Route, Switch} from 'react-router-dom';
 import Home from'./Pages/Home/Home';
 import Login from'./Pages/Login/Login';
 import NewUser from './Pages/Login/NewUser';
+import ForgotPassword from './Pages/Login/ForgotPassword';
 import HomeVogais from './Pages/HomeVogais/HomeVogais';
 import ClickImageA from './Pages/ClickImage/ClickImageA';
 import ClickImageE from './Pages/ClickImage/ClickImageE';
@@ -26,6 +27,12 @@ import TypeLetterO from './Pages/TypeLetter/TypeLetterO';
 import TypeLetterU from './Pages/TypeLetter/TypeLetterU';
 import TestVowels from './Pages/TestVowels/TestVowels';
 
+import HomeConsonants from './Pages/Consonant/HomeConsonant';
+import fMenu from './Pages/Consonant/fMenu';
+import ClickImageF from './Pages/Consonant/ClickImage/ClickImageF';
+import ReadF from './Pages/Consonant/Read/ReadF';
+import TypeConsonantsF from './Pages/Consonant/TypeConsonants/TypeConsonantsF';
+import ClickWordsF from './Pages/Consonant/ClickWords/ClickWordsF';
 //import test from './Pages/test';
 
 function Routes(){
@@ -34,6 +41,7 @@ function Routes(){
             <Route path='/login' component={Login}/>
             <Route path='/forgotPassword' component={Login}/>
             <Route path='/newUser' component={NewUser}/>
+            <Route path='/forgotPassword' component={ForgotPassword}/>
             <Route path='/vogais' component={HomeVogais} />
 
             {/* <Route path='/letra/:letter/:id' component={Letter} />      */}
@@ -62,7 +70,14 @@ function Routes(){
             <Route path='/typeLetterU' component={TypeLetterU} />
 
             <Route path='/testVowels' component={TestVowels} />
+            <Route path='/consonants' component={HomeConsonants} />
+            <Route path='/fMenu' component={fMenu} />
+            <Route path='/clickImageF' component={ClickImageF} />
+            <Route path='/readF' component={ReadF} />
+            <Route path='/typeConsonantsF' component={TypeConsonantsF} />
+            <Route path='/clickWordsF' component={ClickWordsF} />
 
+            
             <Route path='/' component={Home} />
         </Switch>        
     ); 
