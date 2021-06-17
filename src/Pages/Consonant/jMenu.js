@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import Layout from '../../components/Layout/Layout';
 import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
-import f_Menu from '../../Assets/consonants/F/f_Menu.jpg';
+import j_Menu from '../../Assets/consonants/J/j_Menu.JPG';
 
 import ReactAudioPlayer from 'react-audio-player';
  
@@ -19,17 +19,17 @@ const AudioInstrucao = styled(ReactAudioPlayer)`
 `;
 
 
-function fMenu(){  
+function jMenu(){  
    
     return(
         <Layout>
             <Container>
                 <AudioInstrucao controls />
-                    <Image src={f_Menu}/>
+                    <Image src={j_Menu}/>
             </Container>
-            <Link to="/clickImageF"><Button >Continuar</Button></Link>
+            <Link to="/clickImageJ"><Button >Continuar</Button></Link>
         </Layout>    
     );
 }
 
-export default fMenu;
+export default jMenu;

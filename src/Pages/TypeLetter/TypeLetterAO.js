@@ -1,35 +1,33 @@
 import React from 'react';
 import {useState} from 'react'; 
 import styled from "styled-components";
-import Layout from '../../../components/Layout/Layout';
-import Card from '../../../components/Card/Card';
-import Container from '../../../components/Container/Container';
-import Button from '../../../components/Button/Button';
+import Layout from '../../components/Layout/Layout';
+import Card from '../../components/Card/Card';
+import Container from '../../components/Container/Container';
+import Button from '../../components/Button/Button';
+import { Link } from 'react-router-dom';
 
 import ReactAudioPlayer from 'react-audio-player';
-import representacaoF from '../../../Assets/consonants/F/representacaoF.jpg';
 
-import Fogao from '../../../Assets/consonants/fogao.png';
-import Faca from '../../../Assets/a/faca.png';
-import Ferro from '../../../Assets/consonants/ferro.png';
-import Fogo from '../../../Assets/consonants/fogueira.png';
-import Foguete from '../../../Assets/a/foguete.png';
-import Folha from '../../../Assets/consonants/folha.png';
-import Funil from '../../../Assets/consonants/funil.png';
-import Formiga from '../../../Assets/consonants/formiga.png';
-import Foca from '../../../Assets/consonants/foca.png';
-import Farol from '../../../Assets/consonants/farol.png';
-import Feijao from '../../../Assets/consonants/feijao.png';
-import Sofa from '../../../Assets/consonants/sofa.png';
-
-import { Link } from 'react-router-dom';
+import Mamao from '../../Assets/ao/mamao.png';
+import Violao from '../../Assets/u/violao.png';
+import Limao from '../../Assets/ao/limao.png';
+import Tubarao from '../../Assets/u/tubarao.png';
+import Vulcao from '../../Assets/u/vulcao.png';
+import Coracao from '../../Assets/ao/coracao.png';
+import Piao from '../../Assets/ao/piao.png';
+import Leao from '../../Assets/ao/leao.png';
+import Furacao from '../../Assets/ao/furacao.png';
+import Caminhao from '../../Assets/ao/caminhao.png';
+import Aviao from '../../Assets/a/aviao.png';
+import RepresentationAO from '../../Assets/ao/representationAO.gif';
 
 const Wrapper = styled.div`   
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 6px;
-    grid-row-gap: 0.6em;
-    font-size: 1.3em;
+    grid-column-gap: 5px;
+    grid-row-gap: 0.5em;
+    font-size: 1.2em;
 
     img{ 
         width: 90px;
@@ -38,7 +36,7 @@ const Wrapper = styled.div`
     }
      
     input{
-        width: 27px;
+        width: 31px;
         height: 28px;
         align-items: center;
         border: none;
@@ -62,7 +60,7 @@ const Representation = styled.div`
     text-align: center;
 `;
 const ImgA = styled.img` 
-    height: 50px;
+    height: 60px;
     margin:0px;
 `;
 
@@ -71,7 +69,7 @@ const CardGeral = styled(Card)`
     height:140px;
 `;
 
-function TypeConsonantsF () {
+function TypeLetterAO () {
     const [acertos, setAcertos] = useState(0);
     const [erros, setErros] = useState(0);
     const [letter1, setLetter1] = useState('');
@@ -132,7 +130,7 @@ function TypeConsonantsF () {
         setLetter1(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'FO') {
+        if(pressLetter === 'ÃO') {
             setAnswer1(true);
             setAcertos(acertos+1);
             
@@ -145,7 +143,7 @@ function TypeConsonantsF () {
         setLetter2(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'FA') {
+        if(pressLetter === 'ÃO') {
             setAnswer2(true);
             setAcertos(acertos+1);
        
@@ -158,7 +156,7 @@ function TypeConsonantsF () {
         setLetter3(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'FE') {
+        if(pressLetter === 'ÃO') {
             setAnswer3(true);
             setAcertos(acertos+1);
         } else {
@@ -170,7 +168,7 @@ function TypeConsonantsF () {
         setLetter4(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'FO') {
+        if(pressLetter === 'ÃO') {
             setAnswer4(true);
             setAcertos(acertos+1);
         } else {
@@ -182,7 +180,7 @@ function TypeConsonantsF () {
         setLetter5(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'FO') {
+        if(pressLetter === 'ÃO') {
             setAnswer5(true);
             setAcertos(acertos+1);
         } else {
@@ -194,7 +192,7 @@ function TypeConsonantsF () {
         setLetter6(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'FO') {
+        if(pressLetter === 'ÃO') {
             setAnswer6(true);
             setAcertos(acertos+1);
         } else {
@@ -206,7 +204,7 @@ function TypeConsonantsF () {
         setLetter7(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'FU') {
+        if(pressLetter === 'ÃO') {
             setAnswer7(true);
             setAcertos(acertos+1);
         } else {
@@ -218,7 +216,7 @@ function TypeConsonantsF () {
         setLetter8(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'FO') {
+        if(pressLetter === 'ÃO') {
             setAnswer8(true);
             setAcertos(acertos+1);
         } else {
@@ -230,7 +228,7 @@ function TypeConsonantsF () {
         setLetter9(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'FO') {
+        if(pressLetter === 'ÃO') {
             setAnswer9(true);
             setAcertos(acertos+1);
         } else {
@@ -242,7 +240,7 @@ function TypeConsonantsF () {
         setLetter10(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'FA') {
+        if(pressLetter === 'ÃO') {
             setAnswer10(true);
             setAcertos(acertos+1);
         } else {
@@ -254,7 +252,7 @@ function TypeConsonantsF () {
         setLetter11(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'FE') {
+        if(pressLetter === 'ÃO') {
             setAnswer11(true);
             setAcertos(acertos+1);
         } else {
@@ -266,7 +264,7 @@ function TypeConsonantsF () {
         setLetter12(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'FA') {
+        if(pressLetter === 'ÃO') {
             setAnswer12(true);
             setAcertos(acertos+1);
         } else {
@@ -289,111 +287,111 @@ function TypeConsonantsF () {
             <Container> 
                 <AudioInstrucao controls />
                 <Representation>
-                    <ImgA src={representacaoF} alt="F" />
+                    <ImgA src={RepresentationAO} alt="AO" />
                 </Representation>  
                     <Wrapper>
                         <CardGeral>                            
                             <div>
-                                <img src={Fogao}  alt="Fogao" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter1} 
+                                <img src={Mamao}  alt="Mamao" /><hr/>
+                                MAM<input type="text" maxLength="2" size="1" placeholder="__" value={letter1} 
                                     onChange={validaLetter1} style={{outlineColor:color1,}}
-                                />GÃO
+                                />
                             </div>    
                         </CardGeral>
                         <CardGeral>                           
                             <div>
-                                <img src={Faca}  alt="Faca" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter2}
+                                <img src={Piao}  alt="Piao" /><hr/>
+                                PI<input type="text" maxLength="2" size="1" placeholder="__" value={letter2}
                                     onChange={validaLetter2} style={{outlineColor:color2,}}
-                                />CA
+                                />
                             </div>                                          
                         </CardGeral>
                         <CardGeral>
                             <div>
-                                <img src={Ferro}  alt="Ferro" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter3}
+                                <img src={Coracao}  alt="Coracao" /><hr/>
+                                CORAÇ<input type="text" maxLength="2" size="1" placeholder="__" value={letter3}
                                     onChange={validaLetter3} style={{outlineColor:color3,}}
-                                />RRO
+                                />
                             </div>
                         </CardGeral>  
                         <CardGeral>
                             <div>
-                                <img src={Fogo}  alt="Fogo" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter4}
+                                <img src={Limao}  alt="Limao" /><hr/>
+                                LIM<input type="text" maxLength="2" size="1" placeholder="__" value={letter4}
                                     onChange={validaLetter4} style={{outlineColor:color4,}}
-                                />GO
+                                />
                             </div>
                         </CardGeral>    
                         <CardGeral>
                             <div>
-                                <img src={Foguete}  alt="Foguete" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter5}
+                                <img src={Violao}  alt="Violao" /><hr/>
+                                VIOL<input type="text" maxLength="2" size="1" placeholder="__" value={letter5}
                                     onChange={validaLetter5} style={{outlineColor:color5,}}
-                                />GUETE
+                                />
                             </div>
                         </CardGeral>
                         <CardGeral>
                             <div>
-                                <img src={Folha}  alt="Folha" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter6}
+                                <img src={Vulcao}  alt="Vulcao" /><hr/>
+                                VULC<input type="text" maxLength="2" size="1" placeholder="__" value={letter6}
                                     onChange={validaLetter6} style={{outlineColor:color6,}}
-                                />LHA
+                                />
                             </div>
                         </CardGeral>
                         <CardGeral>
                             <div>
-                                <img src={Funil}  alt="Funil" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter7}
+                                <img src={Tubarao}  alt="Tubarao" /><hr/>
+                                TUBAR<input type="text" maxLength="2" size="1" placeholder="__" value={letter7}
                                     onChange={validaLetter7} style={{outlineColor:color7,}}
-                                />NIL
+                                />
                             </div>
                         </CardGeral>
                         <CardGeral>
                             <div>
-                                <img src={Formiga}  alt="Formiga" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter8}
+                                <img src={Leao}  alt="Leao" /><hr/>
+                                LE<input type="text" maxLength="2" size="1" placeholder="__" value={letter8}
                                     onChange={validaLetter8} style={{outlineColor:color8,}}
-                                />RMIGA
+                                />
                             </div>
                         </CardGeral>
                         <CardGeral>
                             <div>
-                                <img src={Foca}  alt="Foca" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter9}
+                                <img src={Furacao}  alt="Furacao" /><hr/>
+                                FURAC<input type="text" maxLength="2" size="1" placeholder="__" value={letter9}
                                     onChange={validaLetter9} style={{outlineColor:color9,}}
-                                />CA
+                                />
                             </div>
                         </CardGeral>
                         <CardGeral>
                             <div>
-                                <img src={Farol}  alt="Farol" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter10}
+                                <img src={Caminhao}  alt="Caminhao" /><hr/>
+                                CAMINH<input type="text" maxLength="2" size="1" placeholder="__" value={letter10}
                                     onChange={validaLetter10} style={{outlineColor:color10,}}
-                                />ROL
+                                />
                             </div>
                         </CardGeral>
                         <CardGeral>
                             <div>
-                                <img src={Feijao}  alt="Feijao" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter11}
+                                <img src={Aviao}  alt="Aviao" /><hr/>
+                                AVI<input type="text" maxLength="2" size="1" placeholder="__" value={letter11}
                                     onChange={validaLetter11} style={{outlineColor:color11,}}
-                                />IJÃO
+                                />
                             </div>
                         </CardGeral>
                         <CardGeral>
                             <div>
-                                <img src={Sofa}  alt="Sofa" /><hr/>
-                                SO<input type="text" maxLength="2" size="1" placeholder="__" value={letter12}
+                                <img src={Mamao}  alt="Mamao" /><hr/>
+                                MAM<input type="text" maxLength="2" size="1" placeholder="__" value={letter12}
                                     onChange={validaLetter12} style={{outlineColor:color12,}}
                                 />
                             </div>
                         </CardGeral>
                                          
                     </Wrapper>
-                <Link to="clickWordsF"><Button onClick={contAcertos}>Continuar</Button></Link>
+                <Link to="/consonants"><Button onClick={contAcertos}>Continuar</Button></Link>
             </Container>
         </Layout>
     );
 }
 
-export default TypeConsonantsF
+export default TypeLetterAO

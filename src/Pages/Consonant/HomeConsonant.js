@@ -7,6 +7,7 @@ import Audio from '../../components/Audio/Audio';
 import hcf from '../../Assets/homeConsonants/hcf.jpg';
 import hcj from '../../Assets/homeConsonants/hcj.jpg';
 import hcm from '../../Assets/homeConsonants/hcm.jpg';
+import hcn from '../../Assets/homeConsonants/hcn.jpg';
 import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
@@ -55,17 +56,22 @@ const HomeConsonants = () => {
                     </Item>
                     <Item >
                         <Audio controls={false} icon={true} /> 
-                        <Link to="">              
+                        <Link to="/jMenu">              
                             <ConsonantImage src={hcj}  alt="Consoante J" />
                         </Link> 
                     </Item>
                     <Item >
                         <Audio controls={false} icon={true} /> 
-                        <Link to="">              
+                        <Link to="/mMenu">              
                             <ConsonantImage src={hcm}  alt="Consoante M" />
                         </Link> 
                     </Item>
-                                     
+                    <Item >
+                        <Audio controls={false} icon={true} /> 
+                        <Link to="/nMenu">              
+                            <ConsonantImage src={hcn}  alt="Consoante N" />
+                        </Link> 
+                    </Item>                                     
                 </Wrapper>
                 <Link to="clickImageF"><Button>Continuar</Button></Link>
         </Container>

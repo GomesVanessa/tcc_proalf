@@ -91,7 +91,7 @@ const NewUser = () => {
           <input type="date" name="date" required/>
           <input type="email" name="email" placeholder="Digite seu e-mail." required/>
           <input type="password" name="senha" placeholder="Digite sua senha." required/>
-          <input type="confirmPassword" name="senha" placeholder="Confirme a senha." required/>
+          <input type="password" name="senha2" placeholder="Confirme a senha." required/>
           <button type="submit">Cadastrar</button>
       </div>
     </form>

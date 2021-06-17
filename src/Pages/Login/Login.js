@@ -126,17 +126,6 @@ const Login = () => {
         <div className="card-group"> 
           <button type="submit">ENTRAR</button>
         </div>
-
-        {/* <hr width="40%" align="left" /> <center><h2>ou</h2></center> <hr width="40%" align="right" />
-        
-        <div className="card-group-facebook"> 
-          <button className="facebook" type="submit">Continue com o Facebook</button>
-        </div>
-
-        <div className="card-group-gmail"> 
-          <button className="gmail" type="submit">Continue com o Gmail</button>
-        </div> */}
-
         <h4>Esqueceu sua senha?<Linkk className='Linkk' to="/forgotPassword">  Clique aqui.</Linkk></h4>
         <h4>Não possui uma conta?<Linkk className='Linkk' to="/newUser">  Registre-se.</Linkk></h4>
       </div>

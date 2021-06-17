@@ -8,22 +8,23 @@ import Card from '../../../components/Card/Card';
 
 import ReactAudioPlayer from 'react-audio-player';
 
-import Faca from '../../../Assets/consonants/F/faca.JPG';
-import Foca from '../../../Assets/consonants/F/foca.JPG';
+import Jacare from '../../../Assets/consonants/J/jacare.JPG';
 import Feijao from '../../../Assets/consonants/F/feijao.JPG';
-import Fino from '../../../Assets/consonants/F/fino.JPG';
-import Fala from '../../../Assets/consonants/F/fala.JPG';
-import Fulana from '../../../Assets/consonants/F/fulana.JPG';
-import Fazenda from '../../../Assets/consonants/F/fazenda.JPG';
-import Afiada from '../../../Assets/consonants/F/afiada.JPG';
-import Felipe from '../../../Assets/consonants/F/felipe.JPG';
-import Feliz from '../../../Assets/consonants/F/feliz.JPG';
-import Gato from '../../../Assets/consonants/F/gato.JPG';
-import Camiseta from '../../../Assets/consonants/F/camiseta.JPG';
-import Mesa from '../../../Assets/consonants/F/mesa.jpg';
-import Fofo from '../../../Assets/consonants/F/fofo.jpg';
-import Mala from '../../../Assets/consonants/F/mala.jpg';
-import Fuba from '../../../Assets/consonants/F/fuba.jpg';
+import Jiboia from '../../../Assets/consonants/J/jiboia.JPG';
+import Jose from '../../../Assets/consonants/J/jose.JPG';
+import Julia from '../../../Assets/consonants/J/julia.JPG';
+import Caju from '../../../Assets/consonants/J/caju.JPG';
+import Janela from '../../../Assets/consonants/J/janela.JPG';
+import Pedra from '../../../Assets/consonants/J/pedra.JPG';
+import Mapa from '../../../Assets/consonants/J/mapa.JPG';
+import Bolsa from '../../../Assets/consonants/J/bolsa.JPG';
+import Unha from '../../../Assets/consonants/J/unha.jpg';
+import Estojo from '../../../Assets/consonants/J/estojo.JPG';
+import Jogo from '../../../Assets/consonants/J/jogo.JPG';
+import Chinelo from '../../../Assets/consonants/J/chinelo.JPG';
+import Agua from '../../../Assets/consonants/J/agua.JPG';
+import Computador from '../../../Assets/consonants/J/computador.JPG';
+
 
 const Wrapper = styled.div`
     display: grid;
@@ -54,7 +55,7 @@ const AudioInstrucao = styled(ReactAudioPlayer)`
 `;
 
 
-function ClickWordsF(){  
+function ClickWordsJ(){  
     const [acertos, setAcertos] = useState(0);
     const [erros, setErros] = useState(0); 
     const [color1, setColor1] = useState('#D5D8DC');
@@ -102,41 +103,41 @@ function ClickWordsF(){
         setColor7('#0F0');
         setAcertos(acertos+1);
     }
-    function validaAcerto8(){
-        setColor8('#0F0');
-        setAcertos(acertos+1);
+    function validaErro8(){
+        setColor8('#F00');
+        setErros(erros+1);
     }
-    function validaAcerto9(){
-        setColor9('#0F0');
-        setAcertos(acertos+1);
+    function validaErro9(){
+        setColor9('#F00');
+        setErros(erros+1);
     }
-    function validaAcerto10(){
-        setColor10('#0F0');
-        setAcertos(acertos+1);
+    function validaErro10(){
+        setColor10('#F00');
+        setErros(erros+1);
     }
     function validaErro11(){
         setColor11('#F00');
         setErros(erros+1);
     }
-    function validaErro12(){
-        setColor12('#F00');
-        setErros(erros+1);
-    }
-    function validaErro13(){
-        setColor13('#F00');
-        setErros(erros+1);
-    }
-    function validaAcerto14(){
-        setColor14('#0F0');
+    function validaAcerto12(){
+        setColor12('#0F0');
         setAcertos(acertos+1);
     }
+    function validaAcerto13(){
+        setColor13('#0F0');
+        setAcertos(acertos+1);
+    }
+    function validaErro14(){
+        setColor14('#F00');
+        setErros(erros+1);
+    }    
     function validaErro15(){
         setColor15('#F00');
         setErros(erros+1);
     }
-    function validaAcerto16(){
-        setColor16('#0F0');
-        setAcertos(acertos+1);
+    function validaErro16(){
+        setColor16('#F00');
+        setErros(erros+1);
     }
  
     function contacertos(){
@@ -153,58 +154,58 @@ function ClickWordsF(){
                 <AudioInstrucao controls />
                     <Wrapper>
                         <CardClick onClick={validaAcerto1} style={{borderColor: color1,}}>
-                            <Img src={Faca} alt="Faca" />  
+                            <Img src={Jacare} alt="Jacare" />  
                         </CardClick>
                         <CardClick onClick={validaAcerto2} style={{borderColor: color2,}}>
-                            <Img src={Foca} alt="Foca"/>
-                        </CardClick>
-                        <CardClick onClick={validaAcerto3} style={{borderColor: color3,}}>
                             <Img src={Feijao} alt="Feijao"/>
                         </CardClick>
+                        <CardClick onClick={validaAcerto3} style={{borderColor: color3,}}>
+                            <Img src={Jiboia} alt="Jiboia"/>
+                        </CardClick>
                         <CardClick onClick={validaAcerto4} style={{borderColor: color4,}}>
-                            <Img src={Fino} alt="Fino"/>
+                            <Img src={Jose} alt="Jose"/>
                         </CardClick>
                         <CardClick onClick={validaAcerto5} style={{borderColor: color5,}}>
-                            <Img src={Fala} alt="Fala"/>
+                            <Img src={Julia} alt="Julia"/>
                         </CardClick>
                         <CardClick onClick={validaAcerto6} style={{borderColor: color6,}}>
-                            <Img src={Fulana} alt="Fulana"/>
+                            <Img src={Caju} alt="Caju"/>
                         </CardClick>
                         <CardClick onClick={validaAcerto7} style={{borderColor: color7,}}>
-                            <Img src={Fazenda} alt="Fazenda"/>
+                            <Img src={Janela} alt="Janela"/>
                         </CardClick>
-                        <CardClick onClick={validaAcerto8} style={{borderColor: color8,}}>
-                            <Img src={Afiada} alt="Afiada"/>
+                        <CardClick onClick={validaErro8} style={{borderColor: color8,}}>
+                            <Img src={Pedra} alt="Pedra"/>
                         </CardClick>
-                        <CardClick onClick={validaAcerto9} style={{borderColor: color9,}}>
-                            <Img src={Felipe} alt="Felipe"/>
+                        <CardClick onClick={validaErro9} style={{borderColor: color9,}}>
+                            <Img src={Mapa} alt="Mapa"/>
                         </CardClick>
-                        <CardClick onClick={validaAcerto10} style={{borderColor: color10,}}>
-                            <Img src={Feliz} alt="Feliz"/>
+                        <CardClick onClick={validaErro10} style={{borderColor: color10,}}>
+                            <Img src={Bolsa} alt="Bolsa"/>
                         </CardClick>
                         <CardClick onClick={validaErro11} style={{borderColor: color11,}}>
-                            <Img src={Gato} alt="Gato"/>
+                            <Img src={Unha} alt="Unha"/>
                         </CardClick>
-                        <CardClick onClick={validaErro12} style={{borderColor: color12,}}>
-                            <Img src={Camiseta} alt="Camiseta"/>
+                        <CardClick onClick={validaAcerto12} style={{borderColor: color12,}}>
+                            <Img src={Estojo} alt="Estojo"/>
                         </CardClick> 
-                        <CardClick onClick={validaErro13} style={{borderColor: color13,}}>
-                            <Img src={Mesa} alt="Mesa"/>
+                        <CardClick onClick={validaAcerto13} style={{borderColor: color13,}}>
+                            <Img src={Jogo} alt="Jogo"/>
                         </CardClick>
-                        <CardClick onClick={validaAcerto14} style={{borderColor: color14,}}>
-                            <Img src={Fofo} alt="Fofo"/>
+                        <CardClick onClick={validaErro14} style={{borderColor: color14,}}>
+                            <Img src={Chinelo} alt="Chinelo"/>
                         </CardClick>
                         <CardClick onClick={validaErro15} style={{borderColor: color15,}}>
-                            <Img src={Mala} alt="Mala"/>
+                            <Img src={Agua} alt="Agua"/>
                         </CardClick>
-                        <CardClick onClick={validaAcerto16} style={{borderColor: color16,}}>
-                            <Img src={Fuba} alt="Fuba"/>
+                        <CardClick onClick={validaErro16} style={{borderColor: color16,}}>
+                            <Img src={Computador} alt="Computador"/>
                         </CardClick>                       
                     </Wrapper>
             </Container>
-            <Link to="/jMenu"><Button onClick={contacertos}>Continuar</Button></Link>
+            <Link to="readJ"><Button onClick={contacertos}>Continuar</Button></Link>
         </Layout>
     );
 }
 
-export default ClickWordsF;
+export default ClickWordsJ;

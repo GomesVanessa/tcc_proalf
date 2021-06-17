@@ -26,14 +26,24 @@ import TypeLetterI from './Pages/TypeLetter/TypeLetterI';
 import TypeLetterO from './Pages/TypeLetter/TypeLetterO';
 import TypeLetterU from './Pages/TypeLetter/TypeLetterU';
 import TestVowels from './Pages/TestVowels/TestVowels';
+import ClickImageAO from './Pages/ClickImage/ClickImageAO';
+import TypeLetterAO from './Pages/TypeLetter/TypeLetterAO';
 
 import HomeConsonants from './Pages/Consonant/HomeConsonant';
 import fMenu from './Pages/Consonant/fMenu';
+import jMenu from './Pages/Consonant/jMenu';
+import mMenu from './Pages/Consonant/mMenu';
+import nMenu from './Pages/Consonant/nMenu';
 import ClickImageF from './Pages/Consonant/ClickImage/ClickImageF';
 import ReadF from './Pages/Consonant/Read/ReadF';
 import TypeConsonantsF from './Pages/Consonant/TypeConsonants/TypeConsonantsF';
 import ClickWordsF from './Pages/Consonant/ClickWords/ClickWordsF';
-//import test from './Pages/test';
+import ClickWordsJ from './Pages/Consonant/ClickWords/ClickWordsJ';
+import ClickImageJ from './Pages/Consonant/ClickImage/ClickImageJ';
+import ReadJ from './Pages/Consonant/Read/ReadJ';
+import TypeConsonantsJ from './Pages/Consonant/TypeConsonants/TypeConsonantsJ';
+
+
 
 function Routes(){
     return(
@@ -44,12 +54,14 @@ function Routes(){
             <Route path='/forgotPassword' component={ForgotPassword}/>
             <Route path='/vogais' component={HomeVogais} />
 
-            {/* <Route path='/letra/:letter/:id' component={Letter} />      */}
             <Route path='/clickImageA' component={ClickImageA} />
             <Route path='/clickImageE' component={ClickImageE} />
             <Route path='/clickImageI' component={ClickImageI} />
             <Route path='/clickImageO' component={ClickImageO} />
             <Route path='/clickImageU' component={ClickImageU} /> 
+            <Route path='/clickImageAO' component={ClickImageAO} />
+            <Route path='/clickImageF' component={ClickImageF} />
+            <Route path='/clickImageJ' component={ClickImageJ} />
                      
             <Route path='/cloudA' component={CloudA} />
             <Route path='/cloudE' component={CloudE} /> 
@@ -62,22 +74,30 @@ function Routes(){
             <Route path='/clickLetterI' component={ClickLetterI} />
             <Route path='/clickLetterO' component={ClickLetterO} />
             <Route path='/clickLetterU' component={ClickLetterU} />
+            <Route path='/clickWordsF' component={ClickWordsF} />
+            <Route path='/clickWordsJ' component={ClickWordsJ} />
 
             <Route path='/typeLetterA' component={TypeLetterA} />
             <Route path='/typeLetterE' component={TypeLetterE} />
             <Route path='/typeLetterI' component={TypeLetterI} />
             <Route path='/typeLetterO' component={TypeLetterO} />
             <Route path='/typeLetterU' component={TypeLetterU} />
+            <Route path='/typeLetterAO' component={TypeLetterAO} />
+
+            <Route path='/typeConsonantsF' component={TypeConsonantsF} />
+            <Route path='/typeConsonantsJ' component={TypeConsonantsJ} />
 
             <Route path='/testVowels' component={TestVowels} />
+                       
             <Route path='/consonants' component={HomeConsonants} />
             <Route path='/fMenu' component={fMenu} />
-            <Route path='/clickImageF' component={ClickImageF} />
-            <Route path='/readF' component={ReadF} />
-            <Route path='/typeConsonantsF' component={TypeConsonantsF} />
-            <Route path='/clickWordsF' component={ClickWordsF} />
-
+            <Route path='/jMenu' component={jMenu} />
+            <Route path='/mMenu' component={mMenu} />
+            <Route path='/nMenu' component={nMenu} />
             
+            <Route path='/readF' component={ReadF} />
+            <Route path='/readJ' component={ReadJ} />
+
             <Route path='/' component={Home} />
         </Switch>        
     ); 
