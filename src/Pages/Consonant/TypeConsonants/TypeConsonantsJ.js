@@ -8,6 +8,7 @@ import Button from '../../../components/Button/Button';
 import { Link } from 'react-router-dom';
 
 import ReactAudioPlayer from 'react-audio-player';
+import telaReadJ from '../../../Audios/J/telaTypeJ.mp3';
 import representacaoJ from '../../../Assets/consonants/J/Jimg/representacaoJ.jpg';
 
 import Jacare from '../../../Assets/consonants/J/Jimg/jacare.png';
@@ -285,7 +286,7 @@ function TypeConsonantsJ () {
     return (
         <Layout>
             <Container> 
-                <AudioInstrucao controls />
+                <AudioInstrucao src={telaReadJ} controls />
                 <Representation>
                     <ImgA src={representacaoJ} alt="J" />
                 </Representation>  
@@ -293,7 +294,7 @@ function TypeConsonantsJ () {
                         <CardGeral>                            
                             <div>
                                 <img src={Jacare}  alt="Jacare" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter1} 
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter1} 
                                     onChange={validaLetter1} style={{outlineColor:color1,}}
                                 />CARÉ
                             </div>    
@@ -301,7 +302,7 @@ function TypeConsonantsJ () {
                         <CardGeral>                           
                             <div>
                                 <img src={Jipe}  alt="Jipe" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter2}
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter2}
                                     onChange={validaLetter2} style={{outlineColor:color2,}}
                                 />PE
                             </div>                                          
@@ -309,7 +310,7 @@ function TypeConsonantsJ () {
                         <CardGeral>
                             <div>
                                 <img src={Joelho}  alt="Joelho" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter3}
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter3}
                                     onChange={validaLetter3} style={{outlineColor:color3,}}
                                 />ELHO
                             </div>
@@ -317,7 +318,7 @@ function TypeConsonantsJ () {
                         <CardGeral>
                             <div>
                                 <img src={Javali}  alt="Javali" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter4}
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter4}
                                     onChange={validaLetter4} style={{outlineColor:color4,}}
                                 />VALI
                             </div>
@@ -325,7 +326,7 @@ function TypeConsonantsJ () {
                         <CardGeral>
                             <div>
                                 <img src={Janela}  alt="Janela" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter5}
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter5}
                                     onChange={validaLetter5} style={{outlineColor:color5,}}
                                 />NELA
                             </div>
@@ -333,7 +334,7 @@ function TypeConsonantsJ () {
                         <CardGeral>
                             <div>
                                 <img src={Jardim}  alt="Jardim" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter6}
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter6}
                                     onChange={validaLetter6} style={{outlineColor:color6,}}
                                 />RDIM
                             </div>
@@ -341,7 +342,7 @@ function TypeConsonantsJ () {
                         <CardGeral>
                             <div>
                                 <img src={Anjo}  alt="Anjo" /><hr/>
-                                AN<input type="text" maxLength="2" size="1" placeholder="__" value={letter7}
+                                AN<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter7}
                                     onChange={validaLetter7} style={{outlineColor:color7,}}
                                 />
                             </div>
@@ -349,7 +350,7 @@ function TypeConsonantsJ () {
                         <CardGeral>
                             <div>
                                 <img src={Carangueijo}  alt="Carangueijo" /><hr/>
-                                CARANGUEI<input type="text" maxLength="2" size="1" placeholder="__" value={letter8}
+                                CARANGUEI<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter8}
                                     onChange={validaLetter8} style={{outlineColor:color8,}}
                                 />
                             </div>
@@ -358,7 +359,7 @@ function TypeConsonantsJ () {
                             {/* não consegui estilizar só o input do feijão pq tem 3 letras */}
                             <div>
                                 <img className = "bean" src={Feijao}  alt="Feijao" /><hr/>
-                                FEI<input type="text" maxLength="3" size="1" placeholder="___" value={letter9}
+                                FEI<input type="text" maxLength="3" size="1" placeholder="_ _ _" value={letter9}
                                     onChange={validaLetter9} style={{outlineColor:color9,}}
                                 />
                             </div>
@@ -366,7 +367,7 @@ function TypeConsonantsJ () {
                         <CardGeral>
                             <div>
                                 <img src={Laranja}  alt="Laranja" /><hr/>
-                                LARAN<input type="text" maxLength="2" size="1" placeholder="__" value={letter10}
+                                LARAN<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter10}
                                     onChange={validaLetter10} style={{outlineColor:color10,}}
                                 />
                             </div>
@@ -374,7 +375,7 @@ function TypeConsonantsJ () {
                         <CardGeral>
                             <div>
                                 <img src={Joaninha}  alt="Joaninha" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter11}
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter11}
                                     onChange={validaLetter11} style={{outlineColor:color11,}}
                                 />ANINHA
                             </div>
@@ -382,14 +383,14 @@ function TypeConsonantsJ () {
                         <CardGeral>
                             <div>
                                 <img src={Tijolo}  alt="Tijolo" /><hr/>
-                                TI<input type="text" maxLength="2" size="1" placeholder="__" value={letter12}
+                                TI<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter12}
                                     onChange={validaLetter12} style={{outlineColor:color12,}}
                                 />LO
                             </div>
                         </CardGeral>
                                          
                     </Wrapper>
-                <Link to=""><Button onClick={contAcertos}>Continuar</Button></Link>
+                <Link to="/mMenu"><Button onClick={contAcertos}>Continuar</Button></Link>
             </Container>
         </Layout>
     );

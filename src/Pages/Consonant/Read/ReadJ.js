@@ -5,8 +5,8 @@ import Layout from '../../../components/Layout/Layout';
 import Container from '../../../components/Container/Container';
 import Button from '../../../components/Button/Button';
 import Card from '../../../components/Card/Card';
-
 import ReactAudioPlayer from 'react-audio-player';
+import telaReadJ from '../../../Audios/J/telaReadJ.mp3';
 
 const Wrapper = styled.div`
     display: grid;
@@ -35,7 +35,7 @@ function ReadJ(){
     return(
         <Layout>
             <Container>
-                <AudioInstrucao controls />
+                <AudioInstrucao src={telaReadJ} controls />
                     <Wrapper>
                         <div>
                             <CardClick>JAJA</CardClick>

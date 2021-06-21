@@ -7,6 +7,7 @@ import Container from '../../../components/Container/Container';
 import Button from '../../../components/Button/Button';
 
 import ReactAudioPlayer from 'react-audio-player';
+import telaReadF from '../../../Audios/F/telaTypeF.mp3';
 import representacaoF from '../../../Assets/consonants/F/representacaoF.jpg';
 
 import Fogao from '../../../Assets/consonants/fogao.png';
@@ -287,7 +288,7 @@ function TypeConsonantsF () {
     return (
         <Layout>
             <Container> 
-                <AudioInstrucao controls />
+                <AudioInstrucao src={telaReadF} controls />
                 <Representation>
                     <ImgA src={representacaoF} alt="F" />
                 </Representation>  
@@ -295,7 +296,7 @@ function TypeConsonantsF () {
                         <CardGeral>                            
                             <div>
                                 <img src={Fogao}  alt="Fogao" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter1} 
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter1} 
                                     onChange={validaLetter1} style={{outlineColor:color1,}}
                                 />GÃO
                             </div>    
@@ -303,7 +304,7 @@ function TypeConsonantsF () {
                         <CardGeral>                           
                             <div>
                                 <img src={Faca}  alt="Faca" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter2}
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter2}
                                     onChange={validaLetter2} style={{outlineColor:color2,}}
                                 />CA
                             </div>                                          
@@ -311,7 +312,7 @@ function TypeConsonantsF () {
                         <CardGeral>
                             <div>
                                 <img src={Ferro}  alt="Ferro" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter3}
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter3}
                                     onChange={validaLetter3} style={{outlineColor:color3,}}
                                 />RRO
                             </div>
@@ -319,7 +320,7 @@ function TypeConsonantsF () {
                         <CardGeral>
                             <div>
                                 <img src={Fogo}  alt="Fogo" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter4}
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter4}
                                     onChange={validaLetter4} style={{outlineColor:color4,}}
                                 />GO
                             </div>
@@ -327,7 +328,7 @@ function TypeConsonantsF () {
                         <CardGeral>
                             <div>
                                 <img src={Foguete}  alt="Foguete" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter5}
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter5}
                                     onChange={validaLetter5} style={{outlineColor:color5,}}
                                 />GUETE
                             </div>
@@ -335,7 +336,7 @@ function TypeConsonantsF () {
                         <CardGeral>
                             <div>
                                 <img src={Folha}  alt="Folha" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter6}
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter6}
                                     onChange={validaLetter6} style={{outlineColor:color6,}}
                                 />LHA
                             </div>
@@ -343,7 +344,7 @@ function TypeConsonantsF () {
                         <CardGeral>
                             <div>
                                 <img src={Funil}  alt="Funil" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter7}
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter7}
                                     onChange={validaLetter7} style={{outlineColor:color7,}}
                                 />NIL
                             </div>
@@ -351,7 +352,7 @@ function TypeConsonantsF () {
                         <CardGeral>
                             <div>
                                 <img src={Formiga}  alt="Formiga" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter8}
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter8}
                                     onChange={validaLetter8} style={{outlineColor:color8,}}
                                 />RMIGA
                             </div>
@@ -359,7 +360,7 @@ function TypeConsonantsF () {
                         <CardGeral>
                             <div>
                                 <img src={Foca}  alt="Foca" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter9}
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter9}
                                     onChange={validaLetter9} style={{outlineColor:color9,}}
                                 />CA
                             </div>
@@ -367,7 +368,7 @@ function TypeConsonantsF () {
                         <CardGeral>
                             <div>
                                 <img src={Farol}  alt="Farol" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter10}
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter10}
                                     onChange={validaLetter10} style={{outlineColor:color10,}}
                                 />ROL
                             </div>
@@ -375,7 +376,7 @@ function TypeConsonantsF () {
                         <CardGeral>
                             <div>
                                 <img src={Feijao}  alt="Feijao" /><hr/>
-                                <input type="text" maxLength="2" size="1" placeholder="__" value={letter11}
+                                <input type="text" maxLength="2" size="1" placeholder="_ _" value={letter11}
                                     onChange={validaLetter11} style={{outlineColor:color11,}}
                                 />IJÃO
                             </div>
@@ -383,12 +384,11 @@ function TypeConsonantsF () {
                         <CardGeral>
                             <div>
                                 <img src={Sofa}  alt="Sofa" /><hr/>
-                                SO<input type="text" maxLength="2" size="1" placeholder="__" value={letter12}
+                                SO<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter12}
                                     onChange={validaLetter12} style={{outlineColor:color12,}}
                                 />
                             </div>
                         </CardGeral>
-                                         
                     </Wrapper>
                 <Link to="clickWordsF"><Button onClick={contAcertos}>Continuar</Button></Link>
             </Container>

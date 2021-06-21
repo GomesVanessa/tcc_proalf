@@ -5,21 +5,20 @@ import Layout from '../../../components/Layout/Layout';
 import Container from '../../../components/Container/Container';
 import Button from '../../../components/Button/Button';
 import Card from '../../../components/Card/Card';
-
 import ReactAudioPlayer from 'react-audio-player';
-
+import telaClickImageM from '../../../Audios/M/telaClickImageM.mp3';
 import Macaco from '../../../Assets/i/macaco.png';
-import Vaca from '../../../Assets/consonants/J/Jimg/vaca.png';
-import Magico from '../../../Assets/consonants/J/Jimg/magico.png';
-import Sol from '../../../Assets/consonants/J/Jimg/sol.png';
-import Suco from '../../../Assets/consonants/J/Jimg/suco.png';
-import Mala from '../../../Assets/consonants/J/Jimg/mala.png';
-import Melancia from '../../../Assets/consonants/J/Jimg/melancia.png';
-import Morango from '../../../Assets/consonants/J/Jimg/morango.png';
-import Moto from '../../../Assets/consonants/J/Jimg/moto.png';
-import Palhaco from '../../../Assets/consonants/J/Jimg/palhaco.png';
-import Meia from '../../../Assets/consonants/J/Jimg/meia.png';
-import Milho from '../../../Assets/consonants/J/Jimg/milho.png';
+import Vaca from '../../../Assets/consonants/M/Mimg/vaca.png';
+import Magico from '../../../Assets/consonants/M/Mimg/magico.png';
+import Sol from '../../../Assets/consonants/M/Mimg/sol.png';
+import Suco from '../../../Assets/consonants/M/Mimg/suco.png';
+import Mala from '../../../Assets/consonants/M/Mimg/mala.png';
+import Melancia from '../../../Assets/consonants/M/Mimg/melancia.png';
+import Morango from '../../../Assets/consonants/M/Mimg/morango.png';
+import Moto from '../../../Assets/consonants/M/Mimg/moto.png';
+import Palhaco from '../../../Assets/consonants/M/Mimg/palhaco.png';
+import Meia from '../../../Assets/consonants/M/Mimg/meia.png';
+import Milho from '../../../Assets/consonants/M/Mimg/milho.png';
 
 const Wrapper = styled.div`
     display: grid;
@@ -133,7 +132,7 @@ function ClickImageM(){
     return(
         <Layout>
             <Container>
-                <AudioInstrucao controls />                     
+                <AudioInstrucao src={telaClickImageM} controls />                     
                     <Wrapper>
                         <CardClick onClick={validaAcerto1} style={{borderColor: color1,}}>
                             <Img src={Macaco} alt="Macaco" /> 
@@ -147,45 +146,45 @@ function ClickImageM(){
                             <Img src={Magico} alt="Magico"/>
                             <AudioCard controls></AudioCard>
                         </CardClick>
-                        <CardClick onClick={validaAcerto4} style={{borderColor: color4,}}>
-                            <Img src={Janela} alt="Janela"/>
+                        <CardClick onClick={validaErro4} style={{borderColor: color4,}}>
+                            <Img src={Sol} alt="Sol"/>
                             <AudioCard controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro5} style={{borderColor: color5,}}>
-                            <Img src={Gravata} alt="Gravata"/>
+                            <Img src={Suco} alt="Suco"/>
                             <AudioCard controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto6} style={{borderColor: color6,}}>
-                            <Img src={Joelho} alt="Joelho"/>
+                            <Img src={Mala} alt="Mala"/>
                             <AudioCard controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto7} style={{borderColor: color7,}}>
-                            <Img src={Javali} alt="Javali"/>
+                            <Img src={Melancia} alt="Melancia"/>
                             <AudioCard controls></AudioCard>
                         </CardClick>
-                        <CardClick onClick={validaErro8} style={{borderColor: color8,}}>
-                            <Img src={Osso} alt="Osso"/>
+                        <CardClick onClick={validaAcerto8} style={{borderColor: color8,}}>
+                            <Img src={Morango} alt="Morango"/>
                             <AudioCard controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto9} style={{borderColor: color9,}}>
-                            <Img src={Jacare} alt="Jacare"/>
+                            <Img src={Moto} alt="Moto"/>
                             <AudioCard controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro10} style={{borderColor: color10,}}>
-                            <Img src={Nuvem} alt="Nuvem"/>
+                            <Img src={Palhaco} alt="Palhaco"/>
                             <AudioCard controls></AudioCard>
                         </CardClick>
-                        <CardClick onClick={validaErro11} style={{borderColor: color11,}}>
-                            <Img src={Macaco} alt="Macaco"/>
+                        <CardClick onClick={validaAcerto11} style={{borderColor: color11,}}>
+                            <Img src={Meia} alt="Meia"/>
                             <AudioCard controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto12} style={{borderColor: color12,}}>
-                            <Img src={Jipe} alt="Jipe"/>
+                            <Img src={Milho} alt="Milho"/>
                             <AudioCard controls></AudioCard>
                         </CardClick>                        
                     </Wrapper>
             </Container>
-            <Link to="/clickWordsJ"><Button onClick={contacertos}>Continuar</Button></Link>
+            <Link to="/clickWordsM"><Button onClick={contacertos}>Continuar</Button></Link>
         </Layout>
     );
 }

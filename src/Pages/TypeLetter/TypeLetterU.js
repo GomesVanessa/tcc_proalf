@@ -5,10 +5,9 @@ import Layout from '../../components/Layout/Layout';
 import Card from '../../components/Card/Card';
 import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
-
-import Audio from '../../components/Audio/Audio';
-//import AudioEnter from '../../../public/audio/Audio_A/tela5-.mp3'
-
+import { Link } from 'react-router-dom';
+import ReactAudioPlayer from 'react-audio-player';
+import AuClickLetterU from '../../Audios/U/telaTypeLetterU.mp3';
 import Uva from '../../Assets/u/uva.png';
 import Unha from '../../Assets/u/unha.png';
 import Urso from '../../Assets/u/urso.png';
@@ -21,7 +20,6 @@ import Tucano from '../../Assets/u/tucano.png';
 import Nuvem from '../../Assets/u/nuvem.png';
 import Lua from '../../Assets/u/lua.png';
 import Fumaca from '../../Assets/u/fumaca.png';
-import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
     display: grid;
@@ -54,7 +52,7 @@ const Wrapper = styled.div`
     }
 `; 
 
-const AudioInstrucao = styled(Audio)`
+const AudioInstrucao = styled(ReactAudioPlayer)`
     margin: 20px; 
 `;
 
@@ -309,7 +307,7 @@ function TypeLetterU () {
     return (
         <Layout>
             <Container> 
-                <AudioInstrucao />
+                <AudioInstrucao src={AuClickLetterU} controls />
                     <Wrapper>
                         <CardGeral>                            
                             <div>

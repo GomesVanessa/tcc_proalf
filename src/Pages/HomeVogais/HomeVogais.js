@@ -3,38 +3,32 @@ import styled from 'styled-components';
 import Layout from '../../components/Layout/Layout';
 import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
-import Audio from '../../components/Audio/Audio';
-
+import ReactAudioPlayer from 'react-audio-player';
+import homeVogaisA from '../../Audios/A/homeVogaisA.mp3';
+import homeVogaisE from '../../Audios/E/homeVogaisE.mp3';
+import homeVogaisI from '../../Audios/I/homeVogaisI.mp3';
+import homeVogaisO from '../../Audios/O/homeVogaisO.mp3';
+import homeVogaisU from '../../Audios/U/homeVogaisU.mp3';
+import { Link } from 'react-router-dom';
 import hvA from '../../Assets/homeVogais/hvA.jpg';
 import hvE from '../../Assets/homeVogais/hvE.jpg';
 import hvI from '../../Assets/homeVogais/hvI.jpg';
 import hvO from '../../Assets/homeVogais/hvO.jpg';
 import hvU from '../../Assets/homeVogais/hvU.jpg';
-import { Link } from 'react-router-dom';
-
-//import VogalA from '../../../public/audio/Audio_A/abacaxi.mp3';
 
 const Wrapper = styled.div`
     display: flex;
     height: 100%;
     justify-content: center;
-
-    img{
-        //border: .8px solid black;
-    }
-
     a{
         margin: 0px 20px;
-        //flex:1;
-    }
-    
+    }    
     img:hover {
         background:#65c728;
-    }    
-     
+    }        
 `;
 
-const AudioInstrucao = styled(Audio)`
+const AudioInstrucao = styled(ReactAudioPlayer)`
     margin: 40px; 
 `;
 
@@ -43,51 +37,51 @@ const Item = styled.div`
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
-    ${Audio}{
-        margin: 10px;
-    }
 `;
 
 const VogalImage = styled.img`
-    height: 390px;
-    width: 110px;
-    
+    height: 420px;
+    width: 120px;
     object-fit: contain;
-
 `; 
+
+const AudioCard = styled(ReactAudioPlayer)`
+    width: 130px;
+    height: 30px;
+`;
 
 const HomeVogais = () => {
   return(
     <Layout>
         <Container>
-            <AudioInstrucao icon={false}/>
+            <AudioInstrucao controls/>
                 <Wrapper>
                     <Item >
-                        <Audio controls={false} icon={true} /> 
+                        <AudioCard src={homeVogaisA} controls></AudioCard>
                         <Link to="ClickImageA">              
                             <VogalImage src={hvA}  alt="Vogal A" />
                         </Link> 
                     </Item>
                     <Item >
-                        <Audio controls={false} icon={true} /> 
+                        <AudioCard src={homeVogaisE} controls></AudioCard>
                         <Link to="ClickImageE">              
                             <VogalImage src={hvE}  alt="Vogal E" />
                         </Link>                   
                     </Item>
                     <Item >
-                        <Audio controls={false} icon={true} /> 
+                        <AudioCard src={homeVogaisI} controls></AudioCard>
                         <Link to="ClickImageI">              
                             <VogalImage src={hvI}  alt="Vogal I" />
                         </Link>                 
                     </Item>
                     <Item >
-                        <Audio controls={false} icon={true} /> 
+                        <AudioCard src={homeVogaisO} controls></AudioCard>
                         <Link to="ClickImageO">              
                             <VogalImage src={hvO}  alt="Vogal O" />
                         </Link>               
                     </Item>
                     <Item >
-                        <Audio controls={false} icon={true} />
+                        <AudioCard src={homeVogaisU} controls></AudioCard>
                         <Link to="ClickImageU">              
                             <VogalImage src={hvU}  alt="Vogal U" />
                         </Link>                  

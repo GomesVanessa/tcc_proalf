@@ -61,7 +61,7 @@ const CardGeral = styled(Card)`
     width: 200px;
     height:140px; 
     box-shadow: 1px 1px 1px #A7BBC7; 
-    border-color: #A7BBC7 ; 
+    border-color: #A7BBC7; 
 `;
 
 function TestVowels () {

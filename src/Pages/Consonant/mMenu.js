@@ -5,9 +5,9 @@ import Layout from '../../components/Layout/Layout';
 import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
 import m_Menu from '../../Assets/consonants/M/m_Menu.jpg';
-
 import ReactAudioPlayer from 'react-audio-player';
- 
+import telaHomeM from '../../Audios/M/telaHomeM.mp3';
+
 const Image = styled.img`
     width: 80%;
     justify-content: center;
@@ -24,10 +24,10 @@ function mMenu(){
     return(
         <Layout>
             <Container>
-                <AudioInstrucao controls />
+                <AudioInstrucao src={telaHomeM} controls />
                     <Image src={m_Menu}/>
             </Container>
-            <Link to="/clickImageF"><Button >Continuar</Button></Link>
+            <Link to="/clickImageM"><Button >Continuar</Button></Link>
         </Layout>    
     );
 }

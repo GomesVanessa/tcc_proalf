@@ -35,15 +35,23 @@ import jMenu from './Pages/Consonant/jMenu';
 import mMenu from './Pages/Consonant/mMenu';
 import nMenu from './Pages/Consonant/nMenu';
 import ClickImageF from './Pages/Consonant/ClickImage/ClickImageF';
+import ClickImageJ from './Pages/Consonant/ClickImage/ClickImageJ';
+import ClickImageM from './Pages/Consonant/ClickImage/ClickImageM';
 import ReadF from './Pages/Consonant/Read/ReadF';
-import TypeConsonantsF from './Pages/Consonant/TypeConsonants/TypeConsonantsF';
+import ReadJ from './Pages/Consonant/Read/ReadJ';
+import ReadM from './Pages/Consonant/Read/ReadM';
 import ClickWordsF from './Pages/Consonant/ClickWords/ClickWordsF';
 import ClickWordsJ from './Pages/Consonant/ClickWords/ClickWordsJ';
-import ClickImageJ from './Pages/Consonant/ClickImage/ClickImageJ';
-import ReadJ from './Pages/Consonant/Read/ReadJ';
+import ClickWordsM from './Pages/Consonant/ClickWords/ClickWordsM';
+import TypeConsonantsF from './Pages/Consonant/TypeConsonants/TypeConsonantsF';
 import TypeConsonantsJ from './Pages/Consonant/TypeConsonants/TypeConsonantsJ';
-
-
+import TypeConsonantsM from './Pages/Consonant/TypeConsonants/TypeConsonantsM';
+import TestFJM from './Pages/Consonant/TestFJM';
+import TelaE from './Pages/TelaE';
+import TelaI from './Pages/TelaI';
+import TelaO from './Pages/TelaO';
+import TelaU from './Pages/TelaU';
+//import TestReadFJM from './Pages/Consonant/TestReadFJM';
 
 function Routes(){
     return(
@@ -53,6 +61,11 @@ function Routes(){
             <Route path='/newUser' component={NewUser}/>
             <Route path='/forgotPassword' component={ForgotPassword}/>
             <Route path='/vogais' component={HomeVogais} />
+            
+            <Route path='/telaE' component={TelaE} />
+            <Route path='/telaI' component={TelaI} />
+            <Route path='/telaO' component={TelaO} />
+            <Route path='/telaU' component={TelaU} />
 
             <Route path='/clickImageA' component={ClickImageA} />
             <Route path='/clickImageE' component={ClickImageE} />
@@ -62,6 +75,7 @@ function Routes(){
             <Route path='/clickImageAO' component={ClickImageAO} />
             <Route path='/clickImageF' component={ClickImageF} />
             <Route path='/clickImageJ' component={ClickImageJ} />
+            <Route path='/clickImageM' component={ClickImageM} />
                      
             <Route path='/cloudA' component={CloudA} />
             <Route path='/cloudE' component={CloudE} /> 
@@ -76,6 +90,7 @@ function Routes(){
             <Route path='/clickLetterU' component={ClickLetterU} />
             <Route path='/clickWordsF' component={ClickWordsF} />
             <Route path='/clickWordsJ' component={ClickWordsJ} />
+            <Route path='/clickWordsM' component={ClickWordsM} />
 
             <Route path='/typeLetterA' component={TypeLetterA} />
             <Route path='/typeLetterE' component={TypeLetterE} />
@@ -86,8 +101,11 @@ function Routes(){
 
             <Route path='/typeConsonantsF' component={TypeConsonantsF} />
             <Route path='/typeConsonantsJ' component={TypeConsonantsJ} />
+            <Route path='/typeConsonantsM' component={TypeConsonantsM} />
 
             <Route path='/testVowels' component={TestVowels} />
+            <Route path='/testFJM' component={TestFJM} />
+            {/* <Route path='/testReadFJM' component={TestReadFJM} /> */}
                        
             <Route path='/consonants' component={HomeConsonants} />
             <Route path='/fMenu' component={fMenu} />
@@ -97,6 +115,7 @@ function Routes(){
             
             <Route path='/readF' component={ReadF} />
             <Route path='/readJ' component={ReadJ} />
+            <Route path='/readM' component={ReadM} />
 
             <Route path='/' component={Home} />
         </Switch>        

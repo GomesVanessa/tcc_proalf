@@ -5,21 +5,20 @@ import Layout from '../../../components/Layout/Layout';
 import Container from '../../../components/Container/Container';
 import Button from '../../../components/Button/Button';
 import Card from '../../../components/Card/Card';
-
 import ReactAudioPlayer from 'react-audio-player';
-import Audio1 from '../../../Audio_A/ASOM1.mp3';
-import AuAbacaxi from '../../../Audio_A/abacaxi.mp3';
-import AuSino from '../../../Audio_A/sino.mp3';
-import AuAbelha from '../../../Audio_A/abelha.mp3';
-import AuAnel from '../../../Audio_A/anel.mp3';
-import AuOlhos from '../../../Audio_A/olho.mp3';
-import AuApito from '../../../Audio_A/apito.mp3';
-import AuFoguete from '../../../Audio_A/foguete.mp3';
-import AuAranha from '../../../Audio_A/aranha.mp3';
-import AuArvore from '../../../Audio_A/arvore.mp3';
-import AuCoelho from '../../../Audio_A/coelho.mp3';
-import AuAviao from '../../../Audio_A/aviao.mp3';
-import AuGalinha from '../../../Audio_A/galinha.mp3';
+import telaClickImageF from '../../../Audios/F/telaClickImageF.mp3';
+import AuFerro from '../../../Audios/bancoSons/ferro.mp3';
+import AuSino from '../../../Audios/bancoSons/sino.mp3';
+import AuFogo from '../../../Audios/bancoSons/fogo.mp3';
+import AuPassaro from '../../../Audios/bancoSons/passaro.mp3';
+import AuOnca from '../../../Audios/bancoSons/onca.mp3';
+//import AuFaca from '../../../Audios/bancoSons/faca.mp3';
+import AuOlho from '../../../Audios/bancoSons/olho.mp3';
+import AuFoguete from '../../../Audios/bancoSons/foguete.mp3';
+import AuFolha from '../../../Audios/bancoSons/folha.mp3';
+import AuMartelo from '../../../Audios/bancoSons/martelo.mp3';
+import AuFunil from '../../../Audios/bancoSons/funil.mp3';
+import AuGalinha from '../../../Audios/bancoSons/galinha.mp3';
 
 import Ferro from '../../../Assets/consonants/ferro.png';
 import Sino from '../../../Assets/a/sino.png';
@@ -151,11 +150,11 @@ function ClickImageF(){
     return(
         <Layout>
             <Container>
-                <AudioInstrucao src={Audio1} controls />                     
+                <AudioInstrucao src={telaClickImageF} controls />                     
                     <Wrapper>
                         <CardClick  onClick={validaAcerto1} style={{borderColor: color1,}}>
                             <Img src={Ferro} alt="Ferro" /> 
-                            <AudioCard src={AuAbacaxi} controls></AudioCard>
+                            <AudioCard src={AuFerro} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro2} style={{borderColor: color2,}}>
                             <Img src={Sino} alt="Sino"/>
@@ -163,39 +162,39 @@ function ClickImageF(){
                         </CardClick>
                         <CardClick onClick={validaAcerto3} style={{borderColor: color3,}}>
                             <Img src={Fogueira} alt="Fogueira"/>
-                            <AudioCard src={AuAbelha} controls></AudioCard>
+                            <AudioCard src={AuFogo} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro4} style={{borderColor: color4,}}>
                             <Img src={Passaro} alt="Passaro"/>
-                            <AudioCard src={AuAnel} controls></AudioCard>
+                            <AudioCard src={AuPassaro} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro5} style={{borderColor: color5,}}>
                             <Img src={Onca} alt="Onca"/>
-                            <AudioCard src={AuOlhos} controls></AudioCard>
+                            <AudioCard src={AuOnca} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto6} style={{borderColor: color6,}}>
                             <Img src={Faca} alt="Faca"/>
-                            <AudioCard src={AuApito} controls></AudioCard>
+                            {/* <AudioCard src={AuFaca} controls></AudioCard> */}
                         </CardClick>
                         <CardClick onClick={validaErro7} style={{borderColor: color7,}}>
-                            <Img src={Olhos} alt="Olhos"/>
-                            <AudioCard src={AuFoguete} controls></AudioCard>
+                            <Img src={Olhos} alt="Olho"/>
+                            <AudioCard src={AuOlho} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto8} style={{borderColor: color8,}}>
                             <Img src={Foguete} alt="Foguete"/>
-                            <AudioCard src={AuAranha} controls></AudioCard>
+                            <AudioCard src={AuFoguete} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto9} style={{borderColor: color9,}}>
                             <Img src={Folha} alt="Folha"/>
-                            <AudioCard src={AuArvore} controls></AudioCard>
+                            <AudioCard src={AuFolha} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro10} style={{borderColor: color10,}}>
                             <Img src={Martelo} alt="Martelo"/>
-                            <AudioCard src={AuCoelho} controls></AudioCard>
+                            <AudioCard src={AuMartelo} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto11} style={{borderColor: color11,}}>
                             <Img src={Funil} alt="Funil"/>
-                            <AudioCard src={AuAviao} controls></AudioCard>
+                            <AudioCard src={AuFunil} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro12} style={{borderColor: color12,}}>
                             <Img src={Galinha} alt="Galinha"/>

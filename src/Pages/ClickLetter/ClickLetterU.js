@@ -3,12 +3,10 @@ import styled from "styled-components";
 import {Link} from 'react-router-dom';
 import Layout from '../../components/Layout/Layout';
 import Container from '../../components/Container/Container';
-import Audio from '../../components/Audio/Audio';
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
-
-//import AudioAve from '../../../public/audio/Audio_A/tela2-nuvens.mp3';
-
+import ReactAudioPlayer from 'react-audio-player';
+import AuClickLetterU from '../../Audios/U/telaClickLetterU.mp3';
 import omi from '../../../src/Assets/letters/omi.JPG';
 import ami from '../../../src/Assets/letters/ami.JPG';
 import u_cur from '../../../src/Assets/letters/u_cur.JPG';
@@ -34,6 +32,7 @@ const Wrapper = styled.div`
     grid-row-gap: 1.5em;
     font-size: .5em;
     margin:20px;
+    margin-left: 1%;
 `; 
 
 const CardClick = styled(Card)`
@@ -51,7 +50,7 @@ const Img = styled.img`
     object-fit: contain;
 `;
 
-const AudioInstrucao = styled(Audio)`
+const AudioInstrucao = styled(ReactAudioPlayer)`
     margin: 20px;
 `;
 
@@ -179,7 +178,7 @@ function ClickLetterU(){
     return(
         <Layout>
             <Container>
-                <AudioInstrucao />
+                <AudioInstrucao src={AuClickLetterU} controls/>
 
                 <Representation>
                     <ImgA src={Uu} alt="U" />

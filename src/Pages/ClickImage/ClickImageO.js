@@ -6,7 +6,22 @@ import Container from '../../components/Container/Container';
 import Audio from '../../components/Audio/Audio';
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
-//import AudioAve from '../../../public/audio/Audio_A/tela2-nuvens.mp3';
+import ReactAudioPlayer from 'react-audio-player';
+
+import AuClickImageO from '../../Audios/O/telaClickImageO.mp3';
+import AuOvo from '../../Audios/bancoSons/ovo.mp3';
+import AuIma from '../../Audios/bancoSons/ima.mp3';
+import AuOlho from '../../Audios/bancoSons/olho.mp3';
+import AuPassaro from '../../Audios/bancoSons/passaro.mp3';
+import AuBota from '../../Audios/bancoSons/bota.mp3';
+import AuOnibus from '../../Audios/bancoSons/onibus.mp3';
+import AuCinto from '../../Audios/bancoSons/cinto.mp3';
+import AuOnca from '../../Audios/bancoSons/onca.mp3';
+import AuOsso from '../../Audios/bancoSons/osso.mp3';
+import AuPe from '../../Audios/bancoSons/pe.mp3';
+import AuAranha from '../../Audios/bancoSons/aranha.mp3';
+import AuOvelha from '../../Audios/bancoSons/ovelha.mp3';
+
 import Ovo from '../../Assets/o/ovo.png';
 import Ima from '../../Assets/i/ima.png';
 import Olhos from '../../Assets/o/olho.png';
@@ -25,9 +40,9 @@ const Wrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 240px);
     grid-column-gap: 0.1em;
-    grid-row-gap: 3em;
+    grid-row-gap: 7em;
     font-size: .5em;
-    margin:20px;
+    margin-left: 2.3%;
 `; 
 
 const CardClick = styled(Card)`
@@ -49,7 +64,13 @@ const Img = styled.img`
 `;
 
 const AudioInstrucao = styled(Audio)`
-    margin: 40px;
+    margin: 30px;
+`;
+
+const AudioCard = styled(ReactAudioPlayer)`
+    margin: 5px;
+    width: 190px;
+    height: 30px;
 `;
 
 function ClickImageO(){  
@@ -128,43 +149,55 @@ function ClickImageO(){
     return(
         <Layout>
             <Container>
-                <AudioInstrucao />
+                <AudioInstrucao  src={AuClickImageO} />
                     <Wrapper>
                         <CardClick onClick={validaAcerto1} style={{borderColor: color1,}}>
                             <Img src={Ovo} alt="Ovo" />  
+                            <AudioCard src={AuOvo} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro2} style={{borderColor: color2,}}>
                             <Img src={Ima} alt="Ima"/>
+                            <AudioCard src={AuIma} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto3} style={{borderColor: color3,}}>
                             <Img src={Olhos} alt="Olhos"/>
+                            <AudioCard src={AuOlho} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro4} style={{borderColor: color4,}}>
                             <Img src={Passaro} alt="Passaro"/>
+                            <AudioCard src={AuPassaro} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro5} style={{borderColor: color5,}}>
                             <Img src={Bota} alt="Bota"/>
+                            <AudioCard src={AuBota} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto6} style={{borderColor: color6,}}>
                             <Img src={Onibus} alt="Onibus"/>
+                            <AudioCard src={AuOnibus} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro7} style={{borderColor: color7,}}>
                             <Img src={Cinto} alt="Cinto"/>
+                            <AudioCard src={AuCinto} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto8} style={{borderColor: color8,}}>
                             <Img src={Onca} alt="Onca"/>
+                            <AudioCard src={AuOnca} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto9} style={{borderColor: color9,}}>
                             <Img src={Osso} alt="Osso"/>
+                            <AudioCard src={AuOsso} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro10} style={{borderColor: color10,}}>
                             <Img src={Pe} alt="Pe"/>
+                            <AudioCard src={AuPe} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro11} style={{borderColor: color11,}}>
                             <Img src={Aranha} alt="Aranha"/>
+                            <AudioCard src={AuAranha} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto12} style={{borderColor: color12,}}>
                             <Img src={Ovelha} alt="Ovelha"/>
+                            <AudioCard src={AuOvelha} controls></AudioCard>
                         </CardClick>
                         
                     </Wrapper>

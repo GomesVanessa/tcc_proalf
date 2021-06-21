@@ -3,12 +3,11 @@ import styled from "styled-components";
 import {Link} from 'react-router-dom';
 import Layout from '../../components/Layout/Layout';
 import Container from '../../components/Container/Container';
-import Audio from '../../components/Audio/Audio';
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
+import ReactAudioPlayer from 'react-audio-player';
 
-//import AudioAve from '../../../public/audio/Audio_A/tela2-nuvens.mp3';
-
+import AuCloudO from '../../Audios/O/telaCloudO.mp3';
 import Ovo from '../../../src/Assets/cloud/ovo.JPG'; 
 import Ave from '../../../src/Assets/cloud/ave.JPG'; 
 import Igor from '../../../src/Assets/cloud/igor.JPG'; 
@@ -17,12 +16,11 @@ import Onca from '../../../src/Assets/cloud/onca.JPG';
 import Osso from '../../../src/Assets/cloud/osso.JPG'; 
 
 const Wrapper = styled.div`
-    //background-color: lightskyblue;
     display: grid;
     grid-template-columns: repeat(3, 280px);
     grid-column-gap: 4em;
     grid-row-gap: 4em;
-    //font-size: .6em;    
+    margin-left: 2.3%;
 `; 
 
 const CardClick = styled(Card)`
@@ -40,7 +38,7 @@ const Img = styled.img`
     
 `;
 
-const AudioInstrucao = styled(Audio)`
+const AudioInstrucao = styled(ReactAudioPlayer)`
     margin: 60px;
 `;
 
@@ -90,7 +88,7 @@ function CloudO(){
     return(
         <Layout>
             <Container>
-                <AudioInstrucao />
+                <AudioInstrucao src={AuCloudO} controls/>
                     <Wrapper>
                         <CardClick onClick={validaAcerto1} style={{borderColor: color1,}}>
                             <Img src={Ovo} alt="Ovo" />  

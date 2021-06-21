@@ -5,11 +5,9 @@ import Layout from '../../components/Layout/Layout';
 import Card from '../../components/Card/Card';
 import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
-
+import { Link } from 'react-router-dom';
 import ReactAudioPlayer from 'react-audio-player';
-import Audio4 from '../../Audio_A/teladigite.mp3';
-
-
+import AuClickLetterA from '../../Audios/A/telaTypeLetterA.mp3';
 import Apito from '../../Assets/a/apito.png';
 import Faca from '../../Assets/a/faca.png';
 import Anel from '../../Assets/a/anel.png';
@@ -22,7 +20,6 @@ import Batata from '../../Assets/a/batata.jpg';
 import Caneca from '../../Assets/a/caneca.jpg';
 import Caneta from '../../Assets/a/caneta.png';
 import Gato from '../../Assets/a/gato.jpg';
-import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
    
@@ -241,7 +238,7 @@ function TypeLetterA () {
         setLetter6(target.value)
         const pressLetter = target.value.toUpperCase();
         
-        if(pressLetter === 'A') {
+        if(pressLetter === 'A' || pressLetter === 'Ã') {
             setAnswer6(true);
             setAcertos(acertos+1);
         } else {
@@ -477,7 +474,7 @@ function TypeLetterA () {
     return (
         <Layout>
             <Container> 
-                <AudioInstrucao src={Audio4} controls />
+                <AudioInstrucao src={AuClickLetterA} controls />
                     <Wrapper>
                         <CardGeral>                            
                             <div>
@@ -613,7 +610,7 @@ function TypeLetterA () {
                             </div>
                         </CardGeral>                 
                     </Wrapper>
-                <Link to="clickImageE"><Button onClick={contAcertos}>Continuar</Button></Link>
+                <Link to="TelaE"><Button onClick={contAcertos}>Continuar</Button></Link>
             </Container>
         </Layout>
     );

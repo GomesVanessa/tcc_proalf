@@ -5,10 +5,8 @@ import Layout from '../../components/Layout/Layout';
 import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
-
 import ReactAudioPlayer from 'react-audio-player';
-import Audio3 from '../../Audio_A/tela5-.mp3';
-
+import AuClickLetterA from '../../Audios/A/telaClickLetterA.mp3';
 import A from '../../../src/Assets/letters/A.JPG';
 import ami from '../../../src/Assets/letters/ami.JPG';
 import a_cur from '../../../src/Assets/letters/a_cur.JPG';
@@ -30,6 +28,7 @@ const Wrapper = styled.div`
     grid-row-gap: 1.5em;
     font-size: .5em;
     margin:20px;
+    margin-left: 1%;
 `; 
 
 const CardClick = styled(Card)`
@@ -175,7 +174,7 @@ function ClickLetterA(){
     return(
         <Layout>
             <Container>
-                <AudioInstrucao src={Audio3} controls />
+                <AudioInstrucao src={AuClickLetterA} controls />
 
                 <Representation>
                     <ImgA src={Aa} alt="A" />

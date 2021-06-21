@@ -3,11 +3,11 @@ import styled from "styled-components";
 import {Link} from 'react-router-dom';
 import Layout from '../../components/Layout/Layout';
 import Container from '../../components/Container/Container';
-import Audio from '../../components/Audio/Audio';
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
+import ReactAudioPlayer from 'react-audio-player';
 
-//import AudioAve from '../../../public/audio/Audio_A/tela2-nuvens.mp3';
+import AuCloudE from '../../Audios/E/telaCloudE.mp3';
 
 import Ema from '../../../src/Assets/cloud/ema.JPG'; 
 import Uva from '../../../src/Assets/cloud/uva.JPG'; 
@@ -17,12 +17,11 @@ import Estrela from '../../../src/Assets/cloud/estrela.JPG';
 import Eu from '../../../src/Assets/cloud/eu.JPG'; 
 
 const Wrapper = styled.div`
-    //background-color: lightskyblue;
     display: grid;
     grid-template-columns: repeat(3, 280px);
     grid-column-gap: 4em;
     grid-row-gap: 4em;
-    //font-size: .6em;    
+    margin-left: 2.3%;
 `; 
 
 const CardClick = styled(Card)`
@@ -40,7 +39,7 @@ const Img = styled.img`
     
 `;
 
-const AudioInstrucao = styled(Audio)`
+const AudioInstrucao = styled(ReactAudioPlayer)`
     margin: 60px;
 `;
 
@@ -90,7 +89,7 @@ function CloudE(){
     return(
         <Layout>
             <Container>
-                <AudioInstrucao />
+                <AudioInstrucao src={AuCloudE} controls />
                     <Wrapper>
                         <CardClick onClick={validaAcerto1} style={{borderColor: color1,}}>
                             <Img src={Ema} alt="Ema" />  

@@ -5,9 +5,20 @@ import Layout from '../../../components/Layout/Layout';
 import Container from '../../../components/Container/Container';
 import Button from '../../../components/Button/Button';
 import Card from '../../../components/Card/Card';
-
 import ReactAudioPlayer from 'react-audio-player';
-
+import telaClickImageJ from '../../../Audios/J/telaClickImageJ.mp3';
+//import AuJardim from '../../../Audios/bancoSons/jardim.mp3';
+//import AuLata from '../../../Audios/bancoSons/lata.mp3';
+import AuIsqueiro from '../../../Audios/bancoSons/isqueiro.mp3';
+//import AuJanela from '../../../Audios/bancoSons/janela.mp3';
+//import AuGravata from '../../../Audios/bancoSons/gravata.mp3';
+//import AuJoelho from '../../../Audios/bancoSons/joelho.mp3';
+//import AuJavali from '../../../Audios/bancoSons/javali.mp3';
+import AuOsso from '../../../Audios/bancoSons/osso.mp3';
+//import AuJacare from '../../../Audios/bancoSons/jacare.mp3';
+import AuNuvem from '../../../Audios/bancoSons/nuvem.mp3';
+import AuMacaco from '../../../Audios/bancoSons/macaco.mp3';
+//import AuJipe from '../../../Audios/bancoSons/jipe.mp3';
 import Jardim from '../../../Assets/consonants/J/Jimg/jardim.png';
 import Lata from '../../../Assets/consonants/J/Jimg/lata.png';
 import Isqueiro from '../../../Assets/i/isqueiro.png';
@@ -135,55 +146,55 @@ function ClickImageJ(){
     return(
         <Layout>
             <Container>
-                <AudioInstrucao controls />                     
+                <AudioInstrucao src={telaClickImageJ} controls />                     
                     <Wrapper>
                         <CardClick onClick={validaAcerto1} style={{borderColor: color1,}}>
                             <Img src={Jardim} alt="Jardim" /> 
-                            <AudioCard controls></AudioCard>
+                            <AudioCard  controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro2} style={{borderColor: color2,}}>
                             <Img src={Lata} alt="Lata"/>
-                            <AudioCard controls></AudioCard>
+                            <AudioCard  controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro3} style={{borderColor: color3,}}>
                             <Img src={Isqueiro} alt="Isqueiro"/>
-                            <AudioCard controls></AudioCard>
+                            <AudioCard src={AuIsqueiro} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto4} style={{borderColor: color4,}}>
                             <Img src={Janela} alt="Janela"/>
-                            <AudioCard controls></AudioCard>
+                            <AudioCard  controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro5} style={{borderColor: color5,}}>
                             <Img src={Gravata} alt="Gravata"/>
-                            <AudioCard controls></AudioCard>
+                            <AudioCard  controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto6} style={{borderColor: color6,}}>
                             <Img src={Joelho} alt="Joelho"/>
-                            <AudioCard controls></AudioCard>
+                            <AudioCard  controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto7} style={{borderColor: color7,}}>
                             <Img src={Javali} alt="Javali"/>
-                            <AudioCard controls></AudioCard>
+                            <AudioCard  controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro8} style={{borderColor: color8,}}>
                             <Img src={Osso} alt="Osso"/>
-                            <AudioCard controls></AudioCard>
+                            <AudioCard src={AuOsso} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto9} style={{borderColor: color9,}}>
                             <Img src={Jacare} alt="Jacare"/>
-                            <AudioCard controls></AudioCard>
+                            <AudioCard  controls></AudioCard> 
                         </CardClick>
                         <CardClick onClick={validaErro10} style={{borderColor: color10,}}>
                             <Img src={Nuvem} alt="Nuvem"/>
-                            <AudioCard controls></AudioCard>
+                            <AudioCard src={AuNuvem} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaErro11} style={{borderColor: color11,}}>
                             <Img src={Macaco} alt="Macaco"/>
-                            <AudioCard controls></AudioCard>
+                            <AudioCard src={AuMacaco} controls></AudioCard>
                         </CardClick>
                         <CardClick onClick={validaAcerto12} style={{borderColor: color12,}}>
                             <Img src={Jipe} alt="Jipe"/>
-                            <AudioCard controls></AudioCard>
+                            <AudioCard  controls></AudioCard>
                         </CardClick>                        
                     </Wrapper>
             </Container>

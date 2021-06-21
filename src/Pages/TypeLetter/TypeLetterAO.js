@@ -293,7 +293,7 @@ function TypeLetterAO () {
                         <CardGeral>                            
                             <div>
                                 <img src={Mamao}  alt="Mamao" /><hr/>
-                                MAM<input type="text" maxLength="2" size="1" placeholder="__" value={letter1} 
+                                MAM<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter1} 
                                     onChange={validaLetter1} style={{outlineColor:color1,}}
                                 />
                             </div>    
@@ -301,7 +301,7 @@ function TypeLetterAO () {
                         <CardGeral>                           
                             <div>
                                 <img src={Piao}  alt="Piao" /><hr/>
-                                PI<input type="text" maxLength="2" size="1" placeholder="__" value={letter2}
+                                PI<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter2}
                                     onChange={validaLetter2} style={{outlineColor:color2,}}
                                 />
                             </div>                                          
@@ -309,7 +309,7 @@ function TypeLetterAO () {
                         <CardGeral>
                             <div>
                                 <img src={Coracao}  alt="Coracao" /><hr/>
-                                CORAÇ<input type="text" maxLength="2" size="1" placeholder="__" value={letter3}
+                                CORAÇ<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter3}
                                     onChange={validaLetter3} style={{outlineColor:color3,}}
                                 />
                             </div>
@@ -317,7 +317,7 @@ function TypeLetterAO () {
                         <CardGeral>
                             <div>
                                 <img src={Limao}  alt="Limao" /><hr/>
-                                LIM<input type="text" maxLength="2" size="1" placeholder="__" value={letter4}
+                                LIM<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter4}
                                     onChange={validaLetter4} style={{outlineColor:color4,}}
                                 />
                             </div>
@@ -325,7 +325,7 @@ function TypeLetterAO () {
                         <CardGeral>
                             <div>
                                 <img src={Violao}  alt="Violao" /><hr/>
-                                VIOL<input type="text" maxLength="2" size="1" placeholder="__" value={letter5}
+                                VIOL<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter5}
                                     onChange={validaLetter5} style={{outlineColor:color5,}}
                                 />
                             </div>
@@ -333,7 +333,7 @@ function TypeLetterAO () {
                         <CardGeral>
                             <div>
                                 <img src={Vulcao}  alt="Vulcao" /><hr/>
-                                VULC<input type="text" maxLength="2" size="1" placeholder="__" value={letter6}
+                                VULC<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter6}
                                     onChange={validaLetter6} style={{outlineColor:color6,}}
                                 />
                             </div>
@@ -341,7 +341,7 @@ function TypeLetterAO () {
                         <CardGeral>
                             <div>
                                 <img src={Tubarao}  alt="Tubarao" /><hr/>
-                                TUBAR<input type="text" maxLength="2" size="1" placeholder="__" value={letter7}
+                                TUBAR<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter7}
                                     onChange={validaLetter7} style={{outlineColor:color7,}}
                                 />
                             </div>
@@ -349,7 +349,7 @@ function TypeLetterAO () {
                         <CardGeral>
                             <div>
                                 <img src={Leao}  alt="Leao" /><hr/>
-                                LE<input type="text" maxLength="2" size="1" placeholder="__" value={letter8}
+                                LE<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter8}
                                     onChange={validaLetter8} style={{outlineColor:color8,}}
                                 />
                             </div>
@@ -357,7 +357,7 @@ function TypeLetterAO () {
                         <CardGeral>
                             <div>
                                 <img src={Furacao}  alt="Furacao" /><hr/>
-                                FURAC<input type="text" maxLength="2" size="1" placeholder="__" value={letter9}
+                                FURAC<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter9}
                                     onChange={validaLetter9} style={{outlineColor:color9,}}
                                 />
                             </div>
@@ -365,7 +365,7 @@ function TypeLetterAO () {
                         <CardGeral>
                             <div>
                                 <img src={Caminhao}  alt="Caminhao" /><hr/>
-                                CAMINH<input type="text" maxLength="2" size="1" placeholder="__" value={letter10}
+                                CAMINH<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter10}
                                     onChange={validaLetter10} style={{outlineColor:color10,}}
                                 />
                             </div>
@@ -373,7 +373,7 @@ function TypeLetterAO () {
                         <CardGeral>
                             <div>
                                 <img src={Aviao}  alt="Aviao" /><hr/>
-                                AVI<input type="text" maxLength="2" size="1" placeholder="__" value={letter11}
+                                AVI<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter11}
                                     onChange={validaLetter11} style={{outlineColor:color11,}}
                                 />
                             </div>
@@ -381,7 +381,7 @@ function TypeLetterAO () {
                         <CardGeral>
                             <div>
                                 <img src={Mamao}  alt="Mamao" /><hr/>
-                                MAM<input type="text" maxLength="2" size="1" placeholder="__" value={letter12}
+                                MAM<input type="text" maxLength="2" size="1" placeholder="_ _" value={letter12}
                                     onChange={validaLetter12} style={{outlineColor:color12,}}
                                 />
                             </div>

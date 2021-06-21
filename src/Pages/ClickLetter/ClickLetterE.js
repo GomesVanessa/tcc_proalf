@@ -3,12 +3,10 @@ import styled from "styled-components";
 import {Link} from 'react-router-dom';
 import Layout from '../../components/Layout/Layout';
 import Container from '../../components/Container/Container';
-import Audio from '../../components/Audio/Audio';
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
-
-//import AudioAve from '../../../public/audio/Audio_A/tela2-nuvens.mp3';
-
+import ReactAudioPlayer from 'react-audio-player';
+import AuClickLetterE from '../../Audios/E/telaClickLetterE.mp3';
 import E from '../../../src/Assets/letters/E.JPG';
 import ami from '../../../src/Assets/letters/ami.JPG';
 import e_cur from '../../../src/Assets/letters/e_cur.JPG';
@@ -31,6 +29,7 @@ const Wrapper = styled.div`
     grid-row-gap: 1.5em;
     font-size: .5em;
     margin:20px;
+    margin-left: 1%;
 `; 
 
 const CardClick = styled(Card)`
@@ -48,7 +47,7 @@ const Img = styled.img`
     object-fit: contain;
 `;
 
-const AudioInstrucao = styled(Audio)`
+const AudioInstrucao = styled(ReactAudioPlayer)`
     margin: 20px;
 `;
 
@@ -177,7 +176,7 @@ function ClickLetterE(){
     return(
         <Layout>
             <Container>
-                <AudioInstrucao />
+                <AudioInstrucao src={AuClickLetterE} controls />
 
                 <Representation>
                     <ImgA src={Ee} alt="E" />

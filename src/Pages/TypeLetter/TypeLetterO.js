@@ -5,10 +5,9 @@ import Layout from '../../components/Layout/Layout';
 import Card from '../../components/Card/Card';
 import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
-
-import Audio from '../../components/Audio/Audio';
-//import AudioEnter from '../../../public/audio/Audio_A/tela5-.mp3'
-
+import { Link } from 'react-router-dom';
+import ReactAudioPlayer from 'react-audio-player';
+import AuClickLetterO from '../../Audios/O/telaTypeLetterO.mp3';
 import Osso from '../../Assets/o/osso.png';
 import Ovo from '../../Assets/o/ovo.png';
 import Olho from '../../Assets/o/olho.png';
@@ -21,8 +20,6 @@ import Radio from '../../Assets/o/radio.png';
 import Navio from '../../Assets/o/navio.png';
 import Porco from '../../Assets/o/porco.png';
 import Piano from '../../Assets/o/piano.png';
-import { Link } from 'react-router-dom';
-
 
 const Wrapper = styled.div`
    
@@ -56,7 +53,7 @@ const Wrapper = styled.div`
     }
 `; 
 
-const AudioInstrucao = styled(Audio)`
+const AudioInstrucao = styled(ReactAudioPlayer)`
     margin: 20px; 
 `;
 
@@ -361,7 +358,7 @@ function TypeLetterO () {
     return (
         <Layout>
             <Container> 
-                <AudioInstrucao />
+                <AudioInstrucao src={AuClickLetterO} controls />
                     <Wrapper>
                         <CardGeral>                            
                             <div>
@@ -475,7 +472,7 @@ function TypeLetterO () {
                             </div>    
                         </CardGeral>                        
                     </Wrapper>
-                <Link to="clickImageU"><Button onClick={contAcertos}>Continuar</Button></Link>
+                <Link to="TelaU"><Button onClick={contAcertos}>Continuar</Button></Link>
             </Container>
         </Layout>
     );

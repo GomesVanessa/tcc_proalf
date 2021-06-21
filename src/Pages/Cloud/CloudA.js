@@ -5,9 +5,9 @@ import Layout from '../../components/Layout/Layout';
 import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
-
 import ReactAudioPlayer from 'react-audio-player';
-import Audio2 from '../../Audio_A/tela2-nuvens.mp3';
+
+import AuCloudA from '../../Audios/A/telaCloudA.mp3';
 
 import Ave from '../../../src/Assets/cloud/ave.JPG';
 import Ovo from '../../../src/Assets/cloud/ovo.JPG';
@@ -17,12 +17,11 @@ import Urso from '../../../src/Assets/cloud/urso.JPG';
 import Anel from '../../../src/Assets/cloud/anel.JPG';
 
 const Wrapper = styled.div`
-    //background-color: lightskyblue;
     display: grid;
     grid-template-columns: repeat(3, 280px);
     grid-column-gap: 4em;
     grid-row-gap: 4em;
-    //font-size: .6em;    
+    margin-left: 2.3%;
 `; 
 
 const CardClick = styled(Card)`
@@ -90,7 +89,7 @@ function CloudA(){
     return(
         <Layout>
             <Container>
-                <AudioInstrucao src={Audio2} controls />
+                <AudioInstrucao src={AuCloudA} controls />
                     <Wrapper>
                         <CardClick onClick={validaAcerto1} style={{borderColor: color1,}}>
                             <Img src={Ave} alt="Ave" />  

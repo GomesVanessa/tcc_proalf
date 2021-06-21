@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import Layout from '../../components/Layout/Layout';
 import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
-import Audio from '../../components/Audio/Audio';
+import ReactAudioPlayer from 'react-audio-player';
+
 import hcf from '../../Assets/homeConsonants/hcf.jpg';
 import hcj from '../../Assets/homeConsonants/hcj.jpg';
 import hcm from '../../Assets/homeConsonants/hcm.jpg';
@@ -13,14 +14,16 @@ import { Link } from 'react-router-dom';
 const Wrapper = styled.div`
     display: flex;
     height: 100%;
-    justify-content: center;    
+    justify-content: center;
+    a{
+        margin: 0px 20px;
+    }    
     img:hover {
         background:#65c728;
-    }    
-     
+    }        
 `;
 
-const AudioInstrucao = styled(Audio)`
+const AudioInstrucao = styled(ReactAudioPlayer)`
     margin: 40px; 
 `;
 
@@ -29,45 +32,45 @@ const Item = styled.div`
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
-    ${Audio}{
-        margin: 10px;
-    }
 `;
 
 const ConsonantImage = styled.img`
-    height: 390px;
-    width: 110px;
-    
+    height: 420px;
+    width: 120px;
     object-fit: contain;
-
 `; 
+
+const AudioCard = styled(ReactAudioPlayer)`
+    width: 130px;
+    height: 30px;
+`;
 
 const HomeConsonants = () => {
   return(
     <Layout>
         <Container>
-            <AudioInstrucao icon={false}/>
+            <AudioInstrucao controls/>
                 <Wrapper>
                     <Item >
-                        <Audio controls={false} icon={true} /> 
+                        <AudioCard controls></AudioCard>
                         <Link to="/fMenu">              
                             <ConsonantImage src={hcf}  alt="Consoante F" />
                         </Link> 
                     </Item>
                     <Item >
-                        <Audio controls={false} icon={true} /> 
+                        <AudioCard controls></AudioCard>
                         <Link to="/jMenu">              
                             <ConsonantImage src={hcj}  alt="Consoante J" />
                         </Link> 
                     </Item>
                     <Item >
-                        <Audio controls={false} icon={true} /> 
+                        <AudioCard controls></AudioCard>
                         <Link to="/mMenu">              
                             <ConsonantImage src={hcm}  alt="Consoante M" />
                         </Link> 
                     </Item>
                     <Item >
-                        <Audio controls={false} icon={true} /> 
+                        <AudioCard controls></AudioCard>
                         <Link to="/nMenu">              
                             <ConsonantImage src={hcn}  alt="Consoante N" />
                         </Link> 

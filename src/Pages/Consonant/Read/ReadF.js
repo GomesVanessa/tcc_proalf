@@ -5,8 +5,8 @@ import Layout from '../../../components/Layout/Layout';
 import Container from '../../../components/Container/Container';
 import Button from '../../../components/Button/Button';
 import Card from '../../../components/Card/Card';
-
 import ReactAudioPlayer from 'react-audio-player';
+import telaReadF from '../../../Audios/F/telaReadF.mp3';
 
 const Wrapper = styled.div`
     display: grid;
@@ -34,20 +34,18 @@ const CardClick2 = styled(Card)`
     font-size: 1.4em;
     width:50.5%;
     margin-left:23.5%;
-    //line-height:1em;
 `;
 
 const AudioInstrucao = styled(ReactAudioPlayer)`
     margin: 24px;
 `;
 
-
 function ReadF(){  
    
     return(
         <Layout>
             <Container>
-                <AudioInstrucao controls />
+                <AudioInstrucao src={telaReadF} controls />
                     <Wrapper>
                         <div>
                             <CardClick>FAFA</CardClick>

@@ -5,21 +5,21 @@ import Layout from '../../components/Layout/Layout';
 import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
-
 import ReactAudioPlayer from 'react-audio-player';
-import Audio1 from '../../Audio_A/ASOM1.mp3';
-import AuAbacaxi from '../../Audio_A/abacaxi.mp3';
-import AuSino from '../../Audio_A/sino.mp3';
-import AuAbelha from '../../Audio_A/abelha.mp3';
-import AuAnel from '../../Audio_A/anel.mp3';
-import AuOlhos from '../../Audio_A/olho.mp3';
-import AuApito from '../../Audio_A/apito.mp3';
-import AuFoguete from '../../Audio_A/foguete.mp3';
-import AuAranha from '../../Audio_A/aranha.mp3';
-import AuArvore from '../../Audio_A/arvore.mp3';
-import AuCoelho from '../../Audio_A/coelho.mp3';
-import AuAviao from '../../Audio_A/aviao.mp3';
-import AuGalinha from '../../Audio_A/galinha.mp3';
+
+import AuClickImageA from '../../Audios/A/telaClickImageA.mp3';
+import AuAbacaxi from '../../Audios/bancoSons/abacaxi.mp3';
+import AuSino from '../../Audios/bancoSons/sino.mp3';
+import AuAbelha from '../../Audios/bancoSons/abelha.mp3';
+import AuAnel from '../../Audios/bancoSons/anel.mp3';
+import AuOlhos from '../../Audios/bancoSons/olho.mp3';
+import AuApito from '../../Audios/bancoSons/apito.mp3';
+import AuFoguete from '../../Audios/bancoSons/foguete.mp3';
+import AuAranha from '../../Audios/bancoSons/aranha.mp3';
+import AuArvore from '../../Audios/bancoSons/arvore.mp3';
+import AuCoelho from '../../Audios/bancoSons/coelho.mp3';
+import AuAviao from '../../Audios/bancoSons/aviao.mp3';
+import AuGalinha from '../../Audios/bancoSons/galinha.mp3';
 
 import Abacaxi from '../../../src/Assets/a/abacaxi.png';
 import Sino from '../../../src/Assets/a/sino.png';
@@ -40,6 +40,7 @@ const Wrapper = styled.div`
     grid-column-gap: 0.1em;
     grid-row-gap: 7em;
     font-size: .5em;
+    margin-left: 2.3%;
 `; 
 
 const CardClick = styled(Card)`
@@ -61,7 +62,7 @@ const Img = styled.img`
 `;
 
 const AudioInstrucao = styled(ReactAudioPlayer)`
-    margin: 40px;
+    margin: 30px;
 `;
 
 const AudioCard = styled(ReactAudioPlayer)`
@@ -151,7 +152,7 @@ function ClickImageA(){
     return(
         <Layout>
             <Container>
-                <AudioInstrucao src={Audio1} controls />                     
+                <AudioInstrucao src={AuClickImageA} controls />                     
                     <Wrapper>
                         <CardClick  onClick={validaAcerto1} style={{borderColor: color1,}}>
                             <Img src={Abacaxi} alt="Abacaxi" /> 

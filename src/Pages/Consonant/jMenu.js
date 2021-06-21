@@ -5,9 +5,9 @@ import Layout from '../../components/Layout/Layout';
 import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
 import j_Menu from '../../Assets/consonants/J/j_Menu.JPG';
-
 import ReactAudioPlayer from 'react-audio-player';
- 
+import telaHomeJ from '../../Audios/J/telaHomeJ.mp3';
+
 const Image = styled.img`
     width: 80%;
     justify-content: center;
@@ -24,7 +24,7 @@ function jMenu(){
     return(
         <Layout>
             <Container>
-                <AudioInstrucao controls />
+                <AudioInstrucao src={telaHomeJ} controls />
                     <Image src={j_Menu}/>
             </Container>
             <Link to="/clickImageJ"><Button >Continuar</Button></Link>
